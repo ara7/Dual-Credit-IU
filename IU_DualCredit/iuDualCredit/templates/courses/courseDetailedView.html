@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %} | Course Detailed View {% endblock %}
+
+{% block content%}
+
+<section id="login" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <ul class="mb0 listing">
+                                
+                                {% for key, values in courseDetailsDict.items %}
+                                    <li>
+                                        <label>{{key}} : </label><span> {{values}}</span>
+                                        <br/>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Section_Seats">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 card">
+                
+                <div class="card-header bg-Crimson text-white">
+                    <h4> Campuses </h4>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Campus Of Instruction</th>
+                                <th scope="col">Campus Of Enrollment</th>
+                                <th scope="col">Total Seats</th>
+                                <th scope="col">Enrolled</th>
+                                <th scope="col">Pending</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for campusSeat in campusSeatsList %}
+                            <tr>
+                                {% for csDetail in campusSeat %}
+                                    <td>{{ csDetail }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="StudentCourseDetails" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 mb-12">
+                    <div class="card">
+                        <div class="card-header bg-Crimson text-white">
+                        </div>
+                        <div class="card-body">
+                            <table class="table" style="text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Student Name</th>
+                                        <th scope="col">Class Number</th>
+                                        <th scope="col">Student Enrollment Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for studentCourse in StudentDetailsList %}
+                                    <tr>
+                                        {% for studentDetail in studentCourse %}
+                                            <td>{{ studentDetail }}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+{% endblock %}

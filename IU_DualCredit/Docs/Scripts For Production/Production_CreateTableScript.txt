@@ -1,0 +1,230 @@
+CREATE TABLE `funding_applications` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `submitted_on` date DEFAULT NULL,
+  `response_id` varchar(255) NOT NULL DEFAULT '',
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `dc_partner` varchar(255) DEFAULT NULL,
+  `high_school` varchar(255) DEFAULT NULL,
+  `previous_iu_student` varchar(255) DEFAULT NULL,
+  `reported_univ_id` varchar(255) DEFAULT NULL,
+  `previous_iu_name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `contact_preference` varchar(255) DEFAULT NULL,
+  `course_preference_1` varchar(1000) DEFAULT NULL,
+  `course_preference_2` varchar(1000) DEFAULT NULL,
+  `birthdate` date DEFAULT NULL,
+  `legal_sex` varchar(255) DEFAULT NULL,
+  `gender_identity` varchar(255) DEFAULT NULL,
+  `former_name_1` varchar(255) DEFAULT NULL,
+  `former_name_2` varchar(255) DEFAULT NULL,
+  `former_name_3` varchar(255) DEFAULT NULL,
+  `former_name_4` varchar(255) DEFAULT NULL,
+  `former_name_5` varchar(255) DEFAULT NULL,
+  `data` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
+  PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `iuie_academic_terms` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `acad_term_cd` varchar(255) NOT NULL DEFAULT '',
+  `acad_term` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+);
+
+
+
+
+CREATE TABLE `iuie_applications` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `PRSN_UNIV_ID` varchar(11) NOT NULL DEFAULT '',
+  `ROW_EFF_DT` date DEFAULT NULL,
+  `APPL_NBR` varchar(255) NOT NULL DEFAULT '',
+  `ACAD_PLAN_CD` varchar(10) NOT NULL DEFAULT '',
+  `ACAD_PGM_CD` varchar(10) NOT NULL DEFAULT '',
+  `INST_CD` varchar(5) NOT NULL DEFAULT '',
+  `PRSN_GNDR_CD` varchar(1) DEFAULT NULL,
+  `PRSN_BIRTH_DT` date NOT NULL,
+  `PRSN_PREF_1ST_NM` varchar(255) NOT NULL DEFAULT '',
+  `PRSN_PREF_LAST_NM` varchar(255) NOT NULL DEFAULT '',
+  `PRSN_PREF_MID_NM` varchar(255) DEFAULT NULL,
+  `PRSN_HM_PHN_NBR` varchar(255) DEFAULT NULL,
+  `PRSN_OTHR_EMAIL_ID` varchar(255) DEFAULT NULL,
+  `PRSN_GDS_CMP_EMAIL_ADDR` varchar(255) DEFAULT NULL,
+  `PRSN_NTWRK_ID` varchar(16) DEFAULT NULL,
+  `CREDITS_COMPLETED` float DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `iuie_classes` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `CLS_KEY` varchar(40) NOT NULL DEFAULT '',
+  `CLS_NBR` varchar(6) NOT NULL DEFAULT '',
+  `CRS_ID` varchar(6) NOT NULL DEFAULT '',
+  `ACAD_TERM_CD` varchar(4) NOT NULL DEFAULT '',
+  `CLS_INSTR_NM` varchar(255) DEFAULT NULL,
+  `CLS_INSTR_GDS_CMP_EMAIL_ADDR` varchar(255) DEFAULT NULL,
+  `COE_INST_CD` varchar(5) DEFAULT NULL,
+  `COI_INST_CD` varchar(5) DEFAULT NULL,
+  `ENROLLMENT_CAP` int(10) DEFAULT NULL,
+  `ENROLLMENT_TOTAL` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `iuie_enrollments` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `PRSN_UNIV_ID` varchar(11) NOT NULL DEFAULT '',
+  `CRS_ID` varchar(6) NOT NULL DEFAULT '',
+  `CRS_SUBJ_CD` varchar(10) NOT NULL DEFAULT '',
+  `CRS_CATLG_NBR` varchar(10) NOT NULL DEFAULT '',
+  `CRS_DESC` varchar(255) NOT NULL DEFAULT '',
+  `CLS_NBR` varchar(6) NOT NULL DEFAULT '',
+  `COE_INST_CD` varchar(5) NOT NULL DEFAULT '',
+  `ACAD_TERM_CD` varchar(4) NOT NULL DEFAULT '',
+  `CRS_OFCL_GRD_CD` varchar(10) DEFAULT '',
+  `STU_ENRL_ADD_DT` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `STU_ENRL_DRP_DT` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `STU_ENRL_STAT_REAS_CD` varchar(255) NOT NULL DEFAULT '',
+  `CLS_INSTR_NM` varchar(255) DEFAULT NULL,
+  `CLS_INSTR_GDS_CMP_EMAIL_ADDR` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `iuie_funding_type` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `fundingType` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `iuie_grant_data` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `PRSN_UNIV_ID` varchar(255) NOT NULL DEFAULT '',
+  `grant_name` varchar(255) NOT NULL DEFAULT '',
+  `grant_account` varchar(255) NOT NULL DEFAULT '',
+  `amount_total` varchar(255) NOT NULL DEFAULT '',
+  `campus` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `iuie_grant_enrollment` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `cls_nbr` varchar(255) NOT NULL DEFAULT '',
+  `course_subject_code` varchar(255) NOT NULL DEFAULT '',
+  `prsn_univ_id` varchar(255) NOT NULL DEFAULT '',
+  `acad_term_cd` varchar(255) NOT NULL DEFAULT '',
+  `grant_id` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `iuie_qualitrics_data` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `Start_Date` varchar(100) NOT NULL DEFAULT '',
+  `End_Date` varchar(100) NOT NULL DEFAULT '',
+  `Response_Type` varchar(100) NOT NULL DEFAULT '',
+  `IP_Address` varchar(100) NOT NULL DEFAULT '',
+  `Progress` varchar(100) NOT NULL DEFAULT '',
+  `Duration` varchar(100) NOT NULL DEFAULT '',
+  `Finished` varchar(100) NOT NULL DEFAULT '',
+  `Recorded_Date` varchar(100) NOT NULL DEFAULT '',
+  `Response_ID` varchar(100) NOT NULL DEFAULT '',
+  `Recipient_Last_Name` varchar(100) NOT NULL DEFAULT '',
+  `Recipient_First_Name` varchar(100) NOT NULL DEFAULT '',
+  `Recipient_Email` varchar(100) NOT NULL DEFAULT '',
+  `External_Data_Reference` varchar(100) NOT NULL DEFAULT '',
+  `Location_Latitude` varchar(100) NOT NULL DEFAULT '',
+  `Location_Longitude` varchar(100) NOT NULL DEFAULT '',
+  `Distribution_Channel` varchar(100) NOT NULL DEFAULT '',
+  `User_Language` varchar(100) NOT NULL DEFAULT '',
+  `First_Name` varchar(100) NOT NULL DEFAULT '',
+  `Last_Name` varchar(100) NOT NULL DEFAULT '',
+  `role_Description` varchar(1000) NOT NULL DEFAULT '',
+  `Institution` varchar(100) NOT NULL DEFAULT '',
+  `High_School` varchar(100) NOT NULL DEFAULT '',
+  `Course_Type` varchar(100) NOT NULL DEFAULT '',
+  `Acadmic_Term` varchar(100) NOT NULL DEFAULT '',
+  `Class_Taken_IndianaUniversity` varchar(100) NOT NULL DEFAULT '',
+  `CurrentlyEnrolled_Degree_IndianaUniversity` varchar(100) NOT NULL DEFAULT '',
+  `Student_UID` varchar(100) NOT NULL DEFAULT '',
+  `Student_FirstName` varchar(100) NOT NULL DEFAULT '',
+  `Student_LastName` varchar(100) NOT NULL DEFAULT '',
+  `Student_PrimaryEmailAddress` varchar(500) NOT NULL DEFAULT '',
+  `Student_ConfirmPrimaryEmailAddress` varchar(500) NOT NULL DEFAULT '',
+  `Primary_PhoneNumber` varchar(100) NOT NULL DEFAULT '',
+  `Contact_Method` varchar(100) NOT NULL DEFAULT '',
+  `Is_Submit_Credentials_IU_ForEquivalency` varchar(100) NOT NULL DEFAULT '',
+  `StateLicensure` varchar(100) NOT NULL DEFAULT '',
+  `MoreThan_TwoYears_TeachingExperience` varchar(100) NOT NULL DEFAULT '',
+  `Graduate_Degree` varchar(100) NOT NULL DEFAULT '',
+  `Spring_CourseFirstRequest` varchar(500) NOT NULL DEFAULT '',
+  `Spring_CourseSecondRequest` varchar(500) NOT NULL DEFAULT '',
+  `Notes` varchar(100) NOT NULL DEFAULT '',
+  `Graduate_Certificate_Programs` varchar(100) NOT NULL DEFAULT '',
+  `Graduate_Certificate_Interest` varchar(100) NOT NULL DEFAULT '',
+  `DateOfBirth` varchar(100) NOT NULL DEFAULT '',
+  `US_Status` varchar(100) NOT NULL DEFAULT '',
+  `Veteran_UnitedStates_ArmedServices` varchar(100) NOT NULL DEFAULT '',
+  `Parents_Guardians_Spouse_Served_UnitedStates_ArmedServices` varchar(100) NOT NULL DEFAULT '',
+  `VeteransAffairs_Department_Defense_Educational_Benefits` varchar(100) NOT NULL DEFAULT '',
+  `CurrentAddress_Street` varchar(100) NOT NULL DEFAULT '',
+  `CurrentAddress_City` varchar(100) NOT NULL DEFAULT '',
+  `CurrentAddress_State` varchar(100) NOT NULL DEFAULT '',
+  `CurrentAddress_PostalCode` varchar(100) NOT NULL DEFAULT '',
+  `CurrentAddress_Country` varchar(100) NOT NULL DEFAULT '',
+  `Duration_Lived_Indiana` varchar(100) NOT NULL DEFAULT '',
+  `Is_Address_PermanentMailingAddress` varchar(100) NOT NULL DEFAULT '',
+  `PermanentMailingAddress_Street` varchar(100) NOT NULL DEFAULT '',
+  `PermanentMailingAddress_City` varchar(100) NOT NULL DEFAULT '',
+  `PermanentMailingAddress_State` varchar(100) NOT NULL DEFAULT '',
+  `PermanentMailingAddress_PostalCode` varchar(100) NOT NULL DEFAULT '',
+  `PermanentMailingAddress_Country` varchar(100) NOT NULL DEFAULT '',
+  `Legal_Sex` varchar(100) NOT NULL DEFAULT '',
+  `OPTIONAL_GenderIdentity` varchar(100) NOT NULL DEFAULT '',
+  `Documents_Arrived_UnderAnyOtherName` varchar(100) NOT NULL DEFAULT '',
+  `FormerNames1` varchar(100) NOT NULL DEFAULT '',
+  `FormerNames2` varchar(100) NOT NULL DEFAULT '',
+  `FormerNames3` varchar(100) NOT NULL DEFAULT '',
+  `FormerNames4` varchar(100) NOT NULL DEFAULT '',
+  `FormerNames5` varchar(100) NOT NULL DEFAULT '',
+  `Formal_DisciplinaryAction` varchar(100) NOT NULL DEFAULT '',
+  `ConvictedCrime` varchar(100) NOT NULL DEFAULT '',
+  `Currently_Pending_CriminalCharges` varchar(100) NOT NULL DEFAULT '',
+  `Behavior_Caused_Injury` varchar(100) NOT NULL DEFAULT '',
+  `Respond_AffirmationStatement` varchar(1000) NOT NULL DEFAULT '',
+  `FullLegalName` varchar(100) NOT NULL DEFAULT '',
+  `sourceDesc` varchar(100) NOT NULL DEFAULT '',
+  `typeDesc` varchar(100) NOT NULL DEFAULT '',
+  `program_id` varchar(100) NOT NULL DEFAULT '',
+  `user` varchar(100) NOT NULL DEFAULT '',
+  `AccessZip` varchar(100) NOT NULL DEFAULT '',
+  `AccessCountry` varchar(100) NOT NULL DEFAULT '',
+  `AccessDate` varchar(100) NOT NULL DEFAULT '',
+  `AccessTime` varchar(100) NOT NULL DEFAULT '',
+  `InquiryType` varchar(100) NOT NULL DEFAULT '',
+  `Q_R_DEL` varchar(100) NOT NULL DEFAULT '',
+  `audience` varchar(100) NOT NULL DEFAULT '',
+  `date` varchar(100) NOT NULL DEFAULT '',
+  `MobileDevice` varchar(100) NOT NULL DEFAULT '',
+  `Q8_2_Topics` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+);
+
+
+
+
+
+
+
+
+

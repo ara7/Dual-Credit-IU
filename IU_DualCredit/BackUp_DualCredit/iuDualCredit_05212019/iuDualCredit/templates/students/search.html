@@ -1,0 +1,426 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block pagecss %} 
+
+<style>
+        .pager {
+            text-align: left; 
+        }
+        
+        .pager span {
+            display: inline-block;
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8;
+            text-align: center;
+            cursor: pointer;
+            background: #7A1705;
+            color: #ccc;
+            margin-right: 0.5em;
+        }
+        
+        .pager span.active {
+            background: #fff;
+            color:#191919;
+            font-weight:bold;
+            text-align:center;
+        }
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'students' %}">
+                        <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'search' %}">Student Search</a>
+                </li>
+                <li class="breadcrumb-item active">Search Results</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+
+<section id="courseSearch" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="container">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4>Search</h4>
+                    </div>
+
+                    <!--<form action="{% url 'search' %}"></form>-->
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="user_name">User Name</label>
+                            <input type="text" id="user_name" name="user_name" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="uid">UID</label>
+                            <input type="text" id="uid" name="uid" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="first_name">Student First Name</label>
+                            <input type="text" id="firstname" name="first_name" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="last_name">Student Last Name</label>
+                            <input type="text" id="lastname" name="last_name" class="form-control" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="col-md-6 mb-3">
+                            <label for="campusofEnrollment">Campus of Enrollment</label>
+                            <select id="campusofEnrollment" name="campusofEnrollment" class="form-control">
+                                <option selected="true" disabled="disabled">Select</option>
+                                    {% for campuss in campuses %}
+                                        <option value="{{ campus }}" {% if campuss == values.campus %} selected {% endif %}>
+                                            {{ campuss }}
+                                        </option>
+                                    {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="student_type">Student Type</label>
+                            <select id="studentType" name="term" class="form-control" id="type">
+                                <option selected="true" disabled="disabled">Select</option>
+                                    {% for key,value in studentType.items %}
+                                        <option value="{{key}}" {% if key == values.studentType %} selected {% endif %}>
+                                            {{ value }}
+                                        </option>
+                                    {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="dc_partner">DC Partner</label>
+                            <select id="dcPartner" name="dc_partner" class="form-control">
+                                <option selected="true" disabled="disabled">Select</option>
+                                {% for key,value in dcPartner.items %}
+                                <option value="{{key}}" {% if key == values.dcPartner %} selected {% endif %}>
+                                    {{ value }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between max-WT-500">
+                            <div class="col-md-6 ">
+                                <label class="container checkbox">Currently Enrolled
+                                    <input type="checkbox" id="currently_enrolled" name="currently_enrolled">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="container checkbox">Pending Enrollment Requests
+                                    <input type="checkbox" id="pending_enrollment" name="pending_enrollment">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mb-3 text-center">
+                            <input type="submit" id="btnSearch" value="Search"
+                                class="btn bg-Crimson text-white text-center ">
+                        </div>
+
+                        <div class="col-md-6 mb-3 text-right">
+                                <input id="btnExport" value="Export" style="width:20%" 
+                                    class="btn bg-Crimson text-white text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses -->
+<section id="studentsGrid" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Student Details</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Uid</th>
+                            <th scope="col">Student Name</th>
+                            <th scope="col">Student Type</th>
+                            <th scope="col">DC Partner</th>
+                            <th scope="col">Pending Course Request Date</th>
+                            <th scope="col">Course Choice</th>
+                            <th scope="col">Second Course Choice</th>
+                            <th scope="col">Credit Hours Earned</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Campus Affiliation</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!--{% for course in courses %}
+                            <tr>
+                                <td>{{ student.student_name }}</td>
+                                <td>{{ student.uid }}</td>
+                                <td>{{ student.student_type }}</td>
+                                <td> 'None' </td>
+                                <td> 'None' </td>
+                                <td> 'None' </td>
+                                <td> 'None' </td>
+                                <td> 'None' </td>
+                                <td>{{ student.email }}</td>
+                                <td>{{ student.campus_affiliation }}</td>
+                                <td>
+                                    <a class="btn btn-light" href="{% url 'students' student.student_id %}">View Student
+                                        Details</a>
+                                </td>
+                            </tr>
+                        {% endfor %}-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!--<div class="row">
+            <div class="col-md-12">
+                {% if courses.has_other_pages %}
+                <ul class="pagination">
+                    {% if courses.has_previous %}
+                    <li class="page-item">
+                        <a href="?page={{courses.previous_page_number}}" class="page-link">&laquo;</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link">&laquo;</a>
+                    </li>
+                    {% endif %}
+
+
+                    {% for i in courses.paginator.page_range %}
+                    {% if courses.number == i %}
+                    <li class="page-item active">
+                        <a class="page-link">{{i}}</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item">
+                        <a href="?page={{i}}" class="page-link">{{i}}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if courses.has_next %}
+                    <li class="page-item">
+                        <a href="?page={{courses.next_page_number}}" class="page-link">&raquo;</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link">&raquo;</a>
+                    </li>
+                    {% endif %}
+
+                </ul>
+                {% endif %}
+            </div>
+        </div>-->
+
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script language="javascript" type="text/javascript">
+        
+                      
+        $(document).ready(function() {
+
+            $("#btnSearch").click(function(event) {
+                //alert($('#coursenumber').val());
+                
+                var username = $('#user_name').val();
+                var uid = $('#uid').val();
+                var firstname = $('#firstname').val();
+                var lastname = $('#lastname').val();
+                var campusOfenrollment = $('#campusofEnrollment:selected').val();
+                var studentType = $('#studentType:selected').val();
+                var dcPartner = $('#dcPartner:selected').val();
+                var currentlyEnrolled = $('#currently_enrolled:selected').val();
+                var pendingEnrollmentReq = $('#pending_enrollment:selected').val();
+
+                $.ajax({
+                      url:"/students/studentsearch/",
+                      dataType: 'json',
+                      data: {
+                        'username': username,
+                        'uid' : uid,
+                        'firstname': firstname,
+                        'lastname': lastname,
+                        'campusOfenrollment': campusOfenrollment,
+                        'studentType': studentType,
+                        'dcPartner': dcPartner,
+                        'currentlyEnrolled': currentlyEnrolled,
+                        'pendingEnrollmentReq': pendingEnrollmentReq
+                      },
+                      success: function(data) {
+                        
+                        $("#tbody tr").remove();
+
+                        var tr=[];
+                        studentDetails = data.studentDetails;
+                        for (var i = 0; i < studentDetails.length; i++) {
+                            tr.push('<tr>');
+                            tr.push("<td>" + studentDetails[i][0] + "</td>");
+                            tr.push("<td>" + studentDetails[i][1] + " " + studentDetails[i][2] + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" + studentDetails[i][6] + "</td>");
+                            tr.push("<td>" + 'None' + "</td>");
+                            tr.push("<td>" +  
+                                "<button type='button' id='btnViewDetails" + i + "' class='btn btn-primary' onclick='ViewDetails(this);'> View Details </button>"
+                                + "</td>");
+                            tr.push('</tr>');
+                        }
+                        $('tbody').append($(tr.join('')));
+                        paging();
+                      },
+                      error: function(data) {
+                        console.log(data); 
+                      }
+                });
+                return false;                
+            });
+
+
+            $("#btnExport").click(function () {
+
+                var username = $('#user_name').val();
+                var uid = $('#uid').val();
+                var firstname = $('#firstname').val();
+                var lastname = $('#lastname').val();
+                var campusOfenrollment = $('#campusofEnrollment:selected').val();
+                var studentType = $('#studentType:selected').val();
+                var dcPartner = $('#dcPartner:selected').val();
+                var currentlyEnrolled = $('#currently_enrolled:selected').val();
+                var pendingEnrollmentReq = $('#pending_enrollment:selected').val();
+    
+                $.ajax({
+                    url: '/students/exportcsv',
+                    type : 'POST',
+                    data: {
+                        'username': username,
+                        'uid' : uid,
+                        'firstname': firstname,
+                        'lastname': lastname,
+                        'campusOfenrollment': campusOfenrollment,
+                        'studentType': studentType,
+                        'dcPartner': dcPartner,
+                        'currentlyEnrolled': currentlyEnrolled,
+                        'pendingEnrollmentReq': pendingEnrollmentReq,
+                        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                    },
+                    error:function(xhr,errmsg,err) {
+                        const csvData = (xhr.responseText);
+                        const blob = new Blob ([csvData], {type: 'text/csv'});
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.setAttribute('hidden', '');
+                        a.setAttribute('href', url);
+                        a.setAttribute('download', 'students.csv');
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        alert("File Downloaded Successfully");
+                    }
+                });
+            });
+
+
+            function paging() {
+
+                $('.table').each(function () {
+                
+                    var currentPage = 0;
+                    var numPerPage = 4; // number of items 
+                    var $table = $(this);
+
+                    $table.bind('repaginate', function () {
+                        $table.find('tbody tr').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
+                    });
+
+                    $table.trigger('repaginate');
+    
+                    var numRows = $table.find('tbody tr').length;
+                    var numPages = Math.ceil(numRows / numPerPage);
+                    var $pager = $('<div class="pager"></div>')
+                    
+                    for (var page = 0; page < numPages; page++) {
+    
+                        $('<span class="page-number"></span>').text(page + 1).bind('click', {
+                            newPage: page
+                        }, function (event) {
+                            currentPage = event.data['newPage'];
+                            $table.trigger('repaginate');
+                            $(this).addClass('active').siblings().removeClass('active');
+                        }).appendTo($pager).addClass('clickable');
+                    }
+                    
+                    if (numRows > numPerPage) {
+                        $pager.insertAfter($table).find('span.page-number:first').addClass('active');
+                    }
+                });
+            }
+
+        });
+
+
+        function ViewDetails(ctl) {
+                
+            var _row = $(ctl).parents("tr");
+            var cols = _row.children("td");
+            var studentUid = $(cols[0]).text();
+
+            //console.log(courseNumber);
+            var url = "/students/studentDetailView/" + studentUid;
+            window.location.href = url;
+       }
+
+    </script>
+{% endblock %}
+
+
+

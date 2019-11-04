@@ -1,0 +1,118 @@
+use acp_instructors_rc_dev;
+
+
+
+select * from funding_applications;
+select * from iuie_applications;
+select * from iuie_classes;
+select * from iuie_enrollments;
+
+---------------------------------------Enrollments------------------------------------------------
+
+SELECT enrollments.ACAD_TERM_CD, CONCAT(enrollments.CRS_SUBJ_CD, ':' ,enrollments.CRS_CATLG_NBR) ,                               
+		date_format(enrollments.STu_ENRL_ADD_DT, '%M %D %Y'), 
+        enrollments.CLS_INSTR_NM                         
+from iuie_enrollments enrollments  
+Where 1 = 1 
+		AND enrollments.ACAD_TERM_CD = 4188
+        AND enrollments.CRS_SUBJ_CD = 'CHEM-T' 
+        AND enrollments.CRS_CATLG_NBR = '586' 
+Order by 1;
+---------------------------------------Enrollments------------------------------------------------
+
+
+---------------------------------------Courses------------------------------------------------
+SELECT classdata.CLS_KEY, classdata.CRS_ID, enrollments.CRS_DESC, classdata.ACAD_TERM_CD, classdata.COI_INST_CD,  
+        classdata.CLS_INSTR_NM, classdata.ENROLLMENT_CAP, classdata.ENROLLMENT_TOTAL,  
+        classdata.ENROLLMENT_CAP - classdata.ENROLLMENT_TOTAL Calculated_Remaining
+from iuie_classes classdata 
+inner join iuie_enrollments enrollments 
+on classdata.CRS_ID = enrollments.CRS_ID 
+Where 1 =1 
+AND classdata.CRS_ID = 17843
+#AND Lower(enrollments.CRS_DESC) Like Lower('%INST ISS IN LNG%')
+---------------------------------------Courses------------------------------------------------
+
+		
+
+---------------------Course Detail View-------------------------------
+SELECT classdata.*,enrollments.*
+from iuie_classes classdata
+inner join iuie_enrollments enrollments
+on classdata.CRS_ID = enrollments.CRS_ID 
+AND classdata.ACAD_TERM_CD = enrollments.ACAD_TERM_CD  AND classdata.CLS_NBR = enrollments.CLS_NBR
+Group By classdata.CRS_ID,STU_ENRL_STAT_REAS_CD
+order By 4;
+
+
+
+#1
+SELECT  classdata.CRS_ID, enrollments.CRS_DESC, 
+		classdata.ACAD_TERM_CD, classdata.COE_INST_CD, classdata.COI_INST_CD
+        #COUNT(IF(enrollments.STU_ENRL_STAT_REAS_CD='DROP',0, NULL)) 'DROP',
+        #COUNT(IF(enrollments.STU_ENRL_STAT_REAS_CD='ENRL',0, NULL)) 'ENRLLOED',
+        #COUNT(IF(enrollments.STU_ENRL_STAT_REAS_CD='WDRW',0, NULL)) 'WITHDRAWAL'
+from iuie_classes classdata
+inner join iuie_enrollments enrollments
+on classdata.CRS_ID = enrollments.CRS_ID AND classdata.ACAD_TERM_CD = enrollments.ACAD_TERM_CD
+WHERE classdata.CRS_ID = 81192 AND  classdata.ACAD_TERM_CD = 4188 AND classdata.COI_INST_CD = 'IUSBA'
+#Group By classdata.CRS_ID,STU_ENRL_STAT_REAS_CD
+order By 1;
+
+Select CRS_ID, ACAD_TERM_CD, COUNT(IF(enrollments.STU_ENRL_STAT_REAS_CD='DROP',0, NULL)) 'DROP',
+		COUNT(IF(enrollments.STU_ENRL_STAT_REAS_CD='ENRL',0, NULL)) 'ENRLLOED',
+        COUNT(IF(enrollments.STU_ENRL_STAT_REAS_CD='WDRW',0, NULL)) 'WITHDRAWAL'
+from iuie_enrollments enrollments
+WHERE CRS_ID = 81192 AND  ACAD_TERM_CD = 4188
+order By 1 Asc;
+
+Select  *
+from iuie_enrollments enrollments
+WHERE CRS_ID = 81192 AND  ACAD_TERM_CD = 4188;
+
+
+
+
+# 2. Class of Instructions and Enrollments
+SELECT  classdata.COI_INST_CD, classdata.COE_INST_CD, classdata.ENROLLMENT_CAP, 
+		classdata.ENROLLMENT_TOTAL, classdata.ENROLLMENT_CAP - classdata.ENROLLMENT_TOTAL 'Calculated Remaining'
+from iuie_classes classdata
+WHERE classdata.CRS_ID = 81192 AND  classdata.ACAD_TERM_CD = 4188 AND classdata.COI_INST_CD = 'IUSBA'
+order By 1;
+
+
+
+# 3. student Section
+SELECT  CONCAT(applications.PRSN_PREF_1st_NM, ' ', applications.PRSN_PREF_MID_NM, ' ',applications.PRSN_PREF_LAST_NM) 'Student Name', 
+		enrollments.CLS_NBR,
+        enrollments.STU_ENRL_STAT_REAS_CD
+		#classdata.CRS_ID, enrollments.CRS_DESC, 
+		#classdata.ACAD_TERM_CD, classdata.COE_INST_CD, classdata.COI_INST_CD
+from iuie_classes classdata
+inner join iuie_enrollments enrollments
+on classdata.CRS_ID = enrollments.CRS_ID AND classdata.ACAD_TERM_CD = enrollments.ACAD_TERM_CD
+inner join iuie_applications applications
+on enrollments.PRSN_UNIV_ID = '000' + applications.PRSN_UNIV_ID 
+WHERE classdata.CRS_ID = 81192 AND  classdata.ACAD_TERM_CD = 4188 AND classdata.COI_INST_CD = 'IUSBA'
+group by CONCAT(applications.PRSN_PREF_1st_NM, ' ', applications.PRSN_PREF_MID_NM, ' ',applications.PRSN_PREF_LAST_NM),
+enrollments.CLS_NBR, enrollments.STU_ENRL_STAT_REAS_CD
+order By 1;
+
+
+Select  *
+from iuie_enrollments enrollments
+WHERE CRS_ID = 81192 AND  ACAD_TERM_CD = 4188
+order by 3;
+
+
+Select * #CRS_ID, CLS_NBR, COE_INST_CD, COI_INST_CD
+from iuie_classes classdata
+Where CRS_ID = 17843;
+
+
+Select * 
+from iuie_applications applications
+Where PRSN_UNIV_ID IN ('0001384920','1589033','1905148')
+
+
+

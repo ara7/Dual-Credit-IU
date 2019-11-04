@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %} | Course Detailed View {% endblock %}
+
+{% block content%}
+
+<section id="login" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <ul class="mb0 listing">
+                                
+                                {% for key, values in courseDetailsDict.items %}
+                                    <li>
+                                        <label>{{key}} : </label><span> {{values}}</span>
+                                        <br/>
+                                    </li>
+                                {% endfor %}
+
+                                <!--{% for coursee in CourseDetails %}
+                                {% endfor %}
+                                
+                                <li><label>Course Description : </label><span>{{coursee}}</a></li>
+                                <li><label>Term Offered : </label><span> 4638 </span></li>
+                                <li><label>Campus of Instruction : </label> <span> Holden,Jocelyn Elizabeth </span></li>
+                                <li><label>Number of Drops : </label> <span>None</span></li>
+                                <li><label>Number of Withdrawals : </label> <span>None</span></li>-->
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Section_Seats">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 card">
+                
+                <div class="card-header bg-Crimson text-white">
+                    <h4> Sections </h4>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Course Number</th>
+                                <th scope="col">Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for coursee in courses %}
+                            <tr>
+                                <td>{{ coursee.CRS_ID }}</td>
+                                <td>TBD</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-md-6 card">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4> Seats </h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <ul class="mb0 listing">
+
+                                {% for key, values in seatsDict.items %}
+                                    <li>
+                                        <label>{{key}} : </label><span> {{values}}</span>
+                                        <br/>
+                                    </li>
+                                {% endfor %}
+                                <!--<label>Total Seats : </label><span>8</span><br />
+                                <label>Enrolled : </label><span>7</span><br />
+                                <label>Pending Enrollment : </label><span>None</span><br />
+                                <label>Calculated Remaining : </label><span>TBD</span><br />-->
+                            </ul>
+                            <ul class="mb0 listing">
+
+                            </ul>
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="StudentCourseDetails" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 mb-12">
+                    <div class="card">
+                        <div class="card-header bg-Crimson text-white">
+                        </div>
+                        <div class="card-body">
+                            <table class="table" style="text-align: center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Student Name</th>
+                                        <th scope="col">Section</th>
+                                        <th scope="col">Course Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for studentCourse in StudentDetails %}
+                                    <tr>
+                                        {% for key, values in studentCourse.items %}
+                                            <td>{{values}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+{% endblock %}

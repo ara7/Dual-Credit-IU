@@ -1,0 +1,201 @@
+<section id="enrollmentHistory">
+    <div class="container card">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12 mb-12">
+                <div class="card">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4> Enrollement History </h4>
+                    </div>
+                    {% if enrollmentHistoryDetailsList %}
+                    <div class="card-body">
+                        <table class="table" style="text-align: left">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course</th>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Term</th>
+                                    <th scope="col">Funding</th>
+                                    <th scope="col">Enrollment</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Credit Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for enrollmentHistoryDetails in enrollmentHistoryDetailsList %}
+                                    <tr>
+                                        {% for key, values in enrollmentHistoryDetails.items %}
+                                            <td>{{values}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="col-md-12">
+                        <p>
+                            No Enrollment History Details
+                        </p>
+                    </div>
+                    
+                    {% endif %}
+                </div>
+                <div class="col-md-12">
+                        <ul>
+                            
+                            {% for key, values in enrollmentHistoryDict.items %}
+                                <li>
+                                    <label>{{key}} : </label><span> {{values}}</span>
+                                    <br/>
+                                </li>
+                            {% endfor %}
+                            
+
+                            <!--<li>
+                                <label>GPA:</label><span>{{enrollmentHistory.gpa}}</span>
+                            </li>
+                            <li>
+                                <label>Hours of Graduate Work Completed:</label><span>{{enrollmentHistory.hours_Graduate_Work_Completed}}</span>
+                            </li>-->
+                        </ul>
+                        <br />
+                        <br />
+                </div>
+            </div>
+            
+            
+
+
+            <div class="col-md-12 col-lg-12 mb-12">
+                <div class="card">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4> Course Request </h4>
+                    </div>
+                    {% if courseDetailsList %}
+                    <div class="card-body">
+                        <table class="table" style="text-align: center">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Requested</th>
+                                    <th scope="col">Choice Number</th>
+                                    <th scope="col">Course Number</th>
+                                    <th scope="col">Class Number</th>
+                                    <th scope="col">Decision Date</th>
+                                    <th scope="col">Decision</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for courseDetail in courseDetailsList %}
+                                    <tr>
+                                        {% for key, values in courseDetail.items %}
+                                            <td>{{values}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    {% else %}
+                    <div class="col-md-12">
+                        <p>
+                            No Course  Details
+                        </p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    
+    <!--<div class="container card">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="container">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4>Enrollments</h4>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label for="term">Term</label>
+                            <select name="term" class="form-control">
+                                <option selected="true" disabled="disabled">Open this Select Menu</option>
+                                {% for key,value in term.items %}
+                                <option value="{{key}}" {% if key == values.term %} selected {% endif %}>{{ value }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label for="course">Course</label>
+                            <select name="course" class="form-control" id="type">
+                                <option selected="true" disabled="disabled">Open this Select Menu</option>
+                                {% for key,value in course.items %}
+                                <option value="{{key}}" {% if key == values.course %} selected {% endif %}>{{ value }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label for="course">Funding</label>
+                            <select name="course" class="form-control" id="type">
+                                <option selected="true" disabled="disabled">Open this Select Menu</option>
+                                {% for key,value in funding.items %}
+                                    <option value="{{key}}" {% if key == values.funding %} selected {% endif %}>{{ value }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <input type="submit" value="Search" class="btn bg-Crimson text-white text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-md-10 mx-auto">
+            <div class="card-header bg-Crimson text-white">
+                <h4> Enrollment Details </h4>
+            </div>
+            {% if enrollmentDetails %}
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Term</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Funding</th>
+                            <th scope="col">Date Created</th>
+                            <th scope="col">Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for enrollmentDetail in enrollmentDetails %}
+                        <tr>
+                            <td>{{ student.term }}</td>
+                            <td>{{ student.course }}</td>
+                            <td>{{ student.funding }}</td>
+                            <td>{{ student.date_created }}</td>
+                            <td>{{ student.Username }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+                <p>No Results Available</p>
+            {% endif %}
+        </div>
+    </div>-->
+
+</section>

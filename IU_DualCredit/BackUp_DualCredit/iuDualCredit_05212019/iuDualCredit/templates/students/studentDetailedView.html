@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'students/_studentDetails.html' %}
+
+<br />
+<br />
+
+{% include 'students/_YearWiseDetails.html' %}
+
+<br />
+<br />
+
+{% include 'students/_enrollmentHistoryCourseRequest.html' %}
+
+<br />
+<br />
+
+{% include 'students/_comments.html' %}
+
+{% endblock %}

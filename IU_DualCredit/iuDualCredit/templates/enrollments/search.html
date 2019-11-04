@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %} | Enrollment Search Results {% endblock %}
+
+
+{% block content%}
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'enrollments' %}">
+                        <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'enrollments' %}">Enrollment Search</a>
+                </li>
+                <li class="breadcrumb-item active">Search Results</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section id="enrollmentSearch" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="container">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4>Search </h4>
+                    </div>
+                    <!--<form action="{% url 'enrollmentsearch' %}">
+                        
+                    </form>-->
+                    {% csrf_token %}
+                      <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                              <label for="term">Term</label>
+                              <select id="term" name="term" class="form-control">
+                                  <option selected="true" disabled="disabled">Select</option>
+                                  {% for termm in terms %}
+                                    <option value="{{ termm }}"
+                                        {% if termm == values.term %}
+                                            selected
+                                        {% endif %}
+                                        >{{ termm }}
+                                    </option>
+                                  {% endfor %}
+                              </select>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                              <label for="course">Course</label>
+                              <select id="course" name="course" class="form-control">
+                                  <option selected="true" disabled="disabled">Select</option>
+                                  {% for coursee in courses %}
+                                    <option value="{{ coursee }}"
+                                        {% if coursee == values.course %}
+                                            selected
+                                        {% endif %}
+                                    >{{ coursee }}</option>
+                                  {% endfor %}
+                              </select>
+                          </div>
+
+
+                          <div class="col-md-4 mb-3">
+                                <label for="funding">Funding</label>
+                                <select id="funding" name="funding" class="form-control" id="type">
+                                    <option selected="true" disabled="disabled">Select</option>
+                                    {% for fundingg in fundings %}
+                                        <option value="{{ fundingg }}"
+                                            {% if fundingg == values.funding %}
+                                                selected
+                                            {% endif %}
+                                        >{{ fundingg }}</option>
+                                    {% endfor %}
+                                </select>
+                           </div>
+
+                           <div class="col-md-10 mb-3 text-center">
+                              <input type="submit" id="btnSearch"  value="Search" class="btn bg-Crimson text-white text-center ">
+                           </div>
+                         
+                           <div class="col-md-2 mb-2 text-right">
+                                <input id="btnExport" value="Export" style="width:50%" class="btn bg-Crimson text-white text-center">
+                           </div>
+
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Listings -->
+<section id="dashboard" class="py-4">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="card-header bg-Crimson text-white">  
+                <h3>Enrollment Details</h3>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Term</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Funding</th>
+                    <th scope="col">Date Created</th>
+                    <th scope="col">Username</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                
+                </tbody>
+              </table>
+          </div>
+          <div id="pagination"></div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+{% block javascript %}
+
+   <!-- <script src="https://cdn.bootcss.com/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> -->
+
+   <script language="javascript" type="text/javascript">
+    
+    $(document).ready(function(){
+            
+            var enollmentsData = [];
+            $("#btnSearch").click(function(event) {
+                //alert($('#coursenumber').val());
+                
+                var term = $('#term').val();
+                var course = $('#course').val();
+                var funding = $('#funding').val();
+                
+                //alert(funding);
+
+                $.ajax({
+                    url:"/enrollments/enrollmentsearch/",
+                    dataType: 'json',
+                    data: {
+                        'term': term,
+                        'course': course,
+                        'funding': funding
+                    },
+                    success: function(data) {
+                        $("#tbody").empty();
+                        var tr=[];
+                        enollments = data.enrollments;
+                        enollmentsData = data.enrollments;
+                        for (var i = 0; i < enollments.length; i++) {
+                            tr.push('<tr>');
+                            tr.push("<td>" + isEmpty(enollments[i][0]) + "</td>");
+                            tr.push("<td>" + isEmpty(enollments[i][1]) + "</td>");
+                            tr.push("<td>" + isEmpty(enollments[i][5]) + "</td>");
+                            tr.push("<td>" + isEmpty(enollments[i][2]) + "</td>");
+                            tr.push("<td>" + isEmpty(enollments[i][3]) + "</td>");
+                            tr.push('</tr>');
+                        }
+                        $('tbody').append($(tr.join('')));
+                        pagination();
+                    },
+                    error: function(data) {
+                        console.log(data); 
+                        alert('Error Occured');
+                    }
+                });
+                return false;
+            });
+
+            function pagination() {
+
+                var items = $("#tbody tr");
+
+                var numItems = items.length;
+                var perPage = 10;
+
+                // Only show the first 2 (or first `per_page`) items initially.
+                items.slice(perPage).hide();
+
+                // Now setup the pagination using the `#pagination` div.
+                $("#pagination").pagination({
+                    items: numItems,
+                    itemsOnPage: perPage,
+                    cssStyle: "light-theme",
+
+                    // This is the actual page changing functionality.
+                    onPageClick: function(pageNumber) {
+                        // We need to show and hide `tr`s appropriately.
+                        var showFrom = perPage * (pageNumber - 1);
+                        var showTo = showFrom + perPage;
+
+                        // We'll first hide everything...
+                        items.hide()
+                             // ... and then only show the appropriate rows.
+                             .slice(showFrom, showTo).show();
+                    }
+                });
+
+            }
+
+            $("#btnExport").click(function () {
+                
+                var term = $('#term').val();
+                var course = $('#course').val();
+                var funding = $('#funding').val();
+    
+                $.ajax({
+                    url: '/enrollments/exportcsv',
+                    type : 'POST',
+                    data: {
+                        term : term,
+                        course : course,
+                        funding : funding,
+                        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                    },
+                    error:function(xhr,errmsg,err) {
+                        
+                        const csvData = (xhr.responseText);
+                        const blob = new Blob ([csvData], {type: 'text/csv'});
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.setAttribute('hidden', '');
+                        a.setAttribute('href', url);
+                        a.setAttribute('download', 'enrollment.csv');
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        alert("File Downloaded Successfully. Check The Download Folder");
+
+                    }
+                });
+            });
+
+
+            function isEmpty(strValue) {
+                if(!strValue || 0 === strValue.length){
+                    return 'None'
+                }
+                return strValue
+            }
+    });
+  </script>
+  
+{% endblock %}

@@ -1,0 +1,485 @@
+"PRSN_UNIV_ID";"ROW_EFF_DT";"APPL_NBR";"ACAD_PLAN_CD";"ACAD_PGM_CD";"INST_CD";"PRSN_GNDR_CD";"PRSN_BIRTH_DT";"PRSN_PREF_1ST_NM";"PRSN_PREF_LAST_NM";"PRSN_PREF_MID_NM";"PRSN_HM_PHN_NBR";"PRSN_OTHR_EMAIL_ID";"PRSN_GDS_CMP_EMAIL_ADDR";"PRSN_NTWRK_ID";"CREDITS_COMPLETED"
+"0000234848";"2018-05-03";"02904976";"GCONNPR";"NDEG9";"IUEAA";"M";"1981-11-16";"Ryan";"Coby";"Michael";"765/966-1145";"rcoby@excelcenter.org";"RCOBY@INDIANA.EDU";"RCOBY";0.0
+"0000771524";"2018-05-03";"02910150";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1963-01-12";"Carol";"Fenimore";"Susan";"765/932-3380";"fenimorec@rushville.k12.in.us";"CSFENIMO@IU.EDU";"CSFENIMO";0.0
+"0001004749";"2018-05-03";"02909773";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1966-02-12";"Grant";"Masson";" ";"574/933-1915";"gmasson@plymouth.k12.in.us";"GMASSON@IU.EDU";"GMASSON";0.0
+"0001606019";"2018-05-03";"02909776";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1980-09-30";"Marc";"Price";"Aaron";"765/238-9224";"marcaprice99@gmail.com";"MARMAPRI@IUE.EDU";"MARMAPRI";0.0
+"0001953994";"2018-05-03";"02910226";"DCTENGDEND";"ENG9";"IUBLA";"F";"1971-10-04";"Tamara";"Dearth";"Ann";"317/694-6401";"tdearth@knox.k12.in.us";"TDEARTH@IU.EDU";"TDEARTH";0.0
+"0002086236";"2018-06-03";"02938867";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1987-12-14";"Kimberly";"Clark";"Noel";"812/345-9396";"kimberly.clark@mvcsc.k12.in.us";"KIMNCLAR@IU.EDU";"KIMNCLAR";0.0
+"0002216488";"2017-11-27";"02856640";"NDG";"NDEG9";"IUEAA";"F";"1988-08-04";"Angela";"Bolotin";"Lubbers";"8126612128";"lubbersangela@gmail.com";"ALUBBERS@INDIANA.EDU";"ALUBBERS";0.0
+"0002241781";"2018-11-03";"03005779";"DCTBIODEND";"EDUC9";"IUKOA";"F";"1968-03-24";"Kathy";"Daniels";"L";"765/686-5812";"kathy_daniels@olemiss.K12.in.us";"";"KD7";0.0
+"2000485830";"2018-05-03";"02911748";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1985-09-04";"Juli";"Wakeman";" ";"317/445-1875";"jmwakeman@gmail.com";"JWAKEMAN@IU.EDU";"JWAKEMAN";0.0
+"2000502614";"2018-06-03";"02926429";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1964-02-08";"Jonathan";"Titus";"Ray";"812/546-4251";"jtitus@jcsc.org";"JRTITUS@IU.EDU";"JRTITUS";0.0
+"0000165295";"2018-06-03";"02928065";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1980-12-07";"Lynn";"Baker";"Ann";"317/642-6091";"lbaker@nwshelbyschools.org";"LYNAMOOR@IU.EDU";"LYNAMOOR";0.0
+"0000333582";"2018-06-03";"02926624";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1982-05-20";"Dawn";"Jenkins";"M";"502/523-3187";"dawnjenkins82@gmail.com";"DBURGIN@IUS.EDU";"DBURGIN";0.0
+"0000418244";"2018-11-03";"03005781";"DCTBIODEND";"COAS9";"IUNWA";"F";"1974-04-01";"Stephanie";"Parks";"Kate";"";"sparks@lcscmail.com";"SKPARKS@IU.EDU";"SKPARKS";0.0
+"0000622779";"2019-02-08";"03020872";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1968-11-27";"Laura";"Sellars";"K";"";"laurasellars@msdlt.k12.in.us";"LSELLARS@IU.EDU";"LSELLARS";0.0
+"0000805845";"2018-06-03";"02923929";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1967-11-01";"Stacy";"Sillings";"Lynn";"812/256-6253";"ssillings@nafcs.k12.in.us";"SSILLING@IU.EDU";"SSILLING";0.0
+"0001173652";"2018-05-03";"02910933";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1969-11-28";"Christyann";"Norton";"Clark";"574/299-9618";"cnorton@lakelandlakers.net";"NORTONCC@IU.EDU";"NORTONCC";0.0
+"0001394942";"2018-04-23";"02867654";"ENGMA";"ENG6";"IUBLA";"F";"1959-08-27";"Sandra";"Riley";"Jean";"3179460704";"sriley@hse.k12.in.us";"SJRILEY@INDIANA.EDU";"SJRILEY";0.0
+"0001520102";"2018-05-03";"02911720";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1963-06-27";"Susan";"Dietzel";"Armstrong";"574/258-0125";"smd663@comcast.net";"SDIETZEL@IU.EDU";"SDIETZEL";0.0
+"0002346619";"2018-06-03";"02928547";"DCTPOLDEND";"NDEG9";"IUEAA";"M";"1982-03-13";"Dan";"Marsh";"Francis";"812/341-5519";"marshd@bcsc.k12.in.us";"DFMARSH@IUPUI.EDU";"DFMARSH";0.0
+"0002654214";"2018-05-03";"02904805";"NONDEG";"NDEG9";"IUSEA";"M";"1979-04-10";"Daniel";"Swart";"Brandon";"";"bswart9@gmail.com";"DBSWART@INDIANA.EDU";"DBSWART";0.0
+"0003654869";"2018-06-03";"02934170";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1986-06-18";"Troy";"Andrews";"Matthew";"";"tmdrews@gmail.com";"TROYANDR@IU.EDU";"TROYANDR";0.0
+"0003656181";"2018-05-03";"02904843";"NONDEG";"NDEG9";"IUSEA";"F";"1981-08-08";"Sarah";"Beilke";"Marie";"";"sbeilke@ph.k12.in.us";"SABEILKE@IU.EDU";"SABEILKE";0.0
+"0001345354";"2018-05-03";"02913652";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1964-06-06";"Eric";"Heppner";"James";"812/934-4384";"eheppner@batesville.k12.in.us";"EJHEPPNE@IU.EDU";"EJHEPPNE";0.0
+"0001457211";"2018-05-03";"02911736";"DCTENGDEND";"ENG9";"IUINA";"F";"1972-12-02";"Liza";"Payton";"Vanessa";"317/402-6305";"lvpayton@yahoo.com";"LVPAYTON@IU.EDU";"LVPAYTON";0.0
+"0001530035";"2018-11-03";"02999245";"DCTBIODEND";"EDUC9";"IUKOA";"F";"1978-07-03";"Kelly";"Chevalier";"Sue";"219/508-4310";"kellychevalier@yahoo.com";"KBIGOTT@IU.EDU";"KBIGOTT";0.0
+"0001706954";"2018-05-03";"02910206";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1984-10-07";"Max";"Howard";"Joseph";"";"mhoward@sripley.k12.in.us";"MAXHOWAR@IU.EDU";"MAXHOWAR";0.0
+"0002085010";"2018-05-03";"02910133";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1971-11-17";"Shellie";"Harshberger";"Anne";"574/360-0834";"sharshberger@phm.k12.in.us";"SHARSHBE@IU.EDU";"SHARSHBE";0.0
+"0002201258";"2018-05-03";"02910630";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1989-03-13";"Jesslyn";"Spicer";" ";"317/372-1235";"";"JCARLSGA@IU.EDU";"JCARLSGA";0.0
+"0002278846";"2018-11-03";"03008612";"DCTCOMDEND";"ARTS9";"IUSBA";"M";"1988-11-16";"Mason";"Shreve";"Riley";"260/409-1765";"mshreve@frontier.k12.in.us";"MRSHREVE@IU.EDU";"MRSHREVE";0.0
+"2000481432";"2018-05-03";"02904988";"NDG";"NDEG9";"IUINA";"F";"1975-08-04";"Brandy";"Aubrey";" ";"812/719-2111";"brandy.aubrey@tellcity.k12.in.us";"BRAUBREY@IU.EDU";"BRAUBREY";0.0
+"2000572828";"2018-11-03";"03007067";"DCTHSTDEND";"NDEG9";"IUSBA";"M";"1979-01-27";"Douglas";"Springer";"LeOllen";"219/928-8102";"springerd@mcsin-k12.org";"";"";0.0
+"0001407500";"2018-05-03";"02914460";"DCTENGDEND";"ENG9";"IUINA";"F";"1968-08-01";"Ruth";"Mauder";"Rene";"812/829-2503";"rmauder@socs.k12.in.us";"RMAUDER@INDIANA.EDU";"RMAUDER";0.0
+"0002143488";"2018-05-03";"02913655";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1965-02-10";"Kyu-Suk";"Kim";" ";"574/329-5688";"kkim@baugo.org";"KK6@IU.EDU";"KK6";0.0
+"0002853437";"2018-05-03";"02910230";"DCTENGDEND";"ENG9";"IUBLA";"F";"1992-10-31";"Maria";"Kioussis";"G";"708/846-2880";"mkioussi@mccsc.edu";"MKIOUSSI@IU.EDU";"MKIOUSSI";0.0
+"0003596279";"2018-06-03";"02928076";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1981-12-14";"Rachel";"Scott";"Elizabeth";"";"rachel.scott@southmont.k12.in.us";"SCOTTRE@IU.EDU";"SCOTTRE";0.0
+"0003656268";"2018-06-01";"02919306";"DCTCOMDEND";"ARTS9";"IUSBA";"F";"1986-08-22";"Whitney";"Freeman";"E";"";"wfreeman@jayschools.k12.in.us";"WHIFREEM@IU.EDU";"WHIFREEM";0.0
+"2000488961";"2018-05-03";"02912247";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1969-03-13";"Amy";"Scharf";" ";"";"amyscharf69@gmail.com";"SCHARFA@IU.EDU";"SCHARFA";0.0
+"0000689227";"2018-05-03";"02904839";"NDGGRAD";"GRAD9";"IUINA";"F";"1947-09-08";"Mary";"Stewart";"A";"317/571-9640";"sstewart@gocathedral.com";"MAS30@INDIANA.EDU";"MAS30";0.0
+"0000919384";"2019-02-08";"02999233";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1968-09-05";"Tod";"Croft";"M";"260/897-2162";"tod.croft@fwcs.k12.in.us";"";"TCROFT";0.0
+"0000920460";"2018-05-03";"02910755";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1973-09-22";"Sarah";"Leach";"Ann";"";"sah3131@gmail.com";"SARAHAYN@IU.EDU";"SARAHAYN";0.0
+"0001520102";"2018-05-03";"02911828";"DCTENGDEND";"COAS9";"IUNWA";"F";"1963-06-27";"Susan";"Dietzel";"Armstrong";"574/258-0125";"smd663@comcast.net";"SDIETZEL@IU.EDU";"SDIETZEL";0.0
+"0002660599";"2018-11-03";"03008602";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1970-05-15";"Deidre";"Laker";"Carol";"";"dlaker@decaturco.k12.in.us";"DCLAKER@IU.EDU";"DCLAKER";0.0
+"0003656508";"2018-05-03";"02910152";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1982-08-13";"Kristin";"Tran";"Marie";"";"kristin.tran@brv.k12.in.us";"KRTRAN@IU.EDU";"KRTRAN";0.0
+"0003657326";"2018-06-03";"02927584";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1973-02-01";"Kirsten";"Brewer";" ";"";"kirsten.brewer@brv.k12.in.us";"KIRBREW@IU.EDU";"KIRBREW";0.0
+"2000504333";"2018-06-03";"02926815";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1959-10-28";"Wendy";"Lerolland";"Ellen";"";"wendy_lerolland@live.com";"WELEROLL@IU.EDU";"WELEROLL";0.0
+"2000509751";"2018-06-03";"02930956";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1952-11-05";"Joseph";"Tanzosh";" ";"";"jtanzosh5@gmail.com";"JTANZOSH@IU.EDU";"JTANZOSH";0.0
+"0002048423";"2018-05-03";"02910643";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1987-08-24";"Lindsey";"Rowland";"Brooke";"812/797-4628";"rowlandl@indiana.edu";"ROWLANDL@IU.EDU";"ROWLANDL";0.0
+"0003226715";"2018-11-03";"02999260";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1993-10-06";"Elizabeth";"Winston";"Ann";"951/269-1808";"eakammer@yahoo.com";"EAKAMMER@IU.EDU";"EAKAMMER";0.0
+"0003656452";"2018-06-03";"02935152";"DCTCOMDEND";"COAS9";"IUNWA";"F";"1989-07-27";"Laura";"Friend";"Marie";"";"laura.friend@zebras.net";"LMFRIEND@IU.EDU";"LMFRIEND";0.0
+"0000412784";"2018-05-03";"02909383";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1984-03-13";"Dustin";"Hudak";"Kevin";"219/552-4699";"dhudak@tricreek.k12.in.us";"DUKHUDAK@IU.EDU";"DUKHUDAK";0.0
+"0001325200";"2018-06-03";"02929762";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1960-12-14";"Meg";"Shelly";"McCarty";"574/293-6545";"mshelly@concord.k12.in.us";"MMSHELLY@IU.EDU";"MMSHELLY";0.0
+"0001868885";"2018-05-03";"02910532";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1986-05-01";"Bryan";"Nallenweg";"Robert";"219/926-7615";"bnallenweg@gmail.com";"BNALLENW@IU.EDU";"BNALLENW";0.0
+"0003657332";"2018-11-03";"03011772";"DCTHSTDEND";"NDEG9";"IUSBA";"M";"1984-04-14";"Joe";"Borders";" ";"";"joedobo@hotmail.com";"JOEBORDE@IU.EDU";"JOEBORDE";0.0
+"0003657370";"2018-06-03";"02930950";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1988-08-05";"Kelsey";"Huber";"Lynn";"";"khuber@jaccendel.k12.in.us";"HUBERKEL@IU.EDU";"HUBERKEL";0.0
+"0000395202";"2018-05-03";"02911478";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1978-12-10";"Sarah";"Craft";"Penner";"812/283-5681";"scraft@westclarkschools.com";"SAPBLACK@IUS.EDU";"SAPBLACK";0.0
+"0001425091";"2018-05-03";"02904825";"NONDEG";"NDEG9";"IUSEA";"F";"1972-04-17";"Kari";"Catanzaro";"Lynn";"765/689-9809";"catanzarok@maconaquah.k12.in.us";"KLCATANZ@IU.EDU";"KLCATANZ";0.0
+"0002325536";"2018-05-03";"02904808";"GCONNPR";"NDEG9";"IUEAA";"F";"1982-02-15";"Alice";"Kilbride";"Beth";"812/322-0981";"akilbrid@gmail.com";"AKILBRID@INDIANA.EDU";"AKILBRID";0.0
+"0002363152";"2018-05-03";"02904846";"NONDEG";"NDEG9";"IUSEA";"M";"1989-11-28";"Justin";"Brownfield";"Ray";"317/903-2573";"jbrownfield@cpcsc.k12.in.us";"JRBROWNF@IU.EDU";"JRBROWNF";0.0
+"0001573934";"2018-05-03";"02911743";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1966-11-03";"Susan";"Johnson";"Boyd";"";"sjohnso1@ccs.k12.in.us";"SUBOJOHN@IU.EDU";"SUBOJOHN";0.0
+"0002109681";"2018-05-03";"02923284";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1970-07-16";"Tracy";"Corneil";"Anne";"219/531-1764";"tcorneil@valpo.k12.in.us";"TCORNEIL@IU.EDU";"TCORNEIL";0.0
+"0002606663";"2018-06-03";"02925863";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1992-02-07";"Rachel";"Staky";"Elaine";"630/217-6851";"rachstaky@comcast.net";"RSTAKY@IU.EDU";"RSTAKY";0.0
+"0003657581";"2018-11-20";"02926311";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1974-06-12";"Libby";"Powell";"Lynne";"";"lpowell@shenandoah.k12.in.us";"LIBBPOWE@IU.EDU";"LIBBPOWE";0.0
+"2000481403";"2018-05-03";"02904933";"GCONNPR";"NDEG9";"IUEAA";"F";"1961-07-07";"Karen";"Stenftenagel";" ";"";"kstenftenagel@gjcs.k12.in.us";"KSTENFT@IU.EDU";"KSTENFT";0.0
+"0000174827";"2018-11-03";"03009031";"DCTENGDEND";"NDEG9";"IUSBA";"F";"1963-12-20";"Anita";"Parsch";"Louise";"812/797-3579";"parscha@nlcs.k12.in.us";"ALPARSCH@IU.EDU";"ALPARSCH";0.0
+"0001164322";"2018-06-03";"02923933";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1963-06-23";"Melanie";"Gardner";"L.G.";"219/926-7468";"mgardner@njsp.k12.in.us";"MELAGARD@IU.EDU";"MELAGARD";0.0
+"0001905148";"2018-05-03";"02911424";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1975-01-29";"Matthew";"Adams";"James";"219/923-2855";"jmattadams@hotmail.com";"JAMMADAM@IU.EDU";"JAMMADAM";0.0
+"0001990834";"2018-01-08";"02869500";"MATHMAT";"NSM6";"IUEAA";"F";"1986-09-05";"Laura";"Mikel";"Rachel";"574/400-6125";"lmikel@wawasee.k12.in.us";"LRBOWERM@IU.EDU";"LRBOWERM";0.0
+"2000485687";"2018-05-03";"02909377";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1994-03-07";"Tyler";"Marx";" ";"419/419-9912";"tmarx@shenandoah.k12.in.us";"TMARX@IU.EDU";"TMARX";0.0
+"2000486374";"2018-05-03";"02909746";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1969-05-05";"Don";"Bernacky";"A";"219/840-6568";"dbernacky@cps.k12.in.us";"DBERNACK@IU.EDU";"DBERNACK";0.0
+"2000487184";"2018-05-03";"02910542";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1989-06-29";"Jake";"Spottiswood";"Adam";"";"jake.spottiswood@portage.k12.in.us";"JASPOTT@IU.EDU";"JASPOTT";0.0
+"2000488219";"2018-05-03";"02914456";"DCTENGDEND";"COAS9";"IUNWA";"M";"1987-06-19";"Kendra";"McPheeters";"Jo";"765/376-3256";"kmcpheeters@tricreek.k12.in.us";"KMCPHEE@IU.EDU";"KMCPHEE";0.0
+"0001345751";"2018-05-03";"02910627";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1974-04-14";"Melissa";"Higgins";"L";"757/548-0696";"cnmhiggins@gmail.com";"HIGGINML@IU.EDU";"HIGGINML";0.0
+"0001347313";"2018-05-03";"02910743";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1967-11-13";"Mischell";"Browning";"R";"574/209-0441";"mbrowning@bps.k12.in.us";"MISCBROW@IU.EDU";"MISCBROW";0.0
+"0002963737";"2018-05-03";"02904817";"GCONNPR";"NDEG9";"IUEAA";"M";"1993-06-15";"Nick";"Montan";"Adam";"317/937-9655";"nick.montan93@gmail.com";"NMONTAN@IU.EDU";"NMONTAN";0.0
+"0003657329";"2018-08-06";"02928501";"MATHMAT";"NSM6";"IUEAA";"F";"1985-04-19";"Kathleen";"Bain";"Novara-Reber";"";"kbain@elkhart.k12.in.us";"KABAIN@IU.EDU";"KABAIN";0.0
+"0001810756";"2018-05-03";"02910529";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1971-06-23";"Amy";"Ingram";"Lynn";"317/891-2672";"aingram@flcs.k12.in.us";"AINGRAM@IU.EDU";"AINGRAM";0.0
+"0002224896";"2018-05-03";"02912603";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1983-09-22";"Stephen";"Gill";"M";"219/730-5438";"stephengill5@hotmail.com";"SMGILL@IU.EDU";"SMGILL";0.0
+"2000487381";"2018-05-03";"02910763";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1974-10-29";"Robert";"Porter";" ";"765/425-1634";"rporter@smcsc.com";"ROBPORT@IU.EDU";"ROBPORT";0.0
+"0002087600";"2018-05-03";"02904845";"NONDEG";"NDEG9";"IUSEA";"M";"1978-02-07";"Nathan";"Blair";"M.";"";"blairn@mishawaka.k12.in.us";"NMBLAIR@INDIANA.EDU";"NMBLAIR";0.0
+"0002134314";"2018-05-03";"02910146";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1983-06-06";"Kristina";"Ralston";"Renée";"219/713-5007";"kralston@rfcsc.k12.in.us";"KRRALSTO@IU.EDU";"KRRALSTO";0.0
+"0002456420";"2018-11-03";"03009034";"DCTCOMDEND";"ARTS9";"IUSBA";"F";"1981-12-08";"Kara";"Pickens";" ";"";"kpickens@svalley.k12.in.us";"KARAPICK@IU.EDU";"KARAPICK";0.0
+"0003657636";"2018-05-03";"02912667";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1990-02-27";"Danielle";"VanderTill";"Rae";"";"dvandertill@rfcsc.k12.in.us";"DRVANDER@IU.EDU";"DRVANDER";0.0
+"0001728320";"2018-05-03";"02910224";"DCTENGDEND";"ENG9";"IUBLA";"F";"1973-01-08";"Jodi";"Gleason";"Lynn";"812/570-0540";"jodigleason13@gmail.com";"JLGLEASO@INDIANA.EDU";"JLGLEASO";0.0
+"0001878252";"2018-05-03";"02912493";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1985-11-22";"Andrew";"Busch";"Howard";"317/784-8701";"andrewhb1985@gmail.com";"AHBUSCH@IU.EDU";"AHBUSCH";0.0
+"0000221655";"2018-06-03";"02936094";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1980-11-11";"Stephanie";"Hoffman";"Lynn";"812/623-0160";"shoffman@fccsc.k12.in.us";"SLWILHEL@IU.EDU";"SLWILHEL";0.0
+"0001540627";"2018-05-03";"02904812";"NONDEG";"NDEG9";"IUSEA";"F";"1970-09-30";"Stefanie";"Foster";"Suzanne";"574/876-3090";"";"STFOSTER@INDIANA.EDU";"STFOSTER";0.0
+"0001712382";"2018-06-03";"02923923";"DCTENGDEND";"ENG9";"IUINA";"F";"1982-04-17";"Melissa";"Pearce";"Christine";"219/123-4567";"melissapearce1982@gmail.com";"MCWRIGHT@INDIANA.EDU";"MCWRIGHT";0.0
+"0001986727";"2019-03-03";"03054999";"DCTHSTDEND";"HIST9";"IUINA";"M";"1967-09-09";"Walter";"Falck";"V";"765/624-8453";"dfalck@shenry.k12.in.us";"WFALCK@IU.EDU";"WFALCK";0.0
+"0002311456";"2018-06-03";"02926474";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1988-11-28";"Mark";"Lambert";"Andrew";"219/741-7942";"marklamberttt@gmail.com";"LAMBERT7@IU.EDU";"LAMBERT7";0.0
+"0003656392";"2019-01-02";"03016221";"FRENGRNDG";"FRIT9";"IUBLA";"F";"1994-07-27";"Lauren";"White";"Ray";"8592062872";"lrwhite@sunmandearborn.k12.in.us";"LRW4@IU.EDU";"LRW4";0.0
+"2000481196";"2018-05-03";"02904842";"NONDEG";"NDEG9";"IUSEA";"F";"1986-11-28";"Kylie";"Hamm";" ";"";"kylie.hamm@comcast.net";"HAMMKY@IU.EDU";"HAMMKY";0.0
+"2000514869";"2018-06-03";"02936069";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1975-09-06";"Heather";"Jackson";" ";"317/371-4330";"hjackson@danville.k12.in.us";"HJACKSO@IU.EDU";"HJACKSO";0.0
+"0000101216";"2018-05-03";"02912588";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1981-01-30";"Suzanne";"Dolembo";"Marie";"574/386-2715";"dolembos@mishawaka.k12.in.us";"SMDOLEMB@INDIANA.EDU";"SMDOLEMB";0.0
+"0001072840";"2018-06-03";"02926306";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1973-08-22";"Karen";"Birt";"S";"574/294-3639";"ksusb91@gmail.com";"KSBIRT@IU.EDU";"KSBIRT";0.0
+"0001077542";"2018-06-03";"02925977";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1966-01-20";"Kevin";"Raney";"Dwayne";"765/349-9844";"kraney@mccsc.edu";"KRANEY@INDIANA.EDU";"KRANEY";0.0
+"0001482583";"2018-05-03";"02909550";"DCTENGDEND";"ENG9";"IUINA";"F";"1976-03-15";"Janelle";"Williams";"Elise";"219/756-3907";"JEWMS@aol.com";"WILLIJAN@IU.EDU";"WILLIJAN";0.0
+"0001626059";"2018-05-03";"02910232";"DCTENGDEND";"ENG9";"IUBLA";"M";"1979-05-25";"Ryan";"Smith";"W";"219/365-8652";"rwsmith516@gmail.com";"RYWSMIT@IU.EDU";"RYWSMIT";0.0
+"0002739914";"2018-11-03";"02999258";"DCTBIODEND";"EDUC9";"IUKOA";"F";"1993-02-11";"Courtney";"Orme";"E";"765/538-2140";"CORT1@TDS.NET";"CORME@IU.EDU";"CORME";0.0
+"0003064026";"2018-05-03";"02912487";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1987-06-02";"Torissa";"Becksvoort";"Jean";"585/750-2148";"Torissajh@gmail.com";"TORIHOFF@IU.EDU";"TORIHOFF";0.0
+"0003656156";"2018-05-03";"02910519";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1983-07-19";"Justin";"March";"Edward";"";"jmarch@marion.k12.in.us";"JEMARCH@IU.EDU";"JEMARCH";0.0
+"2000502570";"2018-06-03";"02926308";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1984-12-18";"Anne";"Brusky";"Marie";"";"abrusky@marianhs.org";"ABRUSKY@IU.EDU";"ABRUSKY";0.0
+"2000503865";"2018-06-03";"02926633";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1989-02-14";"Ryne";"Brown";" ";"";"rynebrown2318@gmail.com";"RYNEBROW@IU.EDU";"RYNEBROW";0.0
+"2000580962";"2018-11-03";"03015167";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1979-04-23";"Renee";"Gibert";" ";"803/383-1755";"rgibert@lsc.k12.in.us";"RGIBERT@IU.EDU";"RGIBERT";0.0
+"2000592842";"2018-11-03";"03024544";"DCTENGDEND";"NDEG9";"IUSEA";"M";"1978-11-22";"Michael";"Russo";"John";"314/308-9593";"mrusso@desmet.org";"MIRUSSO@IU.EDU";"MIRUSSO";0.0
+"0000335905";"2018-05-03";"02910758";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1982-11-06";"Delaina";"Snelling";"L";"812/946-0922";"dsnelling@gccschools.com";"DEHURST@IU.EDU";"DEHURST";0.0
+"0001080723";"2018-05-03";"02912416";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1970-10-29";"Melissa";"Lawson";"Marie";"765/977-7077";"lawsonm29@gmail.com";"";"MMLAWSON";0.0
+"0001349571";"2018-06-03";"02919319";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1974-04-18";"Andrew";"Larson";"Michael";"812/373-0067";"andrewmegan@sbcglobal.net";"ANMLARSO@IU.EDU";"ANMLARSO";0.0
+"0001393315";"2018-05-03";"02910552";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1968-08-22";"Stacy";"Sanford";"Jayne";"317/313-2581";"stacy.sanford@yahoo.com";"SJSANFOR@INDIANA.EDU";"SJSANFOR";0.0
+"0001395533";"2018-11-03";"03005107";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1973-12-27";"Liz";"Atkinson";"L";"317/797-0860";"elizabethatkinson@msdlt.k12.in.us";"ELAURI@IU.EDU";"ELAURI";0.0
+"0001922858";"2018-05-03";"02910764";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1987-05-23";"Ali";"Rohde";" ";"812/686-2994";"ali.renee.rohde@gmail.com";"ALIROHDE@IU.EDU";"ALIROHDE";0.0
+"0002211876";"2018-05-03";"02912325";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1988-09-03";"Chelsea";"Thomas";"Meredith";"502/526-3893";"thomasch@shcsc.k12.in.us";"CMALLEN@IU.EDU";"CMALLEN";0.0
+"0002391276";"2018-05-03";"02912328";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1989-10-21";"Molly";"Vass";"Jo";"219/406-6258";"mollyjvass@gmail.com";"MVASS@IU.EDU";"MVASS";0.0
+"0002837525";"2018-06-03";"02934342";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1992-09-11";"Alex";"Leavell";" ";"260/704-0008";"alexanderleavell@gmail.com";"ALLEAVEL@IU.EDU";"ALLEAVEL";0.0
+"2000509750";"2018-11-09";"02930955";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1962-07-21";"Deborah";"Duffy";"Ann";"";"deborahaduffy21@gmail.com";"DEBDUFFY@IU.EDU";"DEBDUFFY";0.0
+"0001456596";"2018-05-03";"02911466";"NDGGRAD";"GRAD9";"IUINA";"F";"1979-03-09";"Brandalyn";"Hinen";"Kay";"317/679-0272";"bhinen@ehancock.org";"BNOBBE@IU.EDU";"BNOBBE";0.0
+"0001824925";"2018-05-03";"02904828";"GCONNPR";"NDEG9";"IUEAA";"M";"1966-08-20";"Stacey";"Peters";"E";"";"speters@plainfield.k12.in.us";"STAEPETE@INDIANA.EDU";"STAEPETE";0.0
+"0001394460";"2018-05-03";"02909772";"DCTHSTDEND";"NDEG9";"IUSEA";"F";"1957-07-17";"Joyce";"Gilly";" ";"317/460-9727";"joyce.gilly@mooresvilleschools.org";"JGILLY@INDIANA.EDU";"JGILLY";0.0
+"0001507738";"2018-05-03";"02913647";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1972-06-23";"Amy";"Miller";"Jo";"574/370-0369";"amiller@wawasee.k12.in.us";"MILLEAMY@IU.EDU";"MILLEAMY";0.0
+"0001520102";"2018-05-03";"02911759";"DCTENGDEND";"NDEG9";"IUSEA";"F";"1963-06-27";"Susan";"Dietzel";"Armstrong";"574/258-0125";"smd663@comcast.net";"SDIETZEL@IU.EDU";"SDIETZEL";0.0
+"0001926681";"2018-05-03";"02911472";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1987-05-03";"Claire";"Burke";"Elizabeth";"812/320-1744";"claire.burke87@gmail.com";"CEBURKE@IU.EDU";"CEBURKE";0.0
+"0003236999";"2018-05-03";"02914458";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1986-11-25";"Joshua";"Keirn";"Norris";"";"joshua.keirn@gmail.com";"JOKEIR@IU.EDU";"JOKEIR";0.0
+"2000489007";"2018-05-03";"02912339";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1984-10-12";"Sarah";"Owens";" ";"";"owenssarah1984@gmail.com";"OWENS10@IU.EDU";"OWENS10";0.0
+"2000502662";"2018-06-03";"02926470";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1984-10-16";"Christopher";"Buggs";"L";"219/688-2594";"clbuggs@garycsc.k12.in.us";"CLBUGGS@IU.EDU";"CLBUGGS";0.0
+"2000579395";"2018-11-03";"03012934";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1963-04-23";"Deborah";"Nowakowski";"M.";"812/899-2638";"nowakowskid@vcsc.k12.in.us";"DEBNOWAK@IU.EDU";"DEBNOWAK";0.0
+"0001492202";"2018-05-03";"02904847";"NONDEG";"NDEG9";"IUSEA";"F";"1973-02-25";"Kelly";"Rich";"J";"317/893-4563";"Kelly.rich@wayne.k12.in.us";"KELJPARK@IU.EDU";"KELJPARK";0.0
+"0001525985";"2018-05-03";"02912051";"DCTENGDEND";"COAS9";"IUNWA";"F";"1978-05-25";"Melinda";"Shultz";"Diane";"574/653-2614";"shultzm@caston.k12.in.us";"MDSHULTZ@IU.EDU";"MDSHULTZ";0.0
+"0002249833";"2018-05-03";"02909388";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1966-11-13";"Jeff";"Hettinger";" ";"219/208-0656";"jeff.hettinger@frontier.k12.in.us";"JHETTIN@IU.EDU";"JHETTIN";0.0
+"0002632353";"2018-05-03";"02910551";"DCTPOLDEND";"POLS9";"IUBLA";"F";"1968-03-25";"Brooke";"Yeager";"D";"219/776-2657";"byeager@cps.k12.in.us";"BDYEAGER@IU.EDU";"BDYEAGER";0.0
+"0003477942";"2018-11-03";"02999255";"DCTCHMDEND";"NDEG9";"IUSEA";"M";"1960-02-27";"Peter";"Warren";" ";"812/593-6655";"rev7paw@yahoo.com";"PEWARRE@IU.EDU";"PEWARRE";0.0
+"0003657362";"2018-05-03";"02911731";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1962-02-28";"Carol";"Fitzpatrick";"Halloran";"";"cfitzpatrick@andreanhs.com";"CAROFITZ@IU.EDU";"CAROFITZ";0.0
+"2000460007";"2018-04-30";"02895861";"GERGRNDG";"GER9";"IUBLA";"F";"1991-05-14";"Emily";"Stillman";" ";"";"stillemstill@gmail.com";"EMSTILL@IU.EDU";"EMSTILL";0.0
+"2000481192";"2018-05-03";"02904822";"NONDEG";"NDEG9";"IUSEA";"F";"1988-01-21";"Sara";"Warfield";"Renee";"502/409-0640";"swarfield@sacs.k12.in.us";"SWILEYW@IU.EDU";"SWILEYW";0.0
+"2000491212";"2018-05-03";"02914260";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1990-05-17";"Kayla";"Siebert";" ";"847/636-8580";"ksiebert@kokomo.k12.in.us";"KAYSIEB@IU.EDU";"KAYSIEB";0.0
+"0000702311";"2018-11-03";"03016916";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1963-02-25";"Lisa";"Barnes";"Lewis";"317/576-8082";"lbarnes@bishopchatard.org";"LISALEWI@INDIANA.EDU";"LISALEWI";0.0
+"0001350683";"2018-05-03";"02910622";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1968-09-23";"Thomas";"Lutz";"William";"";"tlutz@nm.k12.in.us";"TWLUTZ@INDIANA.EDU";"TWLUTZ";0.0
+"0001372789";"2019-03-03";"03051890";"DCTENGDEND";"ENG9";"IUINA";"F";"1968-04-12";"Kristi";"Williamson";"Ann";"765/524-4996";"kwilliamson@cabeard.k12.in.us";"KRIAWILL@INDIANA.EDU";"KRIAWILL";0.0
+"0002684122";"2018-05-03";"02913653";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1991-11-21";"Brittney";"Johnson";"Nicole";"219/384-0010";"brittneyjohnson@valpo.k12.in.us";"BBUHER@IU.EDU";"BBUHER";0.0
+"2000486806";"2018-05-03";"02910239";"DCTENGDEND";"ENG9";"IUBLA";"F";"1966-04-21";"Michele";"Jablonski";" ";"";"Michele.Jablonski@eastporter.k12.in.us";"MIJABLON@IU.EDU";"MIJABLON";0.0
+"2000572280";"2018-11-03";"03006619";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1990-07-06";"Kathryn";"Ashley";"Betancourt";"843/801-4774";"kashley@ccsindy.org";"KABASHLE@IU.EDU";"KABASHLE";0.0
+"0001470087";"2018-06-03";"02928072";"DCTCHMDEND";"NDEG9";"IUEAA";"M";"1969-07-12";"Luis";"Lopez";"Antonio";"219/781-6015";"llopez@mvsc.k12.in.us";"LOPEZLA@IU.EDU";"LOPEZLA";0.0
+"0001688346";"2018-05-03";"02912064";"DCTENGDEND";"COAS9";"IUNWA";"F";"1985-05-14";"Tiffany";"Stansbury";"Dawn";"812/738-1809";"tstansbury@nafcs.k12.in.us";"TIDJONES@IUS.EDU";"TIDJONES";0.0
+"0001737579";"2018-05-03";"02904833";"GCONNPR";"NDEG9";"IUEAA";"M";"1986-02-04";"Matt";"Poisel";" ";"317/414-0813";"mpoisel@hse.k12.in.us";"MPOISEL@INDIANA.EDU";"MPOISEL";0.0
+"0002172680";"2018-06-03";"02919310";"DCTCOMDEND";"ARTS9";"IUSBA";"F";"1982-10-04";"Amy";"Hayes";"Elaine";"317/363-0420";"amyandblakee@gmail.com";"AMYHAYES@IUPUI.EDU";"AMYHAYES";0.0
+"0002649183";"2017-05-05";"02755763";"GERGRNDG";"GER9";"IUBLA";"F";"1991-12-28";"Lisa";"Stumler";"R";"812/786-5754";"lisaskaggs26@gmail.com";"LISKAGGS@IUS.EDU";"LISKAGGS";0.0
+"0001376493";"2018-05-03";"02911751";"DCTENGDEND";"ENG9";"IUINA";"M";"1978-08-09";"Jeremiah";"Wade";"Emmett";"574/238-3027";"jwade@goshenschools.org";"JWADE@INDIANA.EDU";"JWADE";0.0
+"0001495458";"2018-05-03";"02911469";"NDGGRAD";"GRAD9";"IUINA";"M";"1978-06-21";"Derek";"Chastain";"Curtis";"";"derekchastain@yahoo.com";"DCHASTAI@INDIANA.EDU";"DCHASTAI";0.0
+"0001521424";"2018-06-03";"02934354";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1981-03-07";"Ann";"Bunnell";"Marie";"317/448-0323";"abunnell@jaccendel.k12.in.us";"ANNBUNNE@IU.EDU";"ANNBUNNE";0.0
+"0002210895";"2018-06-03";"02927908";"DCTHSTDEND";"HIST9";"IUBLA";"M";"1988-08-19";"Jesse";"Atkinson";"W";"";"jatkinson_8@hotmail.com";"ATKINSJW@IU.EDU";"ATKINSJW";0.0
+"0000737565";"2018-05-03";"02910208";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1963-04-12";"Kenneth";"Andrzejewski";"William";"574/259-5257";"kandrzejewski@marianhs.org";"KANDRZEJ@IU.EDU";"KANDRZEJ";0.0
+"0001638358";"2018-11-03";"03015774";"DCTCHMDEND";"NDEG9";"IUSEA";"M";"1973-05-05";"Richard";"Bailey";"E";"260/415-7934";"Richard.Bailey@fwcs.k12.in.us";"RICHBAIL@IU.EDU";"RICHBAIL";0.0
+"0001880473";"2018-05-03";"02912248";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1966-03-01";"Tamara";"Whiting Gonzalez";" ";"574/262-9175";"tgonzalez@elkhart.k12.in.us";"TWHITING@IU.EDU";"TWHITING";0.0
+"0001896970";"2018-05-03";"02913648";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1961-06-03";"Sonya";"Paul";"S";"765/716-5466";"sonya.paul@brv.k12.in.us";"SSPAUL@IU.EDU";"SSPAUL";0.0
+"0002155459";"2018-11-03";"03014687";"DCTCHMDEND";"NDEG9";"IUSEA";"M";"1971-06-08";"Christopher";"Hiller";"Steele";"317/784-1691";"cshiller@gmail.com";"CHILLER@IU.EDU";"CHILLER";0.0
+"0002341658";"2018-05-03";"02911740";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1985-03-30";"Adam";"Hofer";"Charles";"765/265-0365";"achofer@gmail.com";"ACHOFER@INDIANA.EDU";"ACHOFER";0.0
+"0003657371";"2018-06-03";"02934081";"DCTPOLDEND";"NDEG9";"IUEAA";"M";"1987-11-19";"David";"Hoffman";"Allen";"";"david.al.hoffman@gmail.com";"DAVIHOFF@IU.EDU";"DAVIHOFF";0.0
+"2000487975";"2018-05-03";"02911467";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1959-01-10";"Timothy";"Appleby";" ";"574/309-3876";"tappleby@sbcsc.k12.in.us";"TIMAPPLE@IU.EDU";"TIMAPPLE";0.0
+"2000516529";"2018-08-04";"02938012";"GERGRNDG";"GER9";"IUBLA";"F";"1984-11-17";"Heidi";"Marek";"Lynn";"";"heidi.marek@cps.k12.in.us";"HMAREK@IU.EDU";"HMAREK";0.0
+"0001398455";"2018-11-03";"03018204";"DCTENGDEND";"NDEG9";"IUSBA";"F";"1968-04-05";"Bridgett";"Kent";"M";"574/288-0149";"bkent@sbcsc.k12.in.us";"BKENT@IUSB.EDU";"BKENT";0.0
+"2000489009";"2018-05-03";"02912346";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1985-05-04";"Brittany";"Townsley";" ";"";"btownsley@elkhart.k12.in.us";"BTOWNSLE@IU.EDU";"BTOWNSLE";0.0
+"0000666107";"2018-05-03";"02910528";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1969-09-25";"Matthew";"Mertes";"G";"260/486-8334";"matthew.mertes@fwcs.k12.in.us";"MGMERTES@IU.EDU";"MGMERTES";0.0
+"0001391512";"2018-06-03";"02928069";"DCTCHMDEND";"NDEG9";"IUEAA";"M";"1975-05-05";"David";"Gardner";"Michael";"502/786-4503";"dgardner@clarksvilleschools.org";"DMGARDNE@IU.EDU";"DMGARDNE";0.0
+"0001441969";"2018-05-03";"02911735";"DCTENGDEND";"ENG9";"IUINA";"F";"1976-12-04";"Amy";"Paul Schmeltz";" ";"574/656-3270";"aschmeltz@plymouth.k12.in.us";"AMPAUL@IU.EDU";"AMPAUL";0.0
+"0002009793";"2018-05-03";"02910623";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1980-03-01";"Kristen";"Swonger";"Judith";"260/750-5308";"swongerkj@wccsonline.com";"KSWONGER@IU.EDU";"KSWONGER";0.0
+"0002648689";"2018-05-03";"02904990";"NDG";"NDEG9";"IUINA";"F";"1986-01-24";"Ashley";"Sutton";"Dawn";"765/210-5804";"suttona@maconquah.k12.in.us";"ADDABBS@INDIANA.EDU";"ADDABBS";0.0
+"0003657341";"2018-05-03";"02910136";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1987-10-13";"Joshua";"Dueweke";"Joseph";"";"joshua.j.dueweke@gmail.com";"JDUEWEKE@IU.EDU";"JDUEWEKE";0.0
+"2000489165";"2018-05-03";"02912412";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1982-06-16";"Kasey";"Lutrell";"Lynn";"";"";"KLUTRELL@IU.EDU";"KLUTRELL";0.0
+"2000505556";"2018-06-03";"02927917";"DCTHSTDEND";"HIST9";"IUBLA";"M";"1964-07-18";"Larry";"Broadwater";" ";"";"lbroadwat_msdwc@hotmail.com";"LBROADW@IU.EDU";"LBROADW";0.0
+"0001341134";"2018-06-03";"02928195";"DCTCHMDEND";"NDEG9";"IUEAA";"M";"1977-10-09";"Matthew";"Carlile";"Trevor";"765/210-6784";"mcarlile@taylor.k12.in.us";"MTCARLIL@IU.EDU";"MTCARLIL";0.0
+"0001413723";"2018-05-03";"02909543";"DCTENGDEND";"ENG9";"IUINA";"F";"1979-02-02";"Lauren";"Pfister";"Michele";"317/417-5489";"laurenpfister@me.com";"PFISTERL@IU.EDU";"PFISTERL";0.0
+"0002103482";"2018-11-03";"03006802";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1982-12-13";"Robert";"Stewart";"Eugene";"812/573-9091";"roestewa@gmail.com";"ROESTEWA@IUPUI.EDU";"ROESTEWA";0.0
+"0002337139";"2018-06-03";"02919320";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1976-11-05";"Stephanie";"Lone";" ";"812/945-6551";"stephanielone@hotmail.com";"CARROLSJ@IU.EDU";"CARROLSJ";0.0
+"0003619079";"2018-05-03";"02910541";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1982-05-16";"Joel";"Schlabach";"David";"";"jschlabach@rcs.k12.in.us";"JSCHLABA@IU.EDU";"JSCHLABA";0.0
+"0003656572";"2018-06-03";"02925751";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1994-10-15";"Frank";"Pejril";"Burton";"";"frank.pejril@gmail.com";"FPEJRIL@IU.EDU";"FPEJRIL";0.0
+"2000505851";"2018-06-03";"02928078";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1976-01-03";"Annette";"Tomory";" ";"219/405-5251";"annette@tomory.com";"ATOMORY@IU.EDU";"ATOMORY";0.0
+"0000419683";"2018-06-03";"02926824";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1970-02-09";"Paula";"Shouse";" ";"765/967-7401";"pshouse@fayette.k12.in.us";"PSHOUSE@INDIANA.EDU";"PSHOUSE";0.0
+"0000733779";"2018-05-03";"02912582";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1965-06-25";"Patrick";"Lockyear";"Edward";"812/925-3418";"sbcoach63@hotmail.com";"PLOCKYEA@IU.EDU";"PLOCKYEA";0.0
+"0001191673";"2018-05-03";"02910756";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1972-01-30";"Lauri";"Johnson";"Renee";"";"ljohnson@ehancock.org";"LRJ5@IU.EDU";"LRJ5";0.0
+"0001340076";"2018-05-03";"02914257";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1974-12-06";"Matt";"Crozier";"David";"";"mcrozier@hccsc.k12.in.us";"MDCROZIE@IU.EDU";"MDCROZIE";0.0
+"0001383407";"2018-05-03";"02909558";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1963-02-03";"Michael";"Burdsall";"J";"317/745-7965";"mburdsall@danville.k12.in.us";"MICBURDS@INDIANA.EDU";"MICBURDS";0.0
+"0001492812";"2018-05-03";"02910502";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1974-08-16";"Kevin";"Cogdell";"Charles";"260/415-4940";"kccogdell@sacs.k12.in.us";"KCOGDELL@IU.EDU";"KCOGDELL";0.0
+"0002156119";"2018-05-03";"02911441";"DCTENGDEND";"ENG9";"IUBLA";"F";"1978-01-09";"Crystal";"Harrigan-Barry";"L";"219/661-8353";"charriganbarry@hanover.k12.in.us";"CHARRIGA@IU.EDU";"CHARRIGA";0.0
+"0002454752";"2018-06-03";"02938189";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1990-08-08";"Rebecca";"Downs";"Janice Louise";"260/433-2925";"rjldowns@gmail.com";"RJDOWNS@IU.EDU";"RJDOWNS";0.0
+"0003293591";"2018-06-03";"02928546";"DCTPOLDEND";"NDEG9";"IUEAA";"F";"1979-03-19";"Elizabeth";"Paternoster";"Ann";"";"lpaternoster@hse.k12.in.us";"EPATERNO@INDIANA.EDU";"EPATERNO";0.0
+"0003656394";"2018-05-03";"02911836";"DCTENGDEND";"COAS9";"IUNWA";"F";"1965-10-14";"Amy";"O'Brien";"S";"";"aobrien@saintjoehigh.com";"AMYOBRI@IU.EDU";"AMYOBRI";0.0
+"0003656562";"2018-05-01";"02899327";"GERGRNDG";"GER9";"IUBLA";"F";"1986-05-17";"Stephanie";"Zachar";"Laura";"";"zachars@mcsin-k12.org";"SZACHAR@IU.EDU";"SZACHAR";0.0
+"2000501097";"2018-06-03";"02925080";"DCTENGDEND";"NDEG9";"IUSEA";"F";"1958-05-06";"Margaret";"Higgins";" ";"812/427-2254";"mmhiggins@switzsc.org";"MARHIGG@IU.EDU";"MARHIGG";0.0
+"0000395202";"2018-05-03";"02911757";"DCTENGDEND";"NDEG9";"IUSEA";"F";"1978-12-10";"Sarah";"Craft";"Penner";"812/283-5681";"scraft@westclarkschools.com";"SAPBLACK@IUS.EDU";"SAPBLACK";0.0
+"0000420672";"2018-05-03";"02911833";"DCTENGDEND";"COAS9";"IUNWA";"M";"1970-02-16";"Paul";"Hankins";"Wayne";"812/923-2653";"paulwhankins@aol.com";"PHANKINS@IU.EDU";"PHANKINS";0.0
+"0000846872";"2018-05-03";"02912342";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1961-11-28";"Jennifer";"Orrill";"A";"812/273-2860";"jenschoch80@gmail.com";"JORRILL@IU.EDU";"JORRILL";0.0
+"0001328382";"2018-05-03";"02910625";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1969-01-15";"Kimberly";"Holifield";"Marie";"";"holifieldkimberly@yahoo.com";"KHOLIFIE@IU.EDU";"KHOLIFIE";0.0
+"0003148601";"2018-05-03";"02910768";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1958-10-08";"Joy";"Gwinn";"Elaine";"";"joyelaine.gwinn@gmail.com";"JGWINN@INDIANA.EDU";"JGWINN";0.0
+"2000489721";"2018-05-03";"02912657";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1972-12-17";"Patrick";"Rose";"James";"812/550-6782";"prose9196@gmail.com";"PJROSE@IU.EDU";"PJROSE";0.0
+"0000664310";"2018-05-03";"02913643";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1960-10-25";"Anne";"Costello";"Sniegowski";"574/233-3206";"minimana@att.net";"COSTELLA@INDIANA.EDU";"COSTELLA";0.0
+"0001353055";"2018-05-03";"02910624";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1972-02-24";"Kevin";"Keltner";"Hal";"812/967-6683";"kkeltner@ewsc.k12.in.us";"KEKELTNE@IU.EDU";"KEKELTNE";0.0
+"0001354306";"2018-06-03";"02933197";"DCTHSTDEND";"COAS9";"IUNWA";"F";"1972-07-26";"Rachel";"Couch";"Fay";"317/640-4500";"rachelcouch@msdlt.k12.in.us";"RFCOUCH@IU.EDU";"RFCOUCH";0.0
+"0001364619";"2018-05-03";"02911755";"DCTENGDEND";"ENG9";"IUINA";"F";"1976-11-08";"Myia";"Williams";"Sue";"317/563-6420";"mwilliams2@danville.k12.in.us";"MSPOOLE@IU.EDU";"MSPOOLE";0.0
+"0001381934";"2018-05-03";"02910138";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1963-03-22";"Randall";"Combs";"Wayne";"812/890-9968";"randy.combs@milan.k12.in.us";"RANCOMBS@IU.EDU";"RANCOMBS";0.0
+"0002272659";"2018-05-03";"02910560";"DCTCOMDEND";"NDEG9";"IUEAA";"M";"1979-10-31";"Ross";"Polen";"Allen";"812/630-2101";"rosspolen@yahoo.com";"RAPOLEN@IU.EDU";"RAPOLEN";0.0
+"0002822941";"2019-04-09";"03040486";"LCLDEMSED";"EDUC5";"IUBLA";"F";"1993-06-29";"Jordan";"Nel";"Lisette";"812/369-0066";"jlgoodmo@indiana.edu";"JLGOODMO@IU.EDU";"JLGOODMO";0.0
+"0003120487";"2018-05-03";"02912229";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1979-03-06";"Nick";"Weicht";"E";"765/438-0362";"nweicht@taylor.k12.in.us";"NWEICHT@IU.EDU";"NWEICHT";0.0
+"0003656155";"2018-06-03";"02936079";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1985-01-08";"Theresa";"Doud";"Alice";"";"theresadoud@gmail.com";"THDOUD@IU.EDU";"THDOUD";0.0
+"2000485686";"2018-05-03";"02909376";"DCTHSTDEND";"NDEG9";"IUSEA";"F";"1972-01-02";"Wendi";"Riser";"Ann";"765/617-4327";"wriser@elwood.k12.in.us";"WRISER@IU.EDU";"WRISER";0.0
+"2000498177";"2018-05-03";"02922230";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1973-01-08";"Suzanne";"Ponder";"Elizabeth";"";"sponder@nafcs.k12.in.us";"SEPONDER@IU.EDU";"SEPONDER";0.0
+"2000572827";"2018-11-03";"03007066";"DCTHSTDEND";"NDEG9";"IUSBA";"M";"1977-07-19";"Joshua";"Strange";"Ray";"765/606-7319";"jstrange@flcs.k12.in.us";"STRANGJR@IU.EDU";"STRANGJR";0.0
+"2000584144";"2018-11-03";"03018203";"DCTBIODEND";"COAS9";"IUNWA";"F";"1981-05-14";"Dana";"Harris";"Marie";"812/719-5542";"dharris@pccs.k12.in.us";"DANMHARR@IU.EDU";"DANMHARR";0.0
+"0000673563";"2017-05-03";"02758322";"GERGRNDG";"GER9";"IUBLA";"F";"1975-05-13";"Kristen";"Dawn";"Michelle";"317/893-4567";"kristen.dawn@wayne.k12.in.us";"";"KMDAWN";0.0
+"0000961644";"2018-05-03";"02911726";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1969-04-09";"Melinda";"Fernung";"Annette";"765/210-2284";"mfernung@tcsc.k12.in.us";"MAFERNUN@IU.EDU";"MAFERNUN";0.0
+"0001304068";"2018-06-03";"02926638";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1970-07-28";"Neil";"Day";"Terrance";"260/489-7869";"neil.day@fwcs.k12.in.us";"NTDAY@IU.EDU";"NTDAY";0.0
+"0001387803";"2018-05-03";"02912584";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1969-02-08";"Catherine";"Maes";" ";"574/807-4307";"catmaes69@gmail.com";"CATMAES@IU.EDU";"CATMAES";0.0
+"0001498504";"2018-05-03";"02914459";"DCTENGDEND";"ENG9";"IUINA";"F";"1973-12-05";"Hannah";"Arbogast";"N.";"765/628-7737";"hannah_arbogast@olemiss.k12.in.us";"HANARBOG@IU.EDU";"HANARBOG";0.0
+"0002088906";"2018-11-03";"03011207";"DCTCHMDEND";"NDEG9";"IUSEA";"M";"1957-04-28";"Mark";"Metz";"Lewis";"260/351-2775";"mmetz@lakelandlakers.net";"MAMETZ@IU.EDU";"MAMETZ";0.0
+"0002149451";"2018-05-03";"02905056";"NDG";"NDEG9";"IUINA";"F";"1977-01-24";"AnneMarie";"Milligan";" ";"765/562-2454";"annemilligan@msdlt.k12.in.us";"ANMILLIG@IU.EDU";"ANMILLIG";0.0
+"0002703095";"2018-05-03";"02912587";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1991-09-23";"Shannon";"Dines";"Michelle";"812/934-0470";"shannon.morris@milan.k12.in.us";"SMM12@IU.EDU";"SMM12";0.0
+"0003657367";"2018-06-03";"02927570";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1990-02-19";"Chloe";"Hoffman";"Morgan";"";"choffman@cps.k12.in.us";"HOFFMACM@IU.EDU";"HOFFMACM";0.0
+"2000502317";"2018-06-03";"02926046";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1978-08-07";"Stephanie";"Strange";" ";"765/661-2344";"stephaniest@ohusc.k12.in.us";"STESTRAN@IU.EDU";"STESTRAN";0.0
+"2000505555";"2018-06-03";"02927915";"DCTHSTDEND";"HIST9";"IUBLA";"F";"1962-05-24";"Julia";"Blakely";"Ann";"";"jblakely@delcomschools.org";"JABLAKEL@IU.EDU";"JABLAKEL";0.0
+"0000108329";"2018-05-03";"02912594";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1980-08-23";"Vincent";"Ferro";" ";"269/932-8614";"ferrov@mishawaka.k12.in.us";"VFERRO@IU.EDU";"VFERRO";0.0
+"0002356545";"2018-05-03";"02910760";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1980-09-15";"Kate";"Smola";"M.";"317/441-4618";"ksmola1@gmail.com";"KSMOLA@INDIANA.EDU";"KSMOLA";0.0
+"0002634768";"2018-06-03";"02926304";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1986-09-18";"Matt";"Adkins";"Bert";"812/620-0068";"madkins@salemschools.com";"MATBADKI@IU.EDU";"MATBADKI";0.0
+"0003657334";"2018-05-03";"02912581";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1961-09-10";"Douglas";"Conner";"F";"";"dconner@acsc.net";"DFCONNER@IU.EDU";"DFCONNER";0.0
+"2000575084";"2019-02-11";"03009037";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1977-09-30";"Joshua";"Thompson";"E.";"765/366-5832";"jthompson@nm.k12.in.us";"";"JET14";0.0
+"0000131691";"2018-05-03";"02909378";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1982-08-17";"Randy";"Hudgins";" ";"317/385-6078";"coach.randy.hudgins@gmail.com";"WHUDGINS@IU.EDU";"WHUDGINS";0.0
+"0001345207";"2018-05-03";"02911733";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1959-12-17";"Cathy";"Gohmann";"Anne";"260/563-2315";"gohmannc@msdwc.k12.in.us";"CGOHMANN@IU.EDU";"CGOHMANN";0.0
+"0001502971";"2019-05-07";"03055194";"CMPSTDGCRT";"HSS6";"IUEAA";"F";"1977-04-11";"Nellie";"Mumaw";"Elizabeth";"";"nmallow@iu.edu";"NMALLOW@IU.EDU";"NMALLOW";0.0
+"0000083877";"2018-11-03";"03011765";"DCTHSTDEND";"NDEG9";"IUSBA";"M";"1982-12-20";"Clinton";"Burch";"Dallas";"812/825-7339";"cburch@egreene.k12.in.us";"CBURCH@IU.EDU";"CBURCH";0.0
+"0001113036";"2018-11-03";"03012136";"DCTBIODEND";"EDUC9";"IUKOA";"M";"1967-08-15";"Scott";"Mangels";"Allen";"812/663-0784";"smangels@greensburg.k12.in.us";"SMANGELS@IUPUI.EDU";"SMANGELS";0.0
+"0001115758";"2018-05-01";"02898845";"GERGRNDG";"GER9";"IUBLA";"F";"1974-10-07";"Kim";"Schiavone";"Lynne";"812/477-7135";"kimberly.schiavone@evsck12.com";"KSCHIAVO@IU.EDU";"KSCHIAVO";0.0
+"0001317290";"2018-06-03";"02926818";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1971-09-14";"Timothy";"Romig";"Gene";"812/947-4885";"tromig@nafcs.k12.in.us";"TROMIG@IU.EDU";"TROMIG";0.0
+"0001606069";"2017-11-30";"02832701";"CMPSTDGCRT";"HSS6";"IUEAA";"F";"1981-02-08";"Laura";"Carnes";"Elizabeth";"765/465-5279";"lecarnes@indiana.edu";"LECARNES@IU.EDU";"LECARNES";0.0
+"0001928352";"2018-05-03";"02904832";"NDGGRAD";"GRAD9";"IUINA";"F";"1968-01-26";"Robin";"Banks";"R";"574/806-6540";"rbanks@knox.k12.in.us";"RRBANKS@IU.EDU";"RRBANKS";0.0
+"0002124010";"2018-05-03";"02910503";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1981-08-04";"Darrick";"Cox";"K";"317/408-7738";"coxy1029@gmail.com";"DAKCOX@IU.EDU";"DAKCOX";0.0
+"0003288538";"2018-04-30";"02896262";"GERGRNDG";"GER9";"IUBLA";"F";"1985-04-01";"Amanda";"Beck";" ";"";"abeck4185@gmail.com";"BECKAM@INDIANA.EDU";"BECKAM";0.0
+"0003618986";"2018-06-03";"02926716";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1980-12-20";"Elizabeth";"Laba";"Anne";"";"elaba@cps.k12.in.us";"ELABA@IU.EDU";"ELABA";0.0
+"2000487279";"2018-05-03";"02910614";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1977-11-22";"Heather";"Fellows";" ";"";"hfellows@elkhart.k12.in.us";"HEFELL@IU.EDU";"HEFELL";0.0
+"0000231672";"2018-11-04";"02912648";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1983-08-21";"Joshua";"Murray";"Lee";"574/709-8999";"jmurray@peru.k12.in.us";"JOSHMURR@IU.EDU";"JOSHMURR";0.0
+"0000380585";"2018-05-03";"02910526";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1983-01-17";"Michael";"McLindon";"William";"219/226-1553";"mmclindon@tricreek.k12.in.us";"MMCLINDO@IU.EDU";"MMCLINDO";0.0
+"0000803814";"2018-06-03";"02926817";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1957-02-19";"Patricia";"Miller";"Martin";"812/989-2577";"pmiller@gcs.k12.in.us";"PATMMILL@INDIANA.EDU";"PATMMILL";0.0
+"0000924559";"2018-06-03";"02936871";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1966-12-18";"Lisa";"Nice";"A Bowling";"812/883-6851";"lnice66@gmail.com";"LNICE@IU.EDU";"LNICE";0.0
+"0000965405";"2018-05-03";"02910538";"DCTPOLDEND";"POLS9";"IUBLA";"F";"1971-01-02";"Erin";"Ondrusek";"K";"317/578-9892";"ondruseke@wws.k12.in.us";"EOGLE@IU.EDU";"EOGLE";0.0
+"0001416467";"2018-11-03";"03008616";"DCTCOMDEND";"ARTS9";"IUSBA";"F";"1976-12-10";"Amanda";"Richmond";"Renee";"";"arichmon@ccs.k12.in.us";"ARBLYTHE@IU.EDU";"ARBLYTHE";0.0
+"0001463927";"2018-06-03";"02929758";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1970-10-10";"Beth";"Cohagan";" ";"574/223-3515";"mbacohagan@rtcol.com";"ECOHAGAN@IU.EDU";"ECOHAGAN";0.0
+"0001468437";"2018-05-03";"02910553";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1971-09-10";"Teresa";"King";"E";"";"tking@bps.k12.in.us";"KINGTER@INDIANA.EDU";"KINGTER";0.0
+"0001506978";"2018-11-03";"02999231";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1963-11-20";"Eric";"Graham";"J";"317/522-7614";"ericgraham@hotmail.com";"ERICGRAH@INDIANA.EDU";"ERICGRAH";0.0
+"0001853862";"2018-06-03";"02931687";"DCTCHMDEND";"NDEG9";"IUEAA";"M";"1985-11-07";"Joseph";"Lamb";"William";"317/889-3871";"jwlamb@sunmandearborn.k12.in.us";"JWLAMB@IU.EDU";"JWLAMB";0.0
+"0002111494";"2018-05-03";"02914391";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1987-11-26";"Ashley";"Sciacca";" ";"219/805-0387";"ashley.sciacca75@gmail.com";"ASCIACCA@IU.EDU";"ASCIACCA";0.0
+"0002654214";"2018-05-03";"02904813";"NDGGRAD";"GRAD9";"IUINA";"M";"1979-04-10";"Daniel";"Swart";"Brandon";"";"bswart9@gmail.com";"DBSWART@INDIANA.EDU";"DBSWART";0.0
+"0003443843";"2018-05-03";"02910509";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1988-08-24";"James";"Hyatt";"Paul";"765/667-1847";"phyatt@jayschools.k12.in.us";"JAPHYATT@IU.EDU";"JAPHYATT";0.0
+"0003651967";"2018-05-03";"02911475";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1973-09-07";"Cristi";"Burman";" ";"";"cburman@mgusc.k12.in.us";"CRBURMAN@IUK.EDU";"CRBURMAN";0.0
+"0000404041";"2018-05-03";"02910499";"DCTENGDEND";"ENG9";"IUBLA";"F";"1984-01-24";"Ashley";"Faith";"Renae";"812/366-3145";"afaith@nafcs.k12.in.us";"ARDYER@IU.EDU";"ARDYER";0.0
+"0000655915";"2018-05-03";"02910762";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1956-01-27";"Richard";"Schuley";"E";"812/498-5729";"rschuley@cinergymetro.net";"RSCHULEY@IUPUI.EDU";"RSCHULEY";0.0
+"0001384416";"2017-05-06";"02756233";"GERGRNDG";"GER9";"IUBLA";"F";"1976-11-12";"Amy";"Norris";"Lynn";"812/876-2611";"amynorris34@gmail.com";"NORRISAM@INDIANA.EDU";"NORRISAM";0.0
+"0001600414";"2018-05-03";"02912061";"DCTENGDEND";"COAS9";"IUNWA";"F";"1962-03-31";"Elizabeth";"Masur";"P";"317/752-8971";"elizabethmasur@msdlt.k12.in.us";"EPMASUR@IU.EDU";"EPMASUR";0.0
+"0002627544";"2018-05-03";"02910744";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1962-07-06";"Jeffrey";"Kindelan";"Robert";"574/360-3842";"";"JKINDELA@IU.EDU";"JKINDELA";0.0
+"0003368498";"2018-03-21";"02895489";"GERGRNDG";"GER9";"IUBLA";"M";"1957-05-03";"Fritz";"Krahl";"T";"";"fkrahl@pcsc.k12.in.us";"FKRAHL@INDIANA.EDU";"FKRAHL";0.0
+"0003657234";"2018-05-03";"02910548";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1984-03-24";"Rachel";"Anderson";"Ann";"";"randerson@hanover.k12.in.us";"ANDERSRA@IU.EDU";"ANDERSRA";0.0
+"0003657316";"2019-01-03";"03028087";"GCONN2";"GRAD9";"IUBLA";"F";"1954-10-29";"Diane";"Wilson";"D";"";"didwilso@iu.edu";"DIDWILSO@IU.EDU";"DIDWILSO";0.0
+"2000487272";"2018-05-03";"02910608";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1976-01-25";"Paul";"McClelland";" ";"574/295-4700";"pmcclelland@elkhart.k12.in.us";"PMCCLEL@IU.EDU";"PMCCLEL";0.0
+"2000489163";"2018-05-03";"02912410";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1982-10-06";"Joseph";"McGowan";" ";"";"jmmcgowan@gmail.com";"JMCGOWA@IU.EDU";"JMCGOWA";0.0
+"0000331017";"2018-05-03";"02910761";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1962-12-27";"Karen";"York";"Waite";"812/738-9573";"karenwaiteyork@gmail.com";"KYORK@IU.EDU";"KYORK";0.0
+"0001069653";"2018-05-03";"02912065";"DCTENGDEND";"COAS9";"IUNWA";"F";"1958-04-03";"Deborah";"Reeves";"Lynne";"317/984-4086";"dreeves@hhschuskies.org";"DEBREEVE@IU.EDU";"DEBREEVE";0.0
+"0001346169";"2018-11-03";"03007084";"DCTHSTDEND";"NDEG9";"IUSBA";"F";"1960-04-29";"Dana";"Mehl";"Jane";"574/533-6223";"";"DMEHL@IU.EDU";"DMEHL";0.0
+"0001352892";"2018-06-03";"02934441";"DCTENGDEND";"NDEG9";"IUSEA";"F";"1978-10-26";"Mindi";"Slone";"Jo";"574/773-3332";"mslone@wanee.org";"MPATTERS@IU.EDU";"MPATTERS";0.0
+"0002142541";"2018-11-03";"03007083";"DCTHSTDEND";"NDEG9";"IUSBA";"F";"1988-12-16";"Natalie";"Mewhinney";"Bryn";"317/379-3298";"nmewhinney@easternhancock.org";"NMEWHINN@IU.EDU";"NMEWHINN";0.0
+"0003657374";"2018-05-03";"02910742";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1983-12-12";"Stephanie";"Harnew";"C";"";"sharnew@cps.k12.in.us";"SHARNEW@IU.EDU";"SHARNEW";0.0
+"2000487274";"2018-05-03";"02910611";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1979-08-16";"Michael";"Wallace";" ";"812/887-3322";"mjwallace79@gmail.com";"MWALLAC@IU.EDU";"MWALLAC";0.0
+"2000570294";"2018-11-03";"03005100";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1981-08-10";"Melissa";"Giusti";"Carole";"";"mgiusti@excelcenter.org";"MGIUSTI@IU.EDU";"MGIUSTI";0.0
+"0000585329";"2018-06-03";"02919322";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1963-03-06";"Patricia";"Robison";"L";"219/661-1477";"probison@mvsc.k12.in.us";"ROBISONP@IU.EDU";"ROBISONP";0.0
+"0001384309";"2018-11-03";"03025889";"DCTMTHDEND";"COAS9";"IUNWA";"M";"1970-10-25";"David";"Garlin";"Nathaniel";"219/805-8171";"dgarlin1@garycsc.k12.in.us";"DNGARLIN@IUN.EDU";"DNGARLIN";0.0
+"0001455767";"2018-05-03";"02904830";"NONDEG";"NDEG9";"IUSEA";"F";"1967-12-02";"Tami";"Wuest";"M";"260/486-5699";"twuest@bhmsd.org";"TWUEST@INDIANA.EDU";"TWUEST";0.0
+"0001937822";"2018-11-03";"03007479";"DCTBIODEND";"COAS9";"IUNWA";"F";"1980-12-06";"Emily";"Zablocki";"Carol";"574/277-6956";"emilyzablocki@gmail.com";"EZABLOCK@IU.EDU";"EZABLOCK";0.0
+"0002026679";"2019-02-21";"03027659";"APLCMMA";"COMM6";"IUINA";"M";"1986-10-03";"Nicholas";"White";"Gregory";"8123437478";"ngwhite@iu.edu";"NGWHITE@IU.EDU";"NGWHITE";0.0
+"0002188655";"2018-11-03";"02999251";"DCTBIODEND";"EDUC9";"IUKOA";"M";"1984-02-19";"Matthew";"Parker";"Langston";"317/985-5860";"mlparker0219@gmail.com";"PARKER9@IU.EDU";"PARKER9";0.0
+"0003656507";"2018-05-03";"02904834";"NONDEG";"NDEG9";"IUSEA";"F";"1979-11-11";"Cathy";"Nye";" ";"";"catherine.nye@portage.k12.in.us";"CATHNYE@IU.EDU";"CATHNYE";0.0
+"0003657528";"2018-06-03";"02926309";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1984-10-01";"Jenny";"Laws";"Lynn";"";"jlaws@jcdapps.com";"JENLAWS@IU.EDU";"JENLAWS";0.0
+"2000514870";"2018-06-03";"02936070";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1986-05-18";"Jenna";"Rozmarin";" ";"516/359-5231";"jrozmarin@k12.com";"JROZMAR@IU.EDU";"JROZMAR";0.0
+"0000354689";"2018-06-04";"02925074";"DCTENGDEND";"NDEG9";"IUSEA";"M";"1975-09-09";"Lane";"Hewitt";"D";"812/508-1658";"hewittl@mitchell.k12.in.us";"LANHEWIT@IU.EDU";"LANHEWIT";0.0
+"0000527310";"2018-05-03";"02910605";"DCTCOMDEND";"NDEG9";"IUEAA";"M";"1956-06-28";"Richard";"Luedeke";"Arnold";"260/749-1630";"rluedeke@blackhawkchristian.org";"RLUEDEKE@IU.EDU";"RLUEDEKE";0.0
+"0000736318";"2018-05-03";"02910539";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1976-03-30";"Marcie";"Trossman";"Ann";"812/933-0224";"mtrossman@etczone.com";"MTROSSMA@INDIANA.EDU";"MTROSSMA";0.0
+"0000806302";"2018-06-03";"02936086";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1958-01-30";"Christine";"Rowland";"Lynn";"812/723-2250";"youngscreek58@hotmail.com";"CHRROWLA@IU.EDU";"CHRROWLA";0.0
+"0001338259";"2018-05-03";"02910626";"DCTHSTDEND";"NDEG9";"IUSEA";"F";"1970-08-25";"Julie";"Coryea";"Marie";"765/914-5985";"jcoryea@nws.k12.in.us";"JMCORYEA@IU.EDU";"JMCORYEA";0.0
+"0001355238";"2018-11-03";"03008871";"DCTMTHDEND";"COAS9";"IUNWA";"M";"1979-11-09";"Chris";"Hackett";" ";"219/628-2223";"chackett@duneland.k12.in.us";"CHACKETT@INDIANA.EDU";"CHACKETT";0.0
+"0001357997";"2018-05-03";"02914471";"DCTHSTDEND";"NDEG9";"IUSEA";"F";"1969-09-12";"Laura";"Kruyer";"Ann";"574/952-1226";"lkruyer@plymouth.k12.in.us";"LKRUYER@IU.EDU";"LKRUYER";0.0
+"0001418283";"2018-11-03";"03016921";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1975-12-26";"Kerry";"Leader";"Donoho";"574/386-2677";"kleader@elkhart.k12.in.us";"KDONOHO@IUSB.EDU";"KDONOHO";0.0
+"0001589033";"2018-05-03";"02914271";"DCTENGDEND";"COAS9";"IUNWA";"M";"1964-08-19";"Wallace";"Austin";"James";"812/951-3416";"waustin@nafcs.org";"WAUSTIN@IU.EDU";"WAUSTIN";0.0
+"0002316328";"2018-05-03";"02910770";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1985-01-19";"Thomas";"Montgomery";"Tate";"260/223-5179";"montgomeryt@nadams.k12.in.us";"TTMONTGO@IU.EDU";"TTMONTGO";0.0
+"0003280872";"2018-06-03";"02937857";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1984-12-13";"Allison";"Malloy";"Nicole";"";"amalloy@ccs.k12.in.us";"ANMALLOY@INDIANA.EDU";"ANMALLOY";0.0
+"0003482058";"2018-06-03";"02927923";"DCTHSTDEND";"HIST9";"IUBLA";"M";"1990-04-22";"Austin";"Hall";"Joseph";"";"ahall@nwshelbyschools.org";"AUSTHALL@INDIANA.EDU";"AUSTHALL";0.0
+"0001172062";"2018-05-03";"02913645";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1969-05-03";"Theresa";"Grossman";"Ann";"517/655-1809";"theresagrossman@gmail.com";"TBOLISH@INDIANA.EDU";"TBOLISH";0.0
+"0001710077";"2018-05-03";"02910604";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1978-12-31";"Krista";"Jauregui";"Lynn";"260/402-7344";"jaureguik@accs.k12.in.us";"KLJAUREG@IU.EDU";"KLJAUREG";0.0
+"0001962580";"2018-05-03";"02911415";"EDLDRMSED";"EDUC5";"IUNWA";"M";"1986-11-14";"Matthew";"Van Vlymen";"Andrew";"219/308-8261";"mattvanvlymen3@gmail.com";"MVANVLYM@IU.EDU";"MVANVLYM";0.0
+"0002185554";"2018-05-12";"02910557";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1982-02-21";"Eileen";"Misener";"Anne";"574/596-4433";"ecorson@gmail.com";"ECORSON@IU.EDU";"ECORSON";0.0
+"0002347912";"2018-05-03";"02912652";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1975-04-09";"Valerie";"Pflum";" ";"";"vmpflum@munster.us";"VPFLUM@IU.EDU";"VPFLUM";0.0
+"0003296437";"2018-05-03";"02910612";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1968-07-06";"Bill";"Webb";" ";"";"billwebb@covenantchristian.org";"BILLWEBB@IU.EDU";"BILLWEBB";0.0
+"0003619078";"2018-06-03";"02925976";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1979-04-13";"Lisa";"Parker";"R.C.";"";"lparker@mccsc.edu";"LISAPARK@IU.EDU";"LISAPARK";0.0
+"0003656509";"2018-05-03";"02911303";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1980-07-11";"Khristen";"Phillips";"Michelle";"";"kphillips@greencastle.k12.in.us";"KHRPHILL@IU.EDU";"KHRPHILL";0.0
+"0003657533";"2018-05-03";"02913654";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1990-01-03";"Zach";"Keller";"Kevin";"";"zkeller@jayschools.k12.in.us";"ZKKELLER@IU.EDU";"ZKKELLER";0.0
+"2000501095";"2018-06-03";"02925079";"DCTENGDEND";"NDEG9";"IUSEA";"M";"1974-10-24";"Francis";"Litz";" ";"";"flitz@roncalli.org";"FLITZ@IU.EDU";"FLITZ";0.0
+"2000514872";"2018-06-03";"02936072";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1986-07-25";"Nicole";"Balliett";" ";"";"nrb@vigoschools.org";"NIBALL@IU.EDU";"NIBALL";0.0
+"2000576396";"2018-11-03";"03010109";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1973-04-06";"Margaret";"Bryant";"Frances";"765/376-2466";"margaretfbryant@att.net";"MFBRYANT@IU.EDU";"MFBRYANT";0.0
+"0001453288";"2018-05-03";"02911299";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1965-01-20";"John";"Calhoun";"Christopher";"812/755-4212";"jcalhoun@salemschools.com";"JCCALHOU@IU.EDU";"JCCALHOU";0.0
+"0002989565";"2018-04-30";"02900560";"GERGRNDG";"GER9";"IUBLA";"M";"1964-03-02";"Christopher";"Howard";"Edward";"";"CEHoward@hammond.k12.in.us";"";"CHRIHOWA";0.0
+"0003657331";"2018-05-03";"02912496";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1981-06-06";"Michael";"Buschman";"Patrick";"";"mike_buschman@yahoo.com";"MPBUSCHM@IU.EDU";"MPBUSCHM";0.0
+"0003657800";"2018-08-04";"02938058";"GERGRNDG";"GER9";"IUBLA";"F";"1984-09-24";"Candis";"Carey";"Nicole";"";"cancarey@iu.edu";"CANCAREY@IU.EDU";"CANCAREY";0.0
+"2000513987";"2018-11-03";"02935151";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1970-04-27";"Ronald";"Wittler";" ";"314/389-3100";"rwittler@lhsnstl.org";"RWITTLER@IU.EDU";"RWITTLER";0.0
+"0000352492";"2018-05-03";"02910504";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1985-05-19";"Kyle";"Davis";"James";"219/210-0425";"kdavis@bps.k12.in.us";"KYJDAVIS@INDIANA.EDU";"KYJDAVIS";0.0
+"0000427555";"2018-05-03";"02910520";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1984-09-04";"Ryan";"McCleary";"Patrick";"765/642-5752";"Funyeppo904@aol.com";"RPMCCLEA@IU.EDU";"RPMCCLEA";0.0
+"0000702623";"2018-05-03";"02910238";"DCTENGDEND";"ENG9";"IUBLA";"F";"1965-01-06";"Barbara";"Handt";"Ann";"812/350-8394";"handtb@bcsc.k12.in.us";"BHANDT@INDIANA.EDU";"BHANDT";0.0
+"0000733226";"2018-11-03";"03007651";"DCTHSTDEND";"NDEG9";"IUSBA";"M";"1959-07-02";"Kevin";"Smith";"Scott";"317/535-4160";"awref1@yahoo.com";"KSS1@IU.EDU";"KSS1";0.0
+"0002075228";"2018-05-03";"02904973";"GCONNPR";"NDEG9";"IUEAA";"F";"1987-09-26";"Amy";"Stark";"Leigh";"812/952-3663";"amyleigh2213@gmail.com";"AMLSTARK@IU.EDU";"AMLSTARK";0.0
+"0002093370";"2018-05-03";"02910692";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1976-08-27";"Tracy";"Bramel";"Lynett";"";"tbramel@mgusc.k12.in.us";"TBRAMEL@IU.EDU";"TBRAMEL";0.0
+"0002565099";"2018-05-03";"02910514";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1991-12-19";"Deonna";"Puckett";"Rose";"317/219-6118";"deonnapuckett@hotmail.com";"DRPUCKET@IU.EDU";"DRPUCKET";0.0
+"0003657360";"2018-11-03";"03005778";"DCTBIODEND";"EDUC9";"IUKOA";"M";"1970-02-23";"Anthony";"Crawford";"Ray";"";"arc97@sbcglobal.net";"ANTHCRAW@IU.EDU";"ANTHCRAW";0.0
+"2000580957";"2018-11-03";"03015159";"DCTPOLDEND";"NDEG9";"IUSEA";"M";"1967-04-09";"Michael";"Sims";"W.";"812/752-8423";"mwsims67@sbcglobal.net";"SIMSMW@IU.EDU";"SIMSMW";0.0
+"0000732590";"2018-05-03";"02904848";"NONDEG";"NDEG9";"IUSEA";"F";"1967-06-30";"Paula";"Workman";"Jean";"812/358-5317";"pwork546@verizon.net";"PJWORKMA@IU.EDU";"PJWORKMA";0.0
+"0000883314";"2018-06-03";"02934361";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1962-09-24";"Victoria";"Fischer";"L.";"812/376-7437";"mike_vicky@comcast.net";"VHARLOW@IUPUI.EDU";"VHARLOW";0.0
+"0001430845";"2018-06-03";"02925140";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1972-12-23";"Rachael";"Ganser";" ";"574/273-0233";"rganser@sbcsc.k12.in.us";"";"";0.0
+"0001506414";"2018-06-03";"02926471";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1965-11-02";"Greg";"Guffey";" ";"765/524-1137";"gguffey@acsc.net";"GRGUFFEY@IU.EDU";"GRGUFFEY";0.0
+"0002207128";"2018-06-03";"02927924";"DCTHSTDEND";"HIST9";"IUBLA";"M";"1972-08-12";"Bryan";"Looker";"Patrick";"574/753-3316";"lookerb@lcsc.k12.in.us";"BLOOKER@IU.EDU";"BLOOKER";0.0
+"0003282257";"2018-05-03";"02910212";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1982-08-17";"Mary";"Stantz";"Ann";"";"mbarendr@gmail.com";"MBARENDR@INDIANA.EDU";"MBARENDR";0.0
+"0003295556";"2018-05-24";"02909380";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1963-01-05";"Richard";"Guipe";"Charles";"317/698-3943";"rguipe@gws.k12.in.us";"RGUIPE@IU.EDU";"RGUIPE";0.0
+"0003657530";"2018-06-03";"02919309";"DCTCOMDEND";"ARTS9";"IUSBA";"F";"1974-08-23";"Lisa";"Keene";" ";"";"lkeene@cps.k12.in.us";"LISKEENE@IU.EDU";"LISKEENE";0.0
+"2000481406";"2018-05-03";"02904936";"GCONNPR";"NDEG9";"IUEAA";"F";"1968-12-05";"Michelle";"McCutcheon";" ";"";"mricks@gccschools.com";"MMCCUTC@IU.EDU";"MMCCUTC";0.0
+"2000488310";"2018-05-03";"02911835";"DCTENGDEND";"COAS9";"IUNWA";"F";"1991-01-26";"Lindsey";"McDowell";" ";"571/480-2437";"lnkaufman12@gmail.com";"LMCDOWE@IU.EDU";"LMCDOWE";0.0
+"0000782254";"2018-08-14";"02936077";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1977-03-17";"Erin";"Havlin";"Marie";"812/654-2080";"khavlin@frontier.com";"EHAVLIN@INDIANA.EDU";"EHAVLIN";0.0
+"0001425713";"2018-05-03";"02910229";"DCTENGDEND";"ENG9";"IUBLA";"F";"1968-09-17";"Karen";"Ball";"Murphy";"765/994-7052";"karenball917@gmail.com";"KARBALL@IUE.EDU";"KARBALL";0.0
+"0001330498";"2018-05-03";"02910508";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1976-09-15";"Brian";"Hawkins";"David";"812/278-3986";"briandavidhawkins@gmail.com";"BDHAWKIN@INDIANA.EDU";"BDHAWKIN";0.0
+"0001445482";"2018-06-03";"02927914";"DCTHSTDEND";"HIST9";"IUBLA";"F";"1973-06-15";"Kimberly";"Miller";"Marie";"574/772-5297";"outtatime73@gmail.com";"KFAVERTY@IU.EDU";"KFAVERTY";0.0
+"0001522361";"2018-05-03";"02913657";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1975-08-12";"Karen";"Koelm";"L.";"219/333-0815";"kkoelm@valpo.k12.in.us";"KKOELM@INDIANA.EDU";"KKOELM";0.0
+"0001628644";"2018-05-03";"02912331";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1985-04-19";"Jennifer";"Teague";"Jo";"";"jjteague@shelbycs.org";"JJBRUMFI@IU.EDU";"JJBRUMFI";0.0
+"2000574336";"2018-11-03";"03008621";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1983-11-15";"Lynette";"Edmiston";"Renee";"";"ledmiston@plymouth.k12.in.us";"LEDMISTO@IU.EDU";"LEDMISTO";0.0
+"0000391189";"2018-06-03";"02928075";"DCTCHMDEND";"NDEG9";"IUEAA";"M";"1977-10-25";"Clark";"Mumaw";" ";"812/949-2055";"cmumaw@nafcs.k12.in.us";"CMUMAW@IU.EDU";"CMUMAW";0.0
+"0000701452";"2018-05-03";"02910533";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1977-04-15";"Denise";"Gornto";"R.";"765/472-7033";"dgornto@peru.k12.in.us";"DGORNTO@INDIANA.EDU";"DGORNTO";0.0
+"0001346689";"2018-05-03";"02913642";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1968-08-31";"Kimberly";"Benton";"A";"812/325-1604";"kbenton@socs.k12.in.us";"KIBENTON@IU.EDU";"KIBENTON";0.0
+"0001407708";"2018-06-03";"02925058";"DCTPOLDEND";"NDEG9";"IUEAA";"F";"1975-05-19";"Michelle";"Miller";"Rae";"";"mremily@hotmail.com";"MREMILY@IU.EDU";"MREMILY";0.0
+"0001585115";"2019-02-11";"03017266";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1968-01-30";"Keith";"Westhoelter";" ";"317/915-0779";"kwesthoelter@gmail.com";"";"";0.0
+"0002268189";"2018-05-03";"02909554";"DCTENGDEND";"ENG9";"IUINA";"F";"1980-09-12";"Gina";"Wright";"M";"574/340-3133";"ginap912@yahoo.com";"GPARRILL@IU.EDU";"GPARRILL";0.0
+"0002463656";"2018-05-03";"02910207";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1991-07-16";"Matthew";"Williams";"Thomas";"912/927-3916";"matyou@sbcglobal.net";"WILLMATT@IU.EDU";"WILLMATT";0.0
+"2000369945";"2018-05-01";"02904969";"GCONNPR";"NDEG9";"IUEAA";"F";"1982-08-15";"Regina";"Warren";"Renee";"574/952-2088";"reginarwarren@gmail.com";"REREWARR@IU.EDU";"REREWARR";0.0
+"2000489163";"2018-05-03";"02914184";"DCTENGDEND";"COAS9";"IUNWA";"M";"1982-10-06";"Joseph";"McGowan";" ";"";"jmmcgowan@gmail.com";"JMCGOWA@IU.EDU";"JMCGOWA";0.0
+"2000566846";"2018-11-03";"02999227";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1978-09-24";"Andrea";"McAlister";" ";"";"amcalister@hse.k12.in.us";"ANMCAL@IU.EDU";"ANMCAL";0.0
+"0001336180";"2018-05-03";"02904991";"NDG";"NDEG9";"IUINA";"F";"1966-03-21";"Missi";"Brewer";" ";"502/296-2236";"mbrewer@gccschools.com";"BREWERME@IU.EDU";"BREWERME";0.0
+"0001642483";"2018-05-03";"02911474";"NDGGRAD";"GRAD9";"IUINA";"F";"1980-03-17";"Alyce";"Myers";"M";"610/974-2675";"";"MYERSALM@IU.EDU";"MYERSALM";0.0
+"0001971702";"2019-03-03";"03052749";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1977-08-10";"Andy";"Krause";" ";"574/875-5370";"akrause@concord.k12.in.us";"ASKRAUSE@IU.EDU";"ASKRAUSE";0.0
+"0002094928";"2018-05-03";"02911758";"DCTENGDEND";"ENG9";"IUINA";"F";"1979-04-17";"Samantha";"Woodard";"Jo";"765/592-5481";"woodards@ncp.k12.in.us";"SAJBRYAN@IU.EDU";"SAJBRYAN";0.0
+"0002200479";"2018-06-03";"02925749";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1981-10-20";"Eric";"Rowland";"Robert";"812/697-5106";"rowlande@shcsc.k12.in.us";"EROWLAND@IUS.EDU";"EROWLAND";0.0
+"0002984179";"2018-05-03";"02913644";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1975-06-06";"Lisa";"Gobel";"Lynn";"";"gobellisa@att.net";"LLGOBEL@INDIANA.EDU";"LLGOBEL";0.0
+"0003142768";"2018-05-03";"02910750";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1968-01-29";"Christine";"Ashmore-Good";"Lynn";"";"cashmore@libertyperry.org";"CASHMORE@INDIANA.EDU";"CASHMORE";0.0
+"0003651323";"2018-05-03";"02910518";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1985-11-06";"Steven";"Lewis";"Zachary";"";"szlewis4220@gmail.com";"SZLEWIS@IU.EDU";"SZLEWIS";0.0
+"0003654870";"2018-05-03";"02912669";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1992-05-22";"Matthew";"Walter";"David";"";"mwalter@unorth.k12.in.us";"WALTERMD@IU.EDU";"WALTERMD";0.0
+"0000328869";"2018-05-03";"02913719";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1983-01-23";"Jason";"McGee";"Daniel";"219/980-3094";"mjcgee@cps.k12.in.us";"JDMCGEE@IU.EDU";"JDMCGEE";0.0
+"0000770952";"2018-05-03";"02912228";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1971-01-17";"Leah Carol";"Fullington";" ";"812/723-0954";"fullingtonc@paoli.k12.in.us";"LCBRUNER@IU.EDU";"LCBRUNER";0.0
+"0001365336";"2018-05-03";"02911727";"DCTENGDEND";"ENG9";"IUINA";"F";"1971-08-04";"Dina";"Koble";"L";"574/265-6356";"dkoble@wanee.org";"DKOBLE@INDIANA.EDU";"DKOBLE";0.0
+"0001878599";"2018-06-03";"02925142";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1986-04-21";"Natalie";"Guest";"Grace";"765/438-6745";"nguest.teach@gmail.com";"NGUEST@IUK.EDU";"NGUEST";0.0
+"0002455684";"2018-05-03";"02912653";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1985-01-10";"Heather";"Oestreich";"Lynn";"";"hpocock@mvsc.k12.in.us";"HPOCOCK@IU.EDU";"HPOCOCK";0.0
+"0002991467";"2018-05-03";"02911747";"DCTENGDEND";"ENG9";"IUINA";"F";"1978-01-09";"Jennifer";"Rosenplot";" ";"";"jrosenplot2@gmail.com";"JROSENPL@IU.EDU";"JROSENPL";0.0
+"2000503868";"2018-06-03";"02926642";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1967-08-19";"Brian";"Todd";"J.";"765/265-9727";"btodd867@gmail.com";"BJTODD@IU.EDU";"BJTODD";0.0
+"0001424040";"2018-06-03";"02922143";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1969-01-27";"Karla";"Rieckers";"Benter";"812/523-5028";"krieckers@btownccs.k12.in.us";"KABRIECK@IU.EDU";"KABRIECK";0.0
+"0002195135";"2018-05-03";"02910524";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1989-01-07";"Evan";"McKalip";"Smith";"812/585-7922";"esmckalip@gmail.com";"EMCKALIP@IU.EDU";"EMCKALIP";0.0
+"0002591993";"2018-11-14";"02946394";"MATHMAT";"NSM6";"IUEAA";"M";"1976-01-29";"Brian";"Nicholson";"Lynn";"2606383035";"bnicholson@sacs.k12.in.us";"NICHOBRL@IU.EDU";"NICHOBRL";0.0
+"0002660086";"2018-05-03";"02910235";"DCTENGDEND";"ENG9";"IUBLA";"F";"1977-05-05";"Katherine";"Canarecci";"Susan";"";"";"KCANAREC@INDIANA.EDU";"KCANAREC";0.0
+"0003656510";"2018-07-12";"02928071";"DCTCHMDEND";"NDEG9";"IUEAA";"F";"1988-06-04";"Laura";"Petty";"Nicole";"";"harris.n.laura@gmail.com";"LNH1@IU.EDU";"LNH1";0.0
+"0003657376";"2018-06-03";"02935161";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1980-12-08";"Tiffany";"Jackson";"Lee";"";"tjackson@acsc.net";"JACKSTIF@IU.EDU";"JACKSTIF";0.0
+"2000488312";"2018-05-03";"02911838";"DCTENGDEND";"COAS9";"IUNWA";"F";"1977-10-01";"Leah";"Pagone";" ";"312/972-4123";"lpagone@union.k12.in.us";"LPAGONE@IU.EDU";"LPAGONE";0.0
+"0000964659";"2018-05-03";"02910631";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1969-01-23";"Wesley";"Stephenson";"Max";"";"wesstephenson2@gmail.com";"WEMSTEPH@INDIANA.EDU";"WEMSTEPH";0.0
+"0001384920";"2018-06-03";"02926775";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1978-02-27";"Kristina";"Retherford";"Marie";"765/552-7344";"kristinaretherford@gmail.com";"KMRETHER@IU.EDU";"KMRETHER";0.0
+"0001425049";"2018-05-03";"02908954";"DCTENGDEND";"ENG9";"IUINA";"F";"1964-09-18";"Valerie";"Hoover";"Sue";"765/480-3660";"valerie.hoover@zebras.net";"VSHOOVER@IU.EDU";"VSHOOVER";0.0
+"0001468578";"2018-11-03";"03008365";"DCTENGDEND";"NDEG9";"IUSBA";"M";"1974-02-19";"Todd";"Cannon";"Ernest";"502/572-8196";"cannon2001@msn.com";"TCANNON@IUS.EDU";"TCANNON";0.0
+"0001805410";"2019-02-08";"03020888";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1950-01-09";"Eugene";"Giorgio";" ";"";"ggiorgio@andreanhs.com";"EGIORGIO@INDIANA.EDU";"EGIORGIO";0.0
+"0002280065";"2018-11-03";"02999257";"DCTCHMDEND";"NDEG9";"IUSEA";"M";"1988-09-30";"Aaron";"Esper";"Timothy";"812/822-2669";"aep7039@gmail.com";"AESPER@IU.EDU";"AESPER";0.0
+"0002376042";"2018-11-01";"02999236";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1973-09-05";"Heather";"Harmeyer";"Lynn";"317/357-0247";"hharmeyer@msn.com";"HHARMEYE@IU.EDU";"HHARMEYE";0.0
+"0002851195";"2018-05-03";"02912508";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1993-05-09";"Amelia";"Claus";"Reneé";"219/663-4397";"ameliaclaus@outlook.com";"ARCLAUS@IU.EDU";"ARCLAUS";0.0
+"2000486748";"2018-05-03";"02910202";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1987-08-26";"Katherine";"Urcuioli";" ";"";"katielfix@gmail.com";"KURCUIOL@IU.EDU";"KURCUIOL";0.0
+"2000486749";"2018-05-03";"02910203";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1989-11-08";"Kori";"Hamm";" ";"";"khamm@knox.k12.in.us";"KORIHAMM@IU.EDU";"KORIHAMM";0.0
+"0001506992";"2018-05-03";"02912063";"DCTENGDEND";"COAS9";"IUNWA";"F";"1966-09-16";"Julie";"Ohlson";"Ann";"574/271-6055";"ohlsonk@sbcglobal.net";"JAOHLSON@IU.EDU";"JAOHLSON";0.0
+"0002083579";"2018-05-03";"02910555";"DCTCOMDEND";"NDEG9";"IUEAA";"M";"1981-07-09";"Joseph";"Urschel";"Hale";"260/229-3821";"urscheljh@wccsonline.com";"JHURSCHE@IU.EDU";"JHURSCHE";0.0
+"0002258996";"2018-05-03";"02909549";"DCTENGDEND";"ENG9";"IUINA";"F";"1988-09-27";"Courtney";"Waters";"Anne";"260/417-7635";"wcourtneyanne@gmail.com";"COWATERS@IU.EDU";"COWATERS";0.0
+"0002274998";"2018-05-03";"02910516";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1988-12-11";"Brian";"Kunze";" ";"574/780-4560";"bkunze@union.k12.in.us";"BKUNZE@IU.EDU";"BKUNZE";0.0
+"0001341039";"2018-06-03";"02923928";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1977-10-18";"Deborah";"Smith";"K";"502/494-6938";"dksmith@nafcs.k12.in.us";"DANDER01@IUS.EDU";"DANDER01";0.0
+"0001365150";"2018-05-03";"02912599";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1976-08-02";"Becki";"Minton";" ";"812/949-7168";"beckiminton@gmail.com";"MINTONR@IU.EDU";"MINTONR";0.0
+"0001642282";"2018-05-03";"02909546";"DCTENGDEND";"ENG9";"IUINA";"F";"1987-07-05";"Ashley";"Smithey";"Mae";"317/431-5147";"PunkyGoGoldFish@yahoo.com";"AMBONHAM@IU.EDU";"AMBONHAM";0.0
+"0002380491";"2018-05-03";"02912489";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1989-07-08";"Kelly";"Berryman";"Anne";"765/469-6320";"kelly.a.berryman@gmail.com";"KELLBERR@IU.EDU";"KELLBERR";0.0
+"0002654231";"2018-05-03";"02909777";"DCTHSTDEND";"NDEG9";"IUSEA";"M";"1982-11-30";"Justin";"Jones";"D";"765/546-1741";"jjones@resc.k12.in.us";"JUDJONE@INDIANA.EDU";"JUDJONE";0.0
+"0002841327";"2018-05-03";"02912239";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1982-12-29";"Ryan";"Scanlan";"Patrick";"";"";"RPSCANLA@INDIANA.EDU";"RPSCANLA";0.0
+"0003447383";"2018-05-03";"02912658";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1990-01-16";"Brittany";"Runge";"Marie";"317/627-8434";"bstephens@gws.k12.in.us";"BRITSTEP@INDIANA.EDU";"BRITSTEP";0.0
+"2000487204";"2018-05-03";"02910561";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1987-09-14";"Courtney";"Hopf";"Anne";"812/631-9758";"chopf@nedubois.k12.in.us";"CAHOPF@IU.EDU";"CAHOPF";0.0
+"0001471260";"2018-06-03";"02919317";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1972-04-20";"Amy";"Blackburn";"Lea";"574/835-5780";"amy.blackburn@zebras.net";"ALTOWNSE@IU.EDU";"ALTOWNSE";0.0
+"0003656506";"2018-05-03";"02908959";"DCTENGDEND";"ENG9";"IUINA";"F";"1962-12-16";"JoAnna";"Mathis";" ";"";"joanna.mathis@frontier.k12.in.us";"JOMATH@IU.EDU";"JOMATH";0.0
+"0000702465";"2018-05-03";"02911301";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1964-02-08";"Laura";"Karnafel";"A";"574/735-2448";"karnafell@lcsc.k12.in.us";"LKARNAFE@INDIANA.EDU";"LKARNAFE";0.0
+"0001492086";"2018-11-03";"02999225";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1975-12-19";"Becky";"Hufty";"Marie";"317/294-1966";"rhufty@hse.k12.in.us";"BHUFTY@IU.EDU";"BHUFTY";0.0
+"0002773087";"2018-05-03";"02911296";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1993-02-14";"Curtis";"Mitchel";"Ray";"260/849-2659";"curtis_mitchel@hotmail.com";"CURTMITC@IU.EDU";"CURTMITC";0.0
+"0002881105";"2018-05-03";"02910767";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1992-11-17";"John William";"Davis";"William";"317/356-5721";"";"DAVIS320@IU.EDU";"DAVIS320";0.0
+"0003656512";"2018-05-03";"02912589";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1960-08-10";"Linda";"Draper";"L.";"";"lindaloudraper@gmail.com";"LLDRAPER@IU.EDU";"LLDRAPER";0.0
+"2000578136";"2018-11-03";"03011753";"DCTHSTDEND";"NDEG9";"IUSBA";"F";"1987-09-21";"Ashley";"Bowling";"Lynn";"812/290-3323";"abowling@risingsun.k12.in.us";"ASHLBOWL@IU.EDU";"ASHLBOWL";0.0
+"0000778106";"2018-06-03";"02926473";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1968-02-24";"Brian";"Richards";"G";"219/872-8170";"brichards@mcas.k12.in.us";"RICHBRG@IU.EDU";"RICHBRG";0.0
+"0001312444";"2018-11-03";"03016918";"DCTLCLDEND";"EDUC9";"IUBLA";"M";"1978-09-28";"Andy";"Heim";" ";"260/437-1186";"heima@nadams.k12.in.us";"ANDYHEIM@IU.EDU";"ANDYHEIM";0.0
+"0001365101";"2018-06-03";"02926643";"DCTHSTDEND";"COAS9";"IUNWA";"M";"1980-01-28";"Adam";"Tolliver";"John";"812/256-3018";"atolliver@gcs.k12.in.us";"AJTOLLIV@IU.EDU";"AJTOLLIV";0.0
+"0001382277";"2018-05-03";"02913646";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1966-10-17";"Sharene";"Martin-Brown";"Ann";"765/210-7577";"sharenebrown@hotmail.com";"SHAMARTI@IUK.EDU";"SHAMARTI";0.0
+"0001520694";"2018-05-03";"02910746";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1964-07-28";"Roger";"Votaw";"K";"260/563-2843";"votawr@msdwc.k12.in.us";"ROVOTAW@INDIANA.EDU";"ROVOTAW";0.0
+"0001679620";"2018-05-03";"02910749";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1983-08-31";"Dustin";"Sewelin";"Lee";"260/602-0759";"dsewelin@gkb.k12.in.us";"DLSEWELI@IU.EDU";"DLSEWELI";0.0
+"0001856911";"2018-06-03";"02928064";"DCTCHMDEND";"NDEG9";"IUEAA";"M";"1965-08-21";"Robert";"Pustek";"A";"219/688-0194";"rapustek@hammond.k12.in.us";"RPUSTEK@IU.EDU";"RPUSTEK";0.0
+"0001887428";"2018-06-03";"02931686";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1985-12-12";"Katie";"Pence";"Bess Walters Martens";"";"katie.martens@gmail.com";"KMARTENS@IU.EDU";"KMARTENS";0.0
+"0002987360";"2018-05-03";"02910507";"DCTPOLDEND";"POLS9";"IUBLA";"F";"1962-07-12";"Lori";"Mazick";"Kathleen";"574/514-7405";"lmazick@sbcglobal.net";"LMAZICK@IU.EDU";"LMAZICK";0.0
+"0003656180";"2018-06-03";"02934082";"DCTPOLDEND";"NDEG9";"IUEAA";"F";"1986-04-18";"Jessica";"Castillo";"Mae";"";"jmcastillo2@hammond.k12.in.us";"JMCASTIL@IU.EDU";"JMCASTIL";0.0
+"2000487380";"2018-06-01";"02936078";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1967-12-29";"Paula";"Carlisle";" ";"812/664-5547";"pdcarlisle@gmail.com";"PCARLIS@IU.EDU";"PCARLIS";0.0
+"2000502316";"2018-06-03";"02926042";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1985-12-17";"Joseph";"Wharton";" ";"260/580-8070";"jwharton@concord.k12.in.us";"JOSEWHAR@IU.EDU";"JOSEWHAR";0.0
+"2000573690";"2018-11-03";"03007489";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1988-03-13";"Leah";"Stoltzfus";" ";"740/541-2853";"lstoltzfus@lakelandlakers.net";"LSTOLTZF@IU.EDU";"LSTOLTZF";0.0
+"0000126387";"2018-11-03";"03007633";"DCTENGDEND";"EDUC9";"IUKOA";"M";"1978-08-14";"James";"Helsley";"W";"317/498-4983";"jhelsley@ses.k12.in.us";"JAHELSLE@IU.EDU";"JAHELSLE";0.0
+"0001027364";"2018-11-03";"03009030";"DCTCHMDEND";"NDEG9";"IUSEA";"M";"1967-12-04";"Timothy";"Barricklow";"Dwight";"765/855-0654";"timmybjacquez@gmail.com";"TDBARRIC@IU.EDU";"TDBARRIC";0.0
+"0001407474";"2018-06-03";"02934444";"DCTPOLDEND";"NDEG9";"IUEAA";"M";"1974-02-12";"Vincent";"Huffman";"S";"574/722-7880";"huffmanv@caston.k12.in.us";"VHUFFMAN@IU.EDU";"VHUFFMAN";0.0
+"0001418331";"2018-05-03";"02910134";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1976-11-19";"Rebecca";"Fields";"Ann";"317/935-2426";"rschini@iu.edu";"RSCHINI@IUPUI.EDU";"RSCHINI";0.0
+"0001589033";"2018-05-03";"02908948";"DCTENGDEND";"ENG9";"IUINA";"M";"1964-08-19";"Wallace";"Austin";"James";"812/951-3416";"waustin@nafcs.org";"WAUSTIN@IU.EDU";"WAUSTIN";0.0
+"0001712382";"2018-06-03";"02926766";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1982-04-17";"Melissa";"Pearce";"Christine";"219/123-4567";"melissapearce1982@gmail.com";"MCWRIGHT@INDIANA.EDU";"MCWRIGHT";0.0
+"0001962580";"2018-05-03";"02904837";"GCONNPR";"NDEG9";"IUEAA";"M";"1986-11-14";"Matthew";"Van Vlymen";"Andrew";"219/308-8261";"mattvanvlymen3@gmail.com";"MVANVLYM@IU.EDU";"MVANVLYM";0.0
+"0002051015";"2019-02-11";"03005319";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1979-06-13";"Shanna";"McCabe";"Joanne";"317/775-2052";"";"";"SBOHDAN";0.0
+"0003657633";"2018-05-03";"02919442";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1982-12-14";"Nicole";"Weber";"Marie";"";"nweber@highland.k12.in.us";"NIWEBER@IU.EDU";"NIWEBER";0.0
+"2000488308";"2018-05-03";"02911832";"DCTENGDEND";"COAS9";"IUNWA";"F";"1985-07-31";"Kristyn";"Gabbert";" ";"812/781-2557";"kgabbert@evdio.org";"KGABBER@IU.EDU";"KGABBER";0.0
+"2000575067";"2018-11-03";"03009010";"DCTPOLDEND";"NDEG9";"IUSEA";"M";"1994-01-19";"Jacob";"Stilwell";"Michael";"";"jstilwell@flcs.k12.in.us";"JMSTILWE@IU.EDU";"JMSTILWE";0.0
+"0000395202";"2018-05-03";"02911827";"DCTENGDEND";"COAS9";"IUNWA";"F";"1978-12-10";"Sarah";"Craft";"Penner";"812/283-5681";"scraft@westclarkschools.com";"SAPBLACK@IUS.EDU";"SAPBLACK";0.0
+"0001301885";"2018-05-03";"02912062";"DCTENGDEND";"COAS9";"IUNWA";"F";"1977-07-15";"Jill";"McGrath";"Hope";"317/370-4792";"jmcgrath@hse.k12.in.us";"JHWALLIN@INDIANA.EDU";"JHWALLIN";0.0
+"0001505076";"2018-05-03";"02910231";"DCTENGDEND";"ENG9";"IUBLA";"F";"1971-07-04";"Heather";"Beach";"Jane";"";"july4beach@gmail.com";"HBEACH@IU.EDU";"HBEACH";0.0
+"0001983303";"2018-06-03";"02919323";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1975-03-05";"Angela";"Smith";"Gayle";"269/231-6035";"asmith@npusc.k12.in.us";"SMITHAG@IU.EDU";"SMITHAG";0.0
+"0002409106";"2018-06-27";"02836631";"EDLREDD";"EDUC5";"IUBLA";"M";"1990-09-16";"Todd";"Alexander";"Edward";"502/303-1717";"talexander@salemschools.com";"TODALEXA@IUS.EDU";"TODALEXA";0.0
+"0002629529";"2018-05-03";"02910747";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1992-11-06";"Cassondra";"Winn";"Lynn";"317/408-6694";"cassondrawinn@gmail.com";"CLCOUCH@IU.EDU";"CLCOUCH";0.0
+"0003054372";"2018-05-03";"02910523";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1977-06-07";"Amy";"Crane";"C";"";"acrane@marquette-hs.org";"ACCRANE@IU.EDU";"ACCRANE";0.0
+"0003654379";"2018-04-25";"02868316";"MATHMAT";"NSM6";"IUEAA";"M";"1989-07-08";"Caleb";"Grim";"Stephen";"";"caleb.grim@gmail.com";"CSGRIM@IU.EDU";"CSGRIM";0.0
+"0003654396";"2018-05-03";"02910205";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1964-07-31";"Diana";"Welch";"Marie";"";"dwelch@providencehigh.net";"DIAWELCH@IU.EDU";"DIAWELCH";0.0
+"0003656272";"2018-05-03";"02910759";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1966-03-14";"Stacy";"Snoble";"Elizabeth";"";"sesnoble@gmail.com";"SESNOBLE@IU.EDU";"SESNOBLE";0.0
+"0003657333";"2018-05-03";"02909559";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1979-08-14";"Chelsey";"Correll";"Marie";"";"chelsey.correll@zebras.net";"CHEMCORR@IU.EDU";"CHEMCORR";0.0
+"2000488309";"2018-05-03";"02911834";"DCTENGDEND";"COAS9";"IUNWA";"F";"1982-06-21";"Christan";"Lauck";" ";"317/446-9024";"lauckcl@live.com";"CHRLAUCK@IU.EDU";"CHRLAUCK";0.0
+"0000925151";"2018-06-03";"02927911";"DCTHSTDEND";"HIST9";"IUBLA";"F";"1967-09-13";"Claudia";"Johnson";"Christine";"";"christine.johnson@wayne.k12.in.us";"CLCHJOHN@IUPUI.EDU";"CLCHJOHN";0.0
+"0001469019";"2016-10-28";"02663250";"MATHDEGCRT";"NSM6";"IUEAA";"M";"1977-09-08";"Joseph";"Oakes";"Dwayne";"812/972-0580";"joakes812@gmail.com";"JOAKES@IUS.EDU";"JOAKES";0.0
+"0001729469";"2018-06-03";"02930953";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1983-01-27";"Kate";"Dean";"Elisabeth";"574/299-1446";"butterflybyvt@hawaii.com";"";"KECHARLE";0.0
+"0002019284";"2018-05-03";"02910204";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1983-08-26";"Carrie";"Bilodeau";"Ann";"803/627-4461";"cbilodeau@risingsun.k12.in.us";"CBILODEA@IU.EDU";"CBILODEA";0.0
+"0002154082";"2018-05-03";"02912650";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1989-04-07";"Andrew";"Nance";"Charles";"317/446-6257";"acnance@shelbycs.org";"ANCNANCE@IU.EDU";"ANCNANCE";0.0
+"0003619076";"2018-05-03";"02908206";"GERGRNDG";"GER9";"IUBLA";"F";"1986-08-20";"Rachel";"Windell";"Elizabeth";"219/776-4077";"rachelwi@ohusc.k12.in.us";"REWINDEL@IU.EDU";"REWINDEL";0.0
+"0003656564";"2018-05-03";"02910745";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1994-05-25";"Jordan";"Kibler";"Kyle";"";"jkibler@shenry.k12.in.us";"JKKIBLER@IU.EDU";"JKKIBLER";0.0
+"2000516064";"2018-06-03";"02937299";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1962-06-15";"Lori";"White";" ";"";"lmwhite3016@gmail.com";"WHITELOR@IU.EDU";"WHITELOR";0.0
+"0001482221";"2018-05-03";"02904962";"GCONNPR";"NDEG9";"IUEAA";"F";"1968-03-02";"Carol";"Kazmierczak";"Anne";"317/755-9727";"teacherkaz@gmail.com";"CAKAZMIE@INDIANA.EDU";"CAKAZMIE";0.0
+"0001953420";"2018-05-03";"02910498";"DCTENGDEND";"ENG9";"IUBLA";"F";"1978-01-16";"Melanie";"Preston";"Stinson";"812/522-5470";"mpreston@btownccs.k12.in.us";"MSPRESTO@IU.EDU";"MSPRESTO";0.0
+"0002343470";"2018-06-01";"02923304";"DCTCOMDEND";"COMM9";"IUINA";"F";"1956-09-11";"Rhonda";"Bower";"A";"260/543-2094";"rhonda.bower@nwcs.k12.in.us";"RHBOWER@IU.EDU";"RHBOWER";0.0
+"0003640035";"2018-05-03";"02910752";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1965-03-22";"John";"Zakelj";"A";"";"jzakelj@resc.k12.in.us";"JZAKELJ@INDIANA.EDU";"JZAKELJ";0.0
+"0001439610";"2018-05-03";"02904987";"NDG";"NDEG9";"IUINA";"M";"1974-11-17";"Geoffrey";"Mauck";"William";"";"gmauck@gjcs.k12.in.us";"GMAUCK@IU.EDU";"GMAUCK";0.0
+"0001482221";"2018-05-03";"02913650";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1968-03-02";"Carol";"Kazmierczak";"Anne";"317/755-9727";"teacherkaz@gmail.com";"CAKAZMIE@INDIANA.EDU";"CAKAZMIE";0.0
+"0001500303";"2018-08-14";"02923532";"FRENGRNDG";"FRIT9";"IUBLA";"F";"1981-07-19";"Elise";"Tiller";"Katherine";"812/876-0710";"aetiller@bluemarble.net";"ELABERGE@INDIANA.EDU";"ELABERGE";0.0
+"0001520782";"2018-11-03";"03017393";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1965-12-19";"Kirsten";"Reed";"Alexine";"219/929-8528";"KREED@DUNELAND.K12.IN.US";"KIRREED@IU.EDU";"KIRREED";0.0
+"0002231102";"2018-05-03";"02910505";"DCTPOLDEND";"POLS9";"IUBLA";"M";"1988-06-19";"Byron";"Faulstich";"James";"";"shureshot_007@yahoo.com";"BFAULSTI@IU.EDU";"BFAULSTI";0.0
+"0003656506";"2018-05-03";"02912237";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1962-12-16";"JoAnna";"Mathis";" ";"";"joanna.mathis@frontier.k12.in.us";"JOMATH@IU.EDU";"JOMATH";0.0
+"0003657373";"2018-05-03";"02910556";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1960-05-10";"Terri";"Gibson";"Lynn";"";"tgibson@daleville.k12.in.us";"TERGIBSO@IU.EDU";"TERGIBSO";0.0
+"0003657584";"2018-05-03";"02912242";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1980-11-26";"Amanda";"Rowe";"Rae";"";"arrowe@tsc.k12.in.us";"AMAROWE@IU.EDU";"AMAROWE";0.0
+"2000489719";"2018-05-03";"02912654";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1963-12-09";"Bryan";"Ratliff";"Scott";"765/730-1545";"bsratliff@yahoo.com";"BSRATLIF@IU.EDU";"BSRATLIF";0.0
+"0000622357";"2018-06-03";"02930449";"DCTHSTDEND";"HIST9";"IUBLA";"F";"1958-11-25";"Sharon";"Neal";"Lynn";"";"mmr3suns@gmail.com";"SLNEAL@INDIANA.EDU";"SLNEAL";0.0
+"0001427004";"2018-06-03";"02927919";"DCTHSTDEND";"HIST9";"IUBLA";"M";"1974-05-21";"Colin";"May";"M";"219/476-1834";"roncolin@msn.com";"COMAY@IU.EDU";"COMAY";0.0
+"0001863906";"2018-05-03";"02911719";"DCTENGDEND";"ENG9";"IUINA";"F";"1977-06-11";"Licia";"Gerber";"Dee";"574/255-1767";"gerberl@mishawaka.k12.in.us";"LDLAYSON@IUSB.EDU";"LDLAYSON";0.0
+"0002864521";"2018-05-03";"02910531";"DCTCOMDEND";"NDEG9";"IUEAA";"M";"1992-07-10";"Dylan";"Gentilcore";"Anthony";"";"dgentilc@ccs.k12.in.us";"DGENTILC@IU.EDU";"DGENTILC";0.0
+"0002997347";"2018-05-03";"02912595";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1985-12-07";"Elena";"Fine";"Kathleen";"";"ekfine@gmail.com";"ELFINE@IUPUI.EDU";"ELFINE";0.0
+"0003657802";"2018-06-03";"02927585";"DCTCHMDEND";"NDEG9";"IUSEA";"F";"1993-04-16";"Megan";"Glaze";"Lynn";"";"mglaze@mcas.k12.in.us";"MLGLAZE@IU.EDU";"MLGLAZE";0.0
+"2000487357";"2018-05-03";"02910690";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1974-01-01";"Ronda";"Waters";"Ann";"219/789-1153";"rwaters@mvsc.k12.in.us";"ROWATERS@IU.EDU";"ROWATERS";0.0
+"2000488219";"2018-05-03";"02911753";"DCTENGDEND";"NDEG9";"IUEAA";"M";"1987-06-19";"Kendra";"McPheeters";"Jo";"765/376-3256";"kmcpheeters@tricreek.k12.in.us";"KMCPHEE@IU.EDU";"KMCPHEE";0.0
+"0001015346";"2018-05-03";"02904835";"NDGGRAD";"GRAD9";"IUINA";"F";"1965-01-14";"June";"Yazel";"Anne";"574/551-7688";"yazelj@tvsc.k12.in.us";"JYAZEL@IU.EDU";"JYAZEL";0.0
+"0001515763";"2018-05-03";"02914268";"DCTENGDEND";"COAS9";"IUNWA";"F";"1963-01-19";"Eugenia";"Badger";"Elaine";"812/256-3830";"ebadger@westclarkschools.com";"EEBADGER@IUPUC.EDU";"EEBADGER";0.0
+"0001642282";"2018-05-03";"02911437";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1987-07-05";"Ashley";"Smithey";"Mae";"317/431-5147";"PunkyGoGoldFish@yahoo.com";"AMBONHAM@IU.EDU";"AMBONHAM";0.0
+"0002527518";"2018-06-03";"02926041";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1990-12-17";"Cassie";"Schwietert";"Anne";"847/577-2421";"caschwie@gmail.com";"CASCHWIE@IU.EDU";"CASCHWIE";0.0
+"0002821113";"2018-11-03";"03016607";"DCTLCLDEND";"EDUC9";"IUBLA";"F";"1976-06-05";"Maggie";"Clark";"Jo";"";"epep_eiteews@hotmail.com";"MCGUSCHW@INDIANA.EDU";"MCGUSCHW";0.0
+"0003656183";"2018-06-03";"02934345";"DCTENGDEND";"NDEG9";"IUEAA";"F";"1983-03-23";"Cortny";"Barnes";"Lee";"";"cortny.barnes@gmail.com";"CORTBARN@IU.EDU";"CORTBARN";0.0
+"0003656396";"2018-05-03";"02904983";"NDG";"NDEG9";"IUINA";"F";"1976-09-10";"Natalie";"Hodge";"Sue";"";"nhodge@sputnam.k12.in.us";"NHODGE@IU.EDU";"NHODGE";0.0
+"0003657638";"2018-05-03";"02912660";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1969-10-07";"Jolene";"Smith";"Marie";"";"jmsmith@cps.k12.in.us";"JMS13@IU.EDU";"JMS13";0.0
+"2000485830";"2018-05-03";"02909548";"DCTENGDEND";"ENG9";"IUINA";"F";"1985-09-04";"Juli";"Wakeman";" ";"317/445-1875";"jmwakeman@gmail.com";"JWAKEMAN@IU.EDU";"JWAKEMAN";0.0
+"2000593659";"2018-11-03";"03025171";"DCTENGDEND";"COAS9";"IUNWA";"F";"1978-11-02";"Jessica";"Neild";"Lynn";"765/744-0712";"jneild@nputnam.k12.in.us";"JNEILD@IU.EDU";"JNEILD";0.0
+"0001397785";"2018-05-03";"02910739";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1969-06-02";"Rose";"Dodson";"Anne";"574/586-7032";"drdodson@fourway.net";"RREDINGE@IU.EDU";"RREDINGE";0.0
+"0001479871";"2018-05-03";"02910748";"DCTCHMDEND";"COAS9";"IUNWA";"M";"1976-10-12";"Scott";"Miller";"Charles";"260/726-0772";"smiller@jayschools.k12.in.us";"SCOMILLE@IU.EDU";"SCOMILLE";0.0
+"0001674902";"2018-05-03";"02904816";"NDGGRAD";"GRAD9";"IUINA";"F";"1985-04-13";"Megan";"Kinsey";"Danielle";"765/977-6970";"mkinsey711@gmail.com";"MPENTECO@IU.EDU";"MPENTECO";0.0
+"0002102494";"2018-05-03";"02912602";"DCTMTHDEND";"NDEG9";"IUEAA";"M";"1987-12-01";"Anthony";"Moorman";"Michael";"812/623-3304";"antmoorman_06@yahoo.com";"AMMOORMA@IU.EDU";"AMMOORMA";0.0
+"0002708144";"2018-06-03";"02934443";"DCTMTHDEND";"NDEG9";"IUEAA";"F";"1992-07-26";"Ellie";"O'Neal";" ";"812/230-7431";"ellie.oneal2015@gmail.com";"ELLSCHAE@IU.EDU";"ELLSCHAE";0.0
+"0003657328";"2018-05-03";"02910131";"DCTBIODEND";"NDEG9";"IUEAA";"F";"1987-06-08";"Kathryn";"Mueller";"Ellen";"";"kmueller@duneland.k12.in.us";"MUELLEKE@IU.EDU";"MUELLEKE";0.0
+"2000487182";"2018-05-03";"02910536";"DCTCOMDEND";"NDEG9";"IUEAA";"F";"1969-09-16";"Martha";"Doyle";" ";"765/299-2070";"mdoyle@tsc.k12.in.us";"MARTDOYL@IU.EDU";"MARTDOYL";0.0
+"2000487382";"2018-05-03";"02910769";"DCTCHMDEND";"COAS9";"IUNWA";"F";"1968-11-06";"Michelle";"Ruane";" ";"630/913-5505";"mruane@mvsc.k12.in.us";"MRUANE@IU.EDU";"MRUANE";0.0
+"2000571590";"2019-03-03";"03052037";"DCTCHMDEND";"NDEG9";"IUSBA";"F";"1990-01-30";"Josie";"Senko";"E";"";"senkoj@bcsc.k12.in.us";"JSENKO@IU.EDU";"JSENKO";0.0
+"0001322945";"2017-05-05";"02755752";"GERGRNDG";"GER9";"IUBLA";"F";"1967-04-02";"Beate";"Westerhouse";"Elisabeth";"317/290-0994";"bwesterhouse@perryschools.org";"BWESTERH@IUPUI.EDU";"BWESTERH";0.0
+"0001425068";"2018-06-01";"02919378";"DCTCOMDEND";"NDEG9";"IUEAA";"M";"1966-08-09";"Timothy";"Perry";"Alan";"812/522-4362";"";"TIMAPERR@IU.EDU";"TIMAPERR";0.0
+"0001681287";"2018-11-03";"02999248";"DCTBIODEND";"EDUC9";"IUKOA";"M";"1966-07-06";"Brian";"Elston";"Scott";"219/743-3512";"belston@cps.k12.in.us";"BSELSTON@IU.EDU";"BSELSTON";0.0
+"0001697290";"2018-05-03";"02910148";"DCTBIODEND";"NDEG9";"IUEAA";"M";"1979-12-26";"Gregory";"Alberding";"M";"219/575-0236";"galberding@lpcsc.k12.in.us";"GALBERDI@IU.EDU";"GALBERDI";0.0
+"0001701010";"2018-05-03";"02904840";"NONDEG";"NDEG9";"IUSEA";"M";"1968-11-27";"Scott";"Royer";"Joseph";"765/447-3647";"sroyer@tsc.k12.in.us";"JOROYER@IU.EDU";"JOROYER";0.0
+"0001903641";"2018-05-03";"02911744";"DCTENGDEND";"ENG9";"IUINA";"F";"1970-04-27";"Tica";"Rogers";"L";"765/461-5048";"tica.rogers@nwsc.k12.in.us";"TILROGER@IU.EDU";"TILROGER";0.0
+"2000580363";"2018-11-03";"03014433";"DCTENGDEND";"EDUC9";"IUKOA";"F";"1985-05-28";"Jessica";"Eubank";"Rachel";"574/360-3216";"jeubank@wanee.org";"JESSEUBA@IU.EDU";"JESSEUBA";0.0

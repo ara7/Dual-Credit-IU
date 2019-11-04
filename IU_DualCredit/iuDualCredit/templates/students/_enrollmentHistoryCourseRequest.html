@@ -1,0 +1,93 @@
+<section id="enrollmentHistory">
+    <div class="container card">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-12 mb-12">
+                <div class="card">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4> Enrollement History </h4>
+                    </div>
+                    {% if enrollmentHistoryDetailsList %}
+                    <div class="card-body">
+                        <table class="table" style="text-align: left">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course</th>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Term</th>
+                                    <th scope="col">Enrollment</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Credit Hours</th>
+                                    <!-- <th scope="col">Funding</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for enrollmentHistoryDetails in enrollmentHistoryDetailsList %}
+                                    <tr>
+                                        {% for enrollmentHistoryDetail in enrollmentHistoryDetails %}
+                                            <td>{{ enrollmentHistoryDetail }}</td>
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="col-md-12">
+                        <p>
+                            No Enrollment History Details
+                        </p>
+                    </div>
+                    
+                    {% endif %}
+                </div>
+
+                <br />            
+                <br />
+            </div>
+            
+            <div class="col-md-12 col-lg-12 mb-12">
+                <div class="card">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4> Course Request </h4>
+                    </div>
+                    {% if courseDetailsList %}
+                    <div class="card-body">
+                        <table class="table" style="text-align: center">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Requested</th>
+                                    <th scope="col">Course Number</th>
+                                    <th scope="col">Class Number</th>
+                                    <th scope="col">Decision Date</th>
+                                    <!-- <th scope="col">Choice Number</th>
+                                    <th scope="col">Decision</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {% for courseDetails in courseDetailsList %}
+                                    <tr>
+                                        {% for courseDetail in courseDetails %}
+                                            <td>{{ courseDetail }}</td>
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    {% else %}
+                    <div class="col-md-12">
+                        <p>
+                            No Course  Details
+                        </p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>

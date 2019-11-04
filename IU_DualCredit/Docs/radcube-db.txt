@@ -1,0 +1,9 @@
+Driver: mysql (MariaDB)
+Host: bl-vpue-hulk.ovpue.indiana.edu
+Accessible from: bl-vpue-radcube.ovpue.indiana.edu
+User: acp-rc
+Password: 30205FEfaF250
+Database: acp_instructors_rc_dev
+Charset: utf8mb4
+Collation: utf8mb4_unicode_ci
+Prefix: [none]

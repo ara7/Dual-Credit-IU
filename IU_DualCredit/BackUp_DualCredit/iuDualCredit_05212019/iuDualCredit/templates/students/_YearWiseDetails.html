@@ -1,0 +1,103 @@
+<section id="YearWiseDetails" class="bg-light py-5">
+        <div class="container card">
+            <div class="card-header bg-Crimson text-white">
+                <h4> Year Wise Details </h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12 align-items-center">
+                        <div id="tabs">
+                            <ul>
+                                <!--{% for tabsList in tabsLists %}
+                                    {% for key, values in tabsList.items %}
+                                        <li><a class="info_link" href="{{values}}">{{values}}</a></li>
+                                    {% endfor %}
+                                {% endfor %}-->
+
+                                <li><a class="info_link" href="4158">4158</a></li>
+                                <li><a class="info_link" href="4188">4188</a></li>
+                            </ul>
+                            
+                            <div id="tabContent" class="col-md-6 align-items-center">
+
+                                <!--{% for tabsList in tabsLists %}
+                                    {% for key, values in tabsList.items %}
+                                        <div id="{{values}}">
+                                            <table style="align-content: center">
+                                                <tr>
+                                                    <td>
+                                                        <label>{{key}} :</label>
+                                                        <span> {{values}} </span>
+                                                    </td>
+                                                    <td>
+                                                        <label>{{key}} :</label>
+                                                        <span> {{values}} </span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    {% endfor %}
+                                {% endfor %}-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+{% block javascript %}
+
+    <<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+        
+        $(document).ready(function(){
+            $( "#tabs" ).tabs();
+
+            $('.info_link').click(function(){
+                
+                $("#tabContent").empty();
+
+                var studentUid = '2001696690'; //$(this).attr('href');
+                var year = $(this).attr('href');
+
+                $.ajax({
+                    url:"/students/studentYearWiseDetails/",
+                    dataType: 'json',
+                    data: {
+                        'studentUid': studentUid,
+                        'academicYear': year
+                    },
+                    success: function(data) {
+                        var tr=[];
+                        console.log(data);
+                        studentYearWiseDetails = data.studentYearWiseDetails;
+                        for (var i = 0; i < studentYearWiseDetails.length; i++) {
+                           tr.push('<tr>');
+                           tr.push("<td> Qualitrics a0pplication ID: </td>");
+                           tr.push("<td>" + studentYearWiseDetails[i][0] + "</td>");
+                           tr.push("<td>" +  ' ' + "</td>");
+                           tr.push("<td>" + studentYearWiseDetails[i][1] + "</td>");
+                           tr.push('</tr>');
+                        }
+                        $('tbody').append($(tr.join('')));
+                    },
+                    error: function(data) {
+                        console.log(data); 
+                    }
+                });
+
+            });
+
+        });
+    </script>
+{% endblock %}
+
+
+

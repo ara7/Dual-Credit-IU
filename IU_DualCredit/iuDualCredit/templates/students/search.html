@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'students' %}">
+                        <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'students' %}">Student Search</a>
+                </li>
+                <li class="breadcrumb-item active">Search Results</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+
+<section id="courseSearch" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="container">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4>Search</h4>
+                    </div>
+
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="user_name">User Name</label>
+                            <input type="text" id="user_name" name="user_name" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="uid">UID</label>
+                            <input type="text" id="uid" name="uid" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="first_name">Student First Name</label>
+                            <input type="text" id="firstname" name="first_name" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="last_name">Student Last Name</label>
+                            <input type="text" id="lastname" name="last_name" class="form-control" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="campusofEnrollment">Campus of Enrollment</label>
+                            <select id="campusofEnrollment" name="campusofEnrollment" class="form-control">
+                                <option selected="true" disabled="disabled">Select</option>
+                                    {% for campuss in campuses %}
+                                        <option value="{{ campuss }}"
+                                            {% if campuss == values.campus %}
+                                                selected
+                                            {% endif %}
+                                        >{{ campuss }}</option>
+                                    {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="dc_partner">DC Partner</label>
+                            <select id="dcPartner" name="dc_partner" class="form-control">
+                                <option selected="true" disabled="disabled">Select</option>
+                                {% for dcPartner in dcPartners %}
+                                    <option value="{{ dcPartner }}"
+                                            {% if dcPartner == values.dcPartner %}
+                                                selected
+                                            {% endif %}
+                                    >{{ dcPartner }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <!--<div class="col-md-6 mb-3">
+                            <label for="student_type">Student Type</label>
+                            <select id="studentType" name="term" class="form-control" id="type">
+                                <option selected="true" disabled="disabled">Select</option>
+                                    {% for studentType in StudentTypes %}
+                                        <option value="{{ studentType }}"
+                                            {% if campuss == values.StudentType %}
+                                                selected
+                                            {% endif %}
+                                        >{{ studentType }}</option>
+                                    {% endfor %}
+                            </select>
+                        </div>-->
+
+                    </div>
+
+                    <div class="form-row">
+                        
+                        <div class="col-md-6 ">
+                            <label class="container checkbox">
+                                <input type="checkbox" id="currently_enrolled" name="currently_enrolled">
+                                <span class="checkmark">Currently Enrolled</span>
+                            </label>
+
+                            <!--<label class="container checkbox">
+                                <input type="checkbox" id="pending_enrollment" name="pending_enrollment">
+                                <span class="checkmark">Pending Enrollment Requests</span>
+                            </label>-->
+
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+
+                        <div class="col-md-6 mb-3 text-right">
+                            <input type="submit" id="btnSearch" value="Search" class="btn bg-Crimson text-white text-center ">
+                        </div>
+
+                        <div class="col-md-6 mb-3 text-right">
+                            <input id="btnExport" value="Export" style="width:20%" class="btn bg-Crimson text-white text-center">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Student Details -->
+<section id="studentsGrid" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-header bg-Crimson text-white">  
+                        <h3>Student Details</h3>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Uid</th>
+                                <th scope="col">Student Name</th>
+                                <th scope="col">DC Partner</th>
+                                <!--<th scope="col">Pending Course Request Date</th>-->
+                                <th scope="col">Course Choice</th>
+                                <th scope="col">Second Course Choice</th>
+                                <th scope="col">Credit Hours Earned</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Campus Affiliation</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="pagination"></div>
+        </div>
+</section>
+{% endblock %}
+
+
+{% block javascript %}
+
+    <!-- <script src="https://cdn.bootcss.com/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> -->
+
+    <script language="javascript" type="text/javascript">
+        
+                      
+        $(document).ready(function() {
+
+            $("#btnSearch").click(function(event) {
+                
+                var username = $('#user_name').val();
+                var uid = $('#uid').val();
+                var firstname = $('#firstname').val();
+                var lastname = $('#lastname').val();
+                var campusOfenrollment = $('#campusofEnrollment').val();
+                var studentType = $('#studentType').val();
+                var dcPartner = $('#dcPartner').val();
+                var currentlyEnrolled = $('#currently_enrolled').is(":checked");
+                
+                $.ajax({
+                      url:"/students/studentsearch/",
+                      dataType: 'json',
+                      data: {
+                        'username': username,
+                        'uid' : uid,
+                        'firstname': firstname,
+                        'lastname': lastname,
+                        'campusOfenrollment': campusOfenrollment,
+                        'studentType': studentType,
+                        'dcPartner': dcPartner,
+                        'currentlyEnrolled': currentlyEnrolled
+                      },
+                      success: function(data) {
+                        $("#tbody").empty();
+                        
+                        var tr=[];
+                        studentDetails = data.studentDetails;
+                        for (var i = 0; i < studentDetails.length; i++) {
+                            tr.push('<tr>');
+                            tr.push("<td>" + isEmpty(studentDetails[i][0]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][1]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][2]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][3]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][4]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][5]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][6]) + "</td>");
+                            tr.push("<td>" + isEmpty(studentDetails[i][7]) + "</td>");
+                            tr.push("<td>" +  
+                                "<button type='button' id='btnViewDetails" + i + "' class='btn btn-primary' onclick='ViewDetails(this);'> View Details </button>"
+                                + "</td>");
+                            tr.push('</tr>');
+                        }
+                        $('tbody').append($(tr.join('')));
+                        //paging();
+                        pagination();
+                      },
+                      error: function(data) {
+                        console.log(data); 
+                        alert("Error Occured"); 
+                      }
+                });
+                return false;                
+            });
+
+
+            $("#btnExport").click(function () {
+
+                var username = $('#user_name').val();
+                var uid = $('#uid').val();
+                var firstname = $('#firstname').val();
+                var lastname = $('#lastname').val();
+                var campusOfenrollment = $('#campusofEnrollment').val();
+                var studentType = $('#studentType').val();
+                var dcPartner = $('#dcPartner').val();
+                var currentlyEnrolled = $('#currently_enrolled').val();
+                var pendingEnrollmentReq = $('#pending_enrollment').val();
+    
+                $.ajax({
+                    url: '/students/exportcsv',
+                    type : 'POST',
+                    data: {
+                        'username': username,
+                        'uid' : uid,
+                        'firstname': firstname,
+                        'lastname': lastname,
+                        'campusOfenrollment': campusOfenrollment,
+                        'studentType': studentType,
+                        'dcPartner': dcPartner,
+                        'currentlyEnrolled': currentlyEnrolled,
+                        'pendingEnrollmentReq': pendingEnrollmentReq,
+                        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                    },
+                    error:function(xhr,errmsg,err) {
+                        const csvData = (xhr.responseText);
+                        const blob = new Blob ([csvData], {type: 'text/csv'});
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.setAttribute('hidden', '');
+                        a.setAttribute('href', url);
+                        a.setAttribute('download', 'students.csv');
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        alert("File Downloaded Successfully");
+                    }
+                });
+            });
+
+            function pagination() {
+
+                var items = $("#tbody tr");
+
+                var numItems = items.length;
+                var perPage = 10;
+
+                // Only show the first 2 (or first `per_page`) items initially.
+                items.slice(perPage).hide();
+
+                // Now setup the pagination using the `#pagination` div.
+                $("#pagination").pagination({
+                    items: numItems,
+                    itemsOnPage: perPage,
+                    cssStyle: "light-theme",
+
+                    // This is the actual page changing functionality.
+                    onPageClick: function(pageNumber) {
+                        // We need to show and hide `tr`s appropriately.
+                        var showFrom = perPage * (pageNumber - 1);
+                        var showTo = showFrom + perPage;
+
+                        // We'll first hide everything...
+                        items.hide()
+                             // ... and then only show the appropriate rows.
+                             .slice(showFrom, showTo).show();
+                    }
+                });
+            }
+        });
+
+
+        function ViewDetails(ctl) {
+                
+            var _row = $(ctl).parents("tr");
+            var cols = _row.children("td");
+            var studentUid = $(cols[0]).text();
+            
+            //alert(studentUid);
+            //console.log(studentUid);
+            
+            var url = "/students/studentDetailView/" + studentUid;
+            window.location.href = url;
+        }
+
+        function isEmpty(strValue) {
+            if(!strValue || 0 === strValue.length){
+                return 'None'
+            }
+            return strValue
+        }
+
+        /*
+        function paging() {
+
+            $('.table').each(function () {
+            
+                var currentPage = 0;
+                var numPerPage = 4; // number of items 
+                var $table = $(this);
+
+                $table.bind('repaginate', function () {
+                    $table.find('tbody tr').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
+                });
+
+                $table.trigger('repaginate');
+
+                var numRows = $table.find('tbody tr').length;
+                var numPages = Math.ceil(numRows / numPerPage);
+                var $pager = $('<div class="pager"></div>')
+                
+                $('.pager').empty();
+                
+                for (var page = 0; page < numPages; page++) {
+
+                    $('<span class="page-number"></span>').text(page + 1).bind('click', {
+                        newPage: page
+                    }, function (event) {
+                        currentPage = event.data['newPage'];
+                        $table.trigger('repaginate');
+                        $(this).addClass('active').siblings().removeClass('active');
+                    }).appendTo($pager).addClass('clickable');
+                }
+                
+                if (numRows > numPerPage) {
+                    $pager.insertAfter($table).find('span.page-number:first').addClass('active');
+                }
+            });
+        }
+        */
+
+
+
+
+    </script>
+{% endblock %}
+
+
+

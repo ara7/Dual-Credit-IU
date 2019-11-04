@@ -1,0 +1,55 @@
+<section id="StudentDetails" class="bg-light py-5">
+    <div class="container card">
+        <div class="card-header bg-Crimson text-white">
+            <h4> Student Details </h4>
+        </div>
+        <div class="row">
+            <div class="col-md-6 align-items-center">
+                <table style="align-content: center">
+    
+                    {% for key, values in studentDetailsDict.items %}
+                    <tr>
+                        <td>
+                            <label>{{key}} :</label>
+                            <span> {{values}} </span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-Crimson text-white">
+                        <h4> Former Name(s) </h4>
+                    </div>
+                    {% if studentFormerNamesList %}
+                    <div class="card-body">
+                        <table class="table" style="text-align: center">
+    
+                            <thead>
+                                <tr>
+                                    <th scope="col">Former Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for formername in studentFormerNamesList %}
+                                <tr>
+                                    <td>{{ formername }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="col-md-12">
+                        <p>
+                            No Former Name(s)
+                        </p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

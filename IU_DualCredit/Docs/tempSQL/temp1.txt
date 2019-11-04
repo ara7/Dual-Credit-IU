@@ -1,0 +1,172 @@
+use acp_instructors_rc_dev;
+
+
+
+
+
+select * from iuie_classes;
+select * from iuie_enrollments;
+select * from funding_applications;
+select * from iuie_applications;
+
+
+
+--funding Table
+1 ACP
+2 DOE
+3 STEM
+
+#---------------------------------------------student List-------------------------------
+SELECT PRSN_UNIV_ID, Concat(PRSN_PREF_1ST_NM,' ', PRSN_PREF_MID_NM, ' ',  PRSN_PREF_LAST_NM) 'Student Name', 
+		DATE_FORMAT(ROW_EFF_DT,'%b %d %Y'), CREDITS_COMPLETED, PRSN_GDS_CMP_EMAIL_ADDR, INST_CD
+from iuie_applications;
+
+#---------------------------------------------Student Detail View---------------------
+# Student Header
+SELECT DISTINCT Concat(PRSN_PREF_1ST_NM,' ', PRSN_PREF_MID_NM, ' ',  PRSN_PREF_LAST_NM) 'Student Name',  PRSN_UNIV_ID,                         DATE_FORMAT(PRSN_BIRTH_DT,'%b %d %Y') 'Birth Date',  
+                        funding.legal_sex, funding.gender_identity, funding.phone, funding.contact_preference, applications.PRSN_GDS_CMP_EMAIL_ADDR 
+                        FROM iuie_applications applications 
+                        Inner Join funding_applications funding 
+                        on Trim(leading '0' from applications.PRSN_UNIV_ID) = funding.reported_univ_id 
+                        Where applications.PRSN_UNIV_ID = 0000331017
+
+
+# # Former Names
+SELECT former_name_1
+from funding_applications funding
+where funding.reported_univ_id = Trim(leading '0' from 2216488) 
+union 
+SELECT former_name_2
+from funding_applications funding
+where funding.reported_univ_id = Trim(leading '0' from 2216488) 
+union 
+SELECT former_name_3
+from funding_applications funding
+where funding.reported_univ_id = Trim(leading '0' from 2216488) 
+union 
+SELECT former_name_4
+from funding_applications funding
+where funding.reported_univ_id = Trim(leading '0' from 2216488) 
+union 
+SELECT former_name_5
+from funding_applications funding
+where funding.reported_univ_id = Trim(leading '0' from 2216488) 
+
+#'0001515763'
+
+select reported_univ_id, former_name_1, former_name_2, former_name_3, former_name_4, former_name_5
+from funding_applications;
+
+
+# Qualitrics Tab
+Select 
+
+applications.ROW_EFF_DT, 
+funding.dc_partner
+From iuie_applications applications
+Left outer Join funding_applications funding
+on Trim(leading '0' from applications.PRSN_UNIV_ID) = funding.reported_univ_id 
+Where applications.PRSN_UNIV_ID = 0002216488
+
+
+# Enrolment History 
+Select Distinct enrollments.CRS_DESC, enrollments.CLS_NBR, enrollments.ACAD_TERM_CD, enrollments.STU_ENRL_STAT_REAS_CD,
+enrollments.CRS_OFCL_GRD_CD, applications.CREDITS_COMPLETED
+from iuie_enrollments enrollments
+Inner Join iuie_classes classdata
+on classdata.CRS_ID = enrollments.CRS_ID AND classdata.ACAD_TERM_CD = enrollments.ACAD_TERM_CD
+Inner Join iuie_applications applications 
+on enrollments.PRSN_UNIV_ID  = Trim(leading '0' from applications.PRSN_UNIV_ID)
+Where enrollments.PRSN_UNIV_ID = Trim(leading '0' from 00001520102)
+Order By 2,3
+
+
+# Course Request
+Select enrollments.STU_ENRL_ADD_DT, 
+enrollments.CRS_ID, enrollments.CLS_NBR, enrollments.STU_ENRL_DRP_DT
+from iuie_enrollments enrollments
+Where enrollments.PRSN_UNIV_ID = Trim(leading '0' from 00001520102)
+ 
+ 
+
+
+
+
+
+
+
+
+SELECT DISTINCT Concat(PRSN_PREF_1ST_NM,' ', PRSN_PREF_MID_NM, ' ',  PRSN_PREF_LAST_NM) 'Student Name',  PRSN_UNIV_ID,                         
+		DATE_FORMAT(PRSN_BIRTH_DT,'%b %d %Y') 'Birth Date',                          
+        funding.legal_sex, funding.gender_identity, funding.phone, funding.contact_preference, 
+        applications.PRSN_GDS_CMP_EMAIL_ADDR                         
+FROM iuie_applications applications                         
+Inner Join funding_applications funding                         
+on Trim(leading '0' from applications.PRSN_UNIV_ID) = funding.reported_univ_id                         
+Where applications.PRSN_UNIV_ID = '331017'
+
+ 
+ 
+ 
+ 
+ SELECT former_name_1                                 
+ from funding_applications funding                                 
+ where funding.reported_univ_id = Trim(leading '0' from '2216488')                                 
+ union                                 
+ SELECT former_name_2                                 
+ from funding_applications funding                                 
+ where funding.reported_univ_id = Trim(leading '0' from '2216488')                                  
+ union                                 
+ SELECT former_name_3                                 
+ from funding_applications funding                                 
+ where funding.reported_univ_id = Trim(leading '0' from '2216488')                                 
+ union                                 
+ SELECT former_name_4                                 
+ from funding_applications funding                                 
+ where funding.reported_univ_id = Trim(leading '0' from '2216488')                                 
+ union                                 
+ SELECT former_name_5                                 
+ from funding_applications funding                                 
+ where funding.reported_univ_id = Trim(leading '0' from '2216488')
+ 
+ 
+ 
+ 
+ SELECT enrollments.ACAD_TERM_CD \
+ from iuie_enrollments enrollments \
+ where enrollments.PRSN_UNIV_ID = Trim(leading '0' from '" + UID + "')
+ 
+ 
+ 
+ 
+ Select enrollments.ACAD_TERM_CD 
+ from iuie_enrollments enrollments 
+ Where enrollments.PRSN_UNIV_ID = Trim(leading '0' from '1606019')
+ 
+ 
+ 
+ 
+ 
+ Select enrollments.ACAD_TERM_CD 
+ from iuie_enrollments enrollments 
+ Where enrollments.PRSN_UNIV_ID = Trim(leading '0' from '1606019')
+ 
+ 
+ 
+ 
+ 
+ Select Distinct enrollments.PRSN_UNIV_ID, enrollments.CRS_DESC, enrollments.CLS_NBR, enrollments.ACAD_TERM_CD, enrollments.STU_ENRL_STAT_REAS_CD,                                     
+ enrollments.CRS_OFCL_GRD_CD, applications.CREDITS_COMPLETED                                     
+ from iuie_enrollments enrollments                                     
+ Inner Join iuie_classes classdata                                     
+ on classdata.CRS_ID = enrollments.CRS_ID AND classdata.ACAD_TERM_CD = enrollments.ACAD_TERM_CD                                     
+ Inner Join iuie_applications applications                                     
+ on enrollments.PRSN_UNIV_ID  = Trim(leading '0' from applications.PRSN_UNIV_ID)                                     
+ Where enrollments.PRSN_UNIV_ID = Trim(leading '0' from '1606019')                                     
+ Order By 2,3 
+ 
+ 
+ 
+ 
+ 
+ select dc_partner from funding_applications;

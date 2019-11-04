@@ -1,0 +1,167 @@
+create database acp_instructors_rc_dev;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Mysql@1234';
+
+
+
+use acp_instructors_rc_dev;
+
+
+## Creating iuie_academic_terms
+Create Table iuie_academic_terms (
+	`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `acad_term_cd` varchar(255) NOT NULL DEFAULT '',
+    `acad_term` varchar(255) NOT NULL DEFAULT '',
+    PRIMARY KEY (`id`)
+)
+
+-- Import academic_term_code.csv
+
+Select * from iuie_academic_terms;
+
+
+
+
+## Creating iuie_funding_type Table
+Create Table iuie_funding_type(
+	`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `fundingType` varchar(255) NOT NULL DEFAULT '',
+    PRIMARY KEY (`id`)
+)
+
+
+## Inserting Value into iuie_funding_type table
+Insert into iuie_funding_type
+values(1,'ACP')
+Insert into iuie_funding_type
+values(2,'DOE')
+Insert into iuie_funding_type
+values(3,'STEM')
+
+
+Select * from iuie_funding_type;
+
+
+
+## Create iuie_grant_data Table
+Create Table iuie_grant_data(
+`id` int(11) unsigned NOT NULL AUTO_INCREMENT,	
+PRSN_UNIV_ID varchar(255) NOT NULL DEFAULT '',
+grant_name	varchar(255) NOT NULL DEFAULT '',
+grant_account varchar(255) NOT NULL DEFAULT '',
+amount_total varchar(255) NOT NULL DEFAULT '',
+campus varchar(255) NOT NULL DEFAULT '',
+PRIMARY KEY (`id`)
+)
+
+Select * from iuie_grant_data;
+
+
+
+
+## Create iuie_grant_enrollment Table
+Create Table iuie_grant_enrollment(
+`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+cls_nbr varchar(255) NOT NULL DEFAULT '',
+course_subject_code varchar(255) NOT NULL DEFAULT '',
+prsn_univ_id varchar(255) NOT NULL DEFAULT '',
+acad_term_cd varchar(255) NOT NULL DEFAULT '',
+grant_id varchar(255) NOT NULL DEFAULT '',
+PRIMARY KEY (`id`)
+)
+
+
+
+
+
+## Create iuie_Qualitrics_data Table
+Create Table iuie_Qualitrics_data(
+ `id` int(11) unsigned NOT NULL AUTO_INCREMENT, 
+ Start_Date varchar(100) NOT NULL DEFAULT '',
+ End_Date varchar(100) NOT NULL DEFAULT '',
+ Response_Type varchar(100) NOT NULL DEFAULT '',
+ IP_Address varchar(100) NOT NULL DEFAULT '',
+ Progress varchar(100) NOT NULL DEFAULT '',
+ Duration varchar(100) NOT NULL DEFAULT '',
+ Finished varchar(100) NOT NULL DEFAULT '',
+ Recorded_Date varchar(100) NOT NULL DEFAULT '',
+ Response_ID varchar(100) NOT NULL DEFAULT '',
+ Recipient_Last_Name varchar(100) NOT NULL DEFAULT '',
+ Recipient_First_Name varchar(100) NOT NULL DEFAULT '',
+ Recipient_Email varchar(100) NOT NULL DEFAULT '',
+ External_Data_Reference varchar(100) NOT NULL DEFAULT '',
+ Location_Latitude varchar(100) NOT NULL DEFAULT '',
+ Location_Longitude varchar(100) NOT NULL DEFAULT '',
+ Distribution_Channel varchar(100) NOT NULL DEFAULT '',
+ User_Language varchar(100) NOT NULL DEFAULT '',
+ First_Name varchar(100) NOT NULL DEFAULT '',
+ Last_Name varchar(100) NOT NULL DEFAULT '',
+ role_Description varchar(1000) NOT NULL DEFAULT '',
+ Institution varchar(100) NOT NULL DEFAULT '',
+ High_School varchar(100) NOT NULL DEFAULT '',
+ Course_Type varchar(100) NOT NULL DEFAULT '',
+ Acadmic_Term varchar(100) NOT NULL DEFAULT '',
+ Class_Taken_IndianaUniversity varchar(100) NOT NULL DEFAULT '',
+ CurrentlyEnrolled_Degree_IndianaUniversity varchar(100) NOT NULL DEFAULT '',
+ Student_UID varchar(100) NOT NULL DEFAULT '',
+ Student_FirstName varchar(100) NOT NULL DEFAULT '',
+ Student_LastName varchar(100) NOT NULL DEFAULT '',
+ Student_PrimaryEmailAddress varchar(500) NOT NULL DEFAULT '',
+ Student_ConfirmPrimaryEmailAddress varchar(500) NOT NULL DEFAULT '',
+ Primary_PhoneNumber varchar(100) NOT NULL DEFAULT '',
+ Contact_Method varchar(100) NOT NULL DEFAULT '',
+ Is_Submit_Credentials_IU_ForEquivalency varchar(100) NOT NULL DEFAULT '',
+ StateLicensure varchar(100) NOT NULL DEFAULT '',
+ MoreThan_TwoYears_TeachingExperience varchar(100) NOT NULL DEFAULT '',
+ Graduate_Degree varchar(100) NOT NULL DEFAULT '',
+ Spring_CourseFirstRequest varchar(500) NOT NULL DEFAULT '',
+ Spring_CourseSecondRequest varchar(500) NOT NULL DEFAULT '',
+ Notes varchar(100) NOT NULL DEFAULT '',
+ Graduate_Certificate_Programs varchar(100) NOT NULL DEFAULT '',
+ Graduate_Certificate_Interest varchar(100) NOT NULL DEFAULT '',
+ DateOfBirth varchar(100) NOT NULL DEFAULT '',
+ US_Status varchar(100) NOT NULL DEFAULT '',
+ Veteran_UnitedStates_ArmedServices varchar(100) NOT NULL DEFAULT '',
+ Parents_Guardians_Spouse_Served_UnitedStates_ArmedServices varchar(100) NOT NULL DEFAULT '',
+ VeteransAffairs_Department_Defense_Educational_Benefits varchar(100) NOT NULL DEFAULT '',
+ CurrentAddress_Street varchar(100) NOT NULL DEFAULT '',
+ CurrentAddress_City varchar(100) NOT NULL DEFAULT '',
+ CurrentAddress_State varchar(100) NOT NULL DEFAULT '',
+ CurrentAddress_PostalCode varchar(100) NOT NULL DEFAULT '',
+ CurrentAddress_Country varchar(100) NOT NULL DEFAULT '',
+ Duration_Lived_Indiana varchar(100) NOT NULL DEFAULT '',
+ Is_Address_PermanentMailingAddress varchar(100) NOT NULL DEFAULT '',
+ PermanentMailingAddress_Street varchar(100) NOT NULL DEFAULT '',
+ PermanentMailingAddress_City varchar(100) NOT NULL DEFAULT '',
+ PermanentMailingAddress_State varchar(100) NOT NULL DEFAULT '',
+ PermanentMailingAddress_PostalCode varchar(100) NOT NULL DEFAULT '',
+ PermanentMailingAddress_Country varchar(100) NOT NULL DEFAULT '',
+ Legal_Sex varchar(100) NOT NULL DEFAULT '',
+ OPTIONAL_GenderIdentity varchar(100) NOT NULL DEFAULT '',
+ Documents_Arrived_UnderAnyOtherName varchar(100) NOT NULL DEFAULT '',
+ FormerNames1 varchar(100) NOT NULL DEFAULT '',
+ FormerNames2 varchar(100) NOT NULL DEFAULT '',
+ FormerName3 varchar(100) NOT NULL DEFAULT '',
+ FormerNames4 varchar(100) NOT NULL DEFAULT '',
+ FormerNames5 varchar(100) NOT NULL DEFAULT '',
+ Formal_DisciplinaryAction varchar(100) NOT NULL DEFAULT '',
+ ConvictedCrime varchar(100) NOT NULL DEFAULT '',
+ Currently_Pending_CriminalCharges varchar(100) NOT NULL DEFAULT '',
+ Behavior_Caused_Injury varchar(100) NOT NULL DEFAULT '',
+ Respond_AffirmationStatement varchar(1000) NOT NULL DEFAULT '',
+ FullLegalName varchar(100) NOT NULL DEFAULT '',
+ sourceDesc varchar(100) NOT NULL DEFAULT '',
+ typeDesc varchar(100) NOT NULL DEFAULT '',
+ program_id varchar(100) NOT NULL DEFAULT '',
+ user varchar(100) NOT NULL DEFAULT '',
+ AccessZip varchar(100) NOT NULL DEFAULT '',
+ AccessCountry varchar(100) NOT NULL DEFAULT '',
+ AccessDate varchar(100) NOT NULL DEFAULT '',
+ AccessTime varchar(100) NOT NULL DEFAULT '',
+ InquiryType varchar(100) NOT NULL DEFAULT '',
+ Q_R_DEL varchar(100) NOT NULL DEFAULT '',
+ audience varchar(100) NOT NULL DEFAULT '',
+ date varchar(100) NOT NULL DEFAULT '',
+ MobileDevice varchar(100) NOT NULL DEFAULT '',
+ Q8_2_Topics varchar(100) NOT NULL DEFAULT '',
+ PRIMARY KEY (`id`)
+ )

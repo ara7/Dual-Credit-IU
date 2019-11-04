@@ -1,0 +1,464 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'js/search-criteria.js' %}"></script>
+<div class="criteria" id="master-container">
+
+   <!-- Student Search box -->
+
+   <div id="student-search-criteria" class="container mb20 mt20">
+      <div class="red">
+         <h5 class="mb-0"> Search Criteria</h5>
+      </div>
+      <div style="box-shadow:0px 0px 10px #ccc;padding:20px;">
+         <form method="POST" action="{% url 'search_module:student-search' %}">
+            {% csrf_token %}
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="username">Username</label>
+                     <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="uid">UID</label>
+                     <input type="text" class="form-control" name="uid" id="uid">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="first_name">Student First Name</label>
+                     <input type="text" class="form-control" id="first_name" name="first_name" aria-describedby="emailHelp">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="last_name">Student Last Name</label>
+                     <input type="text" class="form-control" id="last_name" name="last_name">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="enrollment_campus">Campus of Enrollment</label>
+                     <select class="browser-default custom-select" id="enrollment_campus" name="enrollment_campus">
+                        <option selected>Campus of Enrollment</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="student_type">Student Type</label>
+                     <select class="browser-default custom-select" id="student_type" name="student_type">
+                        <option selected>Student Type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="dc_partner">DC Partner</label>
+                     <select class="browser-default custom-select" id="dc_partner" name="dc_partner">
+                        <option selected>Multiselect</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="d-flex align-items-center justify-content-between max-WT-500">
+                  <div class="col-md-6 ">
+                     <label class="container checkbox">Currently Enrolled
+                        <input type="checkbox" id="currently_enrolled" name="currently_enrolled">
+                        <span class="checkmark"></span>
+                     </label>
+                  </div>
+                  <div class="col-md-6">
+                     <label class="container checkbox">Pending Enrollment Requests
+                        <input type="checkbox" id="pending_enrollment" name="pending_enrollment">
+                        <span class="checkmark"></span>
+                     </label>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+               <button type="submit" class="btn btn-primary btn-red">Search</button>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <!-- Student Search end -->
+
+   <!-- Course Search end -->
+
+   <div style="display:none;" id="course-search-criteria" class="container mb20 mt20">
+      <div class="red">
+         <h5 class="mb-0"> Search Criteria</h5>
+      </div>
+      <div style="box-shadow:0px 0px 10px #ccc;padding:20px;">
+         <form method="POST" action="">
+            {% csrf_token %}
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Course Number</label>
+                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="exampleInputPassword1">Course Name</label>
+                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Campus of Instruction</label>
+                     <select class="browser-default custom-select">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="exampleInputPassword1">Term</label>
+                     <select class="browser-default custom-select">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+               <button type="submit" class="btn btn-primary btn-red">Search</button>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <!-- Course Search end -->
+
+   <!-- Enrollment Search box -->
+
+   <div style="display:none;" id="enrollment-search-criteria" class="container mb20 mt20">
+      <div class="red">
+         <h5 class="mb-0"> Search Criteria</h5>
+      </div>
+      <div style="box-shadow:0px 0px 10px #ccc;padding:20px;">
+         <form method="POST" action="">
+            {% csrf_token %}
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="student_first_name">Student First Name</label>
+                     <input type="text" class="form-control" id="student_first_name" name="first_name" aria-describedby="emailHelp">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="student_last_name">Student Last Name</label>
+                     <input type="text" class="form-control" id="student_last_name" name="last_name">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="course_number">Course Number</label>
+                     <input type="text" class="form-control" id="course_number" name="course_number" aria-describedby="emailHelp">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="class_number">Class Number</label>
+                     <input type="text" class="form-control" id="class_number" name="class_number" placeholder="">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="Campus_of_enrollment">Campus of Enrollment</label>
+                     <select class="browser-default custom-select" id="Campus_of_enrollment" name="campus_of_enrollment">
+                        <option selected>Campus of Enrollment</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="term">Term</label>
+                     <select class="browser-default custom-select" id="term" name="term">
+                        <option selected>Student Type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label for="grant">Grant</label>
+                     <select class="browser-default custom-select" id="grant" name="grant">
+                        <option selected>Multiselect</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+               <button type="submit" class="btn btn-primary btn-red">Search</button>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <!-- Enrollment Search end -->
+
+</div>
+<div class="container">
+   <div class="row">
+      <div class="col-md-12 ">
+         <div style="box-shadow: 0px 0px 10px #ccc">
+            <nav>
+               <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a onclick="student_tab();" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                     role="tab" aria-controls="nav-home" aria-selected="true">Student</a>
+                  <a onclick="course_tab();" class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                     role="tab" aria-controls="nav-profile" aria-selected="false">Course</a>
+                  <a onclick="enrollment_tab();" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                     role="tab" aria-controls="nav-contact" aria-selected="false">Enrollment</a>
+                  <a onclick="batchexport_tab();" class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about"
+                     role="tab" aria-controls="nav-about" aria-selected="false">Batch Export</a>
+               </div>
+            </nav>
+            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+               <!-- Student Table -->
+
+               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="export-search-results">
+                     <button id="export-search-results" style="padding:5px; margin-left:870px;" type="submit" class="btn btn-primary btn-red">Export</button>
+                  </div>
+                  <table class="table table-responsive">
+                     <table class="table table-hover table-responsive table-section">
+                        <thead class="thead-light">
+                           <tr>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">UID</th>
+                              <th scope="col">Student Type</th>
+                              <th scope="col">DC Partner</th>
+                              <th scope="col">Pending Course Request Date</th>
+                              <th scope="col">Course Choice</th>
+                              <th scope="col">Second Course Choice</th>
+                              <th scope="col">Credit Hours Earned</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Campus Affiliation</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           {% for student in students %}
+                           <tr class="student-details" id="{{student.uuid}}">
+                              <td scope="row">{{student.student_name}}</td>
+                              <td>{% if student.uid == None %}-{% else %}{{student.uid}}{% endif %}</td>
+                              <td>{{student.student_type}}</td>
+                              <td>{{student.dc_partner}}</td>
+                              <td>{{student.pending_course_request_date|date:'d/m/Y'}}</td>
+                              <td>{{student.course_choice}}</td>
+                              <td>{{student.second_course_choice}}</td>
+                              <td>{{student.credit_hours_earned}}</td>
+                              <td>{{student.email}}</td>
+                              <td>{{student.campus_affilation}}</td>
+                           </tr>
+                           {% endfor %}
+                        </tbody>
+                     </table>
+               </div>
+
+               <!-- Student Table end -->
+
+               <!-- Course Table -->
+
+               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="export-search-results">
+                     <button id="export-search-results" style="padding:5px; margin-left:870px;" type="submit" class="btn btn-primary btn-red">Export</button>
+                  </div>
+                  <table class="table table-responsive">
+                     <table class="table table-hover table-responsive table-section">
+                        <thead class="thead-light">
+                           <tr>
+                              <th scope="col" style="width: 126px;">Course Number</th>
+                              <th scope="col" style="width: 125px;">Course Name</th>
+                              <th scope="col" style="width: 94px;">Term</th>
+                              <th scope="col" style="width: 165px;">Campus of Instruction</th>
+                              <th scope="col" style="width: 94px;">Instructor</th>
+                              <th scope="col" style="width: 100px;">Total Seats</th>
+                              <th scope="col" style="width: 94px;">Enrolled</th>
+                              <th scope="col" style="width: 145px;">Pending Enrolled</th>
+                              <th scope="col" style="width: 165px;">Calculated Remaining</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr id="course-details_{{course.id}}">
+                              <td scope="row">1</td>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                           </tr>
+                           <tr id="course-details_{{course.id}}">
+                              <td scope="row">2</td>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                           </tr>
+                           <tr id="course-details_{{course.id}}">
+                              <td scope="row">3</td>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+                           </tr>
+                        </tbody>
+                     </table>
+               </div>
+
+               <!-- Course Table End -->
+
+               <!-- Enrollment Table -->
+
+               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <div class="export-search-results">
+                     <button id="export-search-results" style="padding:5px; margin-left:870px;" type="submit" class="btn btn-primary btn-red">Export</button>
+                  </div>
+                  <table class="table table-responsive">
+                     <table class="table table-hover table-responsive table-section">
+                        <thead class="thead-light">
+                           <tr>
+                              <th scope="col" style="width: 200px;">Student Name</th>
+                              <th scope="col" style="width: 200px;">Course Number</th>
+                              <th scope="col" style="width: 200px;">Class Number</th>
+                              <th scope="col" style="width: 200px;">Term</th>
+                              <th scope="col" style="width: 200px;">Campus of Enrollment</th>
+                              <th scope="col" style="width: 200px;">Grant</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr id="enrollment-details_{{enrollment.id}}">
+                              <td scope="row">Gene Guilizzoni</td>
+                              <td>Gene Guilizzoni</td>
+                              <td>BIO509</td>
+                              <td>000204</td>
+                              <td>Mariah Maclachlan</td>
+                              <td>Valerie Liberty</td>
+                           </tr>
+                           <tr id="enrollment-details_{{enrollment.id}}">
+                              <td scope="row">Gene Guilizzoni</td>
+                              <td>Marco Botton</td>
+                              <td>BIO509</td>
+                              <td>BIO509</td>
+                              <td>BIO509</td>
+                              <td>BIO509</td>
+                           </tr>
+                           <tr id="enrollment-details_{{enrollment.id}}">
+                              <td scope="row">Gene Guilizzoni</td>
+                              <td>Valerie Liberty</td>
+                              <td>000204</td>
+                              <td>000204</td>
+                              <td>000204</td>
+                              <td>000204</td>
+                           </tr>
+                        </tbody>
+                     </table>
+               </div>
+
+               <!-- Enrollment Table end -->
+
+               <!-- Batch Export Table -->
+
+               <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                  <div class="p20">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Term</label>
+                              <select class="browser-default custom-select">
+                                 <option selected>Select</option>
+                                 <option value="1">One</option>
+                                 <option value="2">Two</option>
+                                 <option value="3">Three</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <label for="exampleInputPassword1">Batch Process</label>
+                              <select class="browser-default custom-select">
+                                 <option selected>Select</option>
+                                 <option value="1">One</option>
+                                 <option value="2">Two</option>
+                                 <option value="3">Three</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="d-flex align-items-center justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-red">Download</button>
+                     </div>
+                  </div>
+               </div>
+               <!--- Batch Export Table end --->
+
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script>
+
+   $('tr').bind('click', function () {
+      student_id = this.id;
+      window.location = "/student-details/" + student_id
+   });
+</script>
+{% endblock %}

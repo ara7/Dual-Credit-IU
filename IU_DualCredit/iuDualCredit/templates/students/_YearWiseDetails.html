@@ -1,0 +1,441 @@
+<section id="YearWiseDetails" class="bg-light py-5">
+        <div class="container card">
+            {% csrf_token %}
+            <div class="card-header bg-Crimson text-white">
+                <h4> Year Wise Details </h4>
+            </div>
+            
+            <div id="tabs">
+                <ul>
+                </ul>
+            </div>
+           
+            <div class="row">
+                <div class="col-md-12 align-items-center">
+                  <input id="tabListing" type="hidden" value="{{tabsLists}}" />        
+                  <input id="studentUid" type="hidden" value="{{studentUid}}" />          
+                </div>
+            </div>
+            
+        </div>
+  
+</section>
+
+
+{% block javascript %}
+    
+    <script language="javascript" type="text/javascript">
+        
+      $(document).ready(function () {
+          $("div#tabs").tabs();
+
+          var studentUid = $("#studentUid").val();
+          var tabValues = $("#tabListing").val();
+          var inputTabValue = tabValues.split(',');
+          var tabValuesArr = [];
+          //var tabContent = []
+          var tabContent = new Array(inputTabValue.length); 
+          var row = 0;
+
+          //alert(studentUid);
+          //alert(tabValues);
+
+          for (var i=0; i < inputTabValue.length; i++) {
+            var tabValue = inputTabValue[i].replace('[','').replace(']','').replace(/["']/g, "").trim();
+            tabValuesArr.push(tabValue);
+          }
+
+          // alert(tabValuesArr);
+
+          for (var i=0; i < tabValuesArr.length; i++) {
+
+                var tabAcademicYear = tabValuesArr[i].split('|');
+
+                $.ajax({
+                  url:"/students/studentQualitricsYearWiseDetails/",
+                  dataType: 'json',
+                  type : 'POST',
+                  data: {
+                      'studentUid': studentUid,
+                      'academicYear': tabAcademicYear[0],
+                      csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+                  },
+                  success: function(data) {
+
+                      //var tr=[];
+                      //console.log(data);
+                      //studentQualitricsDataList = data;
+
+                      var studentQualitricdata = data.StudentQualitricsDataList;
+                      tabContent[row] = new Array(studentQualitricdata.length);
+
+                      //console.log(tabContent[row]);
+
+                      for (var j = 0; j < studentQualitricdata.length; j++) {
+                          
+                          //console.log(studentQualitricdata[j]);
+                          
+                          tabContent[row][j] = studentQualitricdata[j];
+                          
+                          //console.log(tabContent[row][j]);
+
+                          //console.log(i + " " + j + " " + tabContent[i][j]);
+                          //console.log(row + " " + j + " " + tabContent[row][j]);
+                      }
+                      
+                      row = row + 1;
+                      if(row == tabValuesArr.length){
+                        addTab(tabValuesArr,tabContent);
+                      }
+
+                  },
+                  error: function(data) {
+                      console.log(data);
+                      alert("Error Occured");
+                  }
+              });
+          }
+        });
+
+        
+        function addTab(tabValuesArr,tabContent) {
+           
+          QualiricsHeaderArr = ['Qualtrics Application ID', 'Qualtrics Completion Date', 'Requested Start Date', 'DC Partner', 'Required Teaching in Subject Area', 'Highest Degree earned', 'State Licensure', 'Previous Classwork Through IU', 'Previous Name'];
+
+          for (var i=0; i < tabValuesArr.length; i++) {
+              
+
+            var tabAcademicYear = tabValuesArr[i].split('|');
+
+              $("div#tabs ul").append(
+                "<li><a href='#tab" + tabAcademicYear[0] + "'>" + tabAcademicYear[1] + "</a></li>"
+              );
+
+              var stringDiv = "<div id='tab" + tabAcademicYear[0] + "'>";
+              stringDiv += "<table id='table" + tabAcademicYear[0] + "'>";
+              
+              var colwidth = 0;  
+              for (var j = 0; j < tabContent[i].length; j++) 
+              {
+              
+                if(colwidth%2 == 0){
+                  stringDiv += '<tr>';
+                }
+                colwidth = colwidth + 1;
+                
+                stringDiv += '<td>';
+                    stringDiv += '<table>';
+
+
+                var qualitricsData = String(tabContent[i][j]);
+                var qualitricsDataArr = qualitricsData.split(',');
+                for (var k = 0; k < qualitricsDataArr.length; k++) 
+                {
+                  stringDiv += '<tr style="width:100%">';
+                  stringDiv += "<td>" + QualiricsHeaderArr[k] + " : " + isEmpty(qualitricsDataArr[k]) + "</td>";
+                  stringDiv += '<td style="width:125px"> &nbsp; </td>';
+                  stringDiv += '</tr>';
+                }
+                
+                //stringDiv += '<td> &nbsp; </td>';
+                //stringDiv += '<td> &nbsp; </td>';
+
+                for (var k = 0; k < 2; k++) 
+                {
+                  stringDiv += '<tr> <td> &nbsp; </td> </tr>';
+                }
+
+                  stringDiv += '</table>';
+                stringDiv += '</td>';
+                if(colwidth%2 == 0){
+                  stringDiv += '</tr>';
+                }
+              
+                
+              }
+
+              stringDiv += "</table>";
+              stringDiv += "</div>";
+              //alert(stringDiv);
+
+              $("div#tabs").append(stringDiv);
+
+              $("div#tabs").tabs("refresh");
+          
+          }
+
+        }
+
+        function isEmpty(strValue) {
+          if(!strValue || 0 === strValue.length){
+              return 'None'
+          }
+          return strValue
+      }
+
+        
+    </script>
+{% endblock %}
+
+
+
+<!-- 
+  
+  //alert(tablevalueArr[i].replace('[','').replace(']','').replace(/["']/g, ""));
+                //$("div#tabs ul").append(
+                //  "<li><a href='#tab" + tabValue + "'>" + tabValue + "</a></li>"
+                //);
+                //$("div#tabs").append(
+                //    "<div id='tab" + tabValue + "'>" + tabValue + "</div>"
+                //);
+                //console.log(row + " " + tabValuesArr[i]);
+
+
+
+    $("button#add-tab").click(function () {
+
+          var num_tabs = $("div#tabs ul li").length + 1;
+
+          $("div#tabs ul").append(
+            "<li><a href='#tab" + num_tabs + "'>#" + num_tabs + "</a></li>"
+          );
+          $("div#tabs").append(
+            "<div id='tab" + num_tabs + "'>#" + num_tabs + "</div>"
+          );
+          $("div#tabs").tabs("refresh");
+        });
+
+
+        $( function() {
+
+            var  tabTitle = $( "#tab_title" ),
+              tabContent = $( "#tab_content" ),
+              tabTemplate = "<li><a href='#{href}'>#{label}</a> </li>",
+              tabCounter = 4;
+         
+            var tabs = $("#tabs").tabs();
+         
+            // Modal dialog init: custom buttons and a "close" callback resetting the form inside
+            //var dialog = $( "#dialog" ).dialog({
+
+                //  autoOpen: false,
+                //modal: true,
+           //buttons: {
+          // Add: function() {
+            //addTab();
+              //    $( this ).dialog( "close" );
+               // },
+                //Cancel: function() {
+                 // $( this ).dialog( "close" );
+                //}
+              //},
+              //close: function() {
+               // form[ 0 ].reset();
+              //}
+            // });
+         
+            // AddTab form: calls addTab function on submit and closes the dialog
+            //var form = dialog.find( "form" ).on( "submit", function( event ) {
+            //  addTab();
+            //  dialog.dialog( "close" );
+            //  event.preventDefault();
+            //});
+            
+            var tabValues = $("#tabListing").val();
+            var tablevalueArr = tabValues.split(',');
+
+            for (var i=0; i < tablevalueArr.length; i++) {
+                //alert(tablevalueArr[i].replace('[','').replace(']','').replace(/["']/g, ""));
+                addTab(tablevalueArr[i].replace('[','').replace(']','').replace(/["']/g, ""));
+            }
+            
+            // Actual addTab function: adds new tab using the input from the form above
+            function addTab(tabTitle) {
+              alert(tabTitle);
+              var label = tabTitle,
+                id = tabTitle,
+                li = $( tabTemplate.replace( /#\{href\}/g, "#" + id ).replace( /#\{label\}/g, label ) );
+                //tabContentHtml = tabContent.val();
+         
+              tabs.find( ".ui-tabs-nav" ).append(li);
+              tabs.append( "<div id='" + id + "'></div>" );
+              tabs.tabs("refresh");
+              tabCounter++;
+            }
+         
+            // AddTab button: just opens the dialog
+            //$( "#add_tab" )
+             // .button()
+             // .on( "click", function() {
+             //   dialog.dialog( "open" );
+             // });
+         
+            // Close icon: removing the tab on click
+            tabs.on( "click", function() {
+              //var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
+              //$( "#" + panelId ).remove();
+              //tabs.tabs( "refresh" );
+            });
+         
+            tabs.on( "keyup", function( event ) {
+              if ( event.altKey && event.keyCode === $.ui.keyCode.BACKSPACE ) {
+                var panelId = tabs.find( ".ui-tabs-active" ).remove().attr( "aria-controls" );
+                $( "#" + panelId ).remove();
+                alert($( "#" + panelId ));
+                tabs.tabs( "refresh" );
+              }
+            });
+        });
+  
+  
+  
+    $(document).ready(function(){
+    $( "#tabs" ).tabs();
+
+    $('.info_link').click(function(){
+        
+        $("#tabContent").empty();
+
+        var studentUid = '2001696690'; //$(this).attr('href');
+        var year = $(this).attr('href');
+
+        $.ajax({
+            url:"/students/studentYearWiseDetails/",
+            dataType: 'json',
+            data: {
+                'studentUid': studentUid,
+                'academicYear': year
+            },
+            success: function(data) {
+                var tr=[];
+                console.log(data);
+                studentYearWiseDetails = data.studentYearWiseDetails;
+                for (var i = 0; i < studentYearWiseDetails.length; i++) {
+                   tr.push('<tr>');
+                   tr.push("<td> Qualitrics a0pplication ID: </td>");
+                   tr.push("<td>" + studentYearWiseDetails[i][0] + "</td>");
+                   tr.push("<td>" +  ' ' + "</td>");
+                   tr.push("<td>" + studentYearWiseDetails[i][1] + "</td>");
+                   tr.push('</tr>');
+                }
+                $('tbody').append($(tr.join('')));
+            },
+            error: function(data) {
+                console.log(data); 
+            }
+        });
+
+    });
+
+}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//var tableId = '<table id=#table"'+ tabValuesArr[i] + '">';
+              
+              //var tr=[];
+              //tr.push('<div id=tab"'+ tabValuesArr[i] + '">');
+              //tr.push('<table id=#table"'+ tabValuesArr[i] + '">');
+              //tr.push('<tr>');
+              //for(var j=0; j < tabContent[i].length; j++)
+              //{
+              //  tr.push("<td>" + tabContent[i][j] + "</td>");
+              //  tr.push("<td>" +  ' : ' + "</td>");
+              //  tr.push("<td>" + " Hello " + tabContent[i][1] + "</td>");
+              //}
+              //tr.push('</tr>'); 
+              //tr.push('</table>'); 
+              //tr.push('</div>'); 
+              //$("div#tabs").append($(tr.join('')));
+
+
+              //$("#tableYearWiseDetails tbody").append($(tr.join(''))); 
+              //$("#tableYearWiseDetails").append( $(tr.join('')) );
+              
+              //var tableData =;
+              
+              //$('tbody').append($(tr.join(''))).appendTo(table);
+
+              //$("#tblEntAttributes").append($('tbody').append($(tr.join('')))); 
+              //table.append($('tbody').append($(tr.join(''))));
+              //$('tab' + tabValuesArr[i]).append (
+              //  $('table').append( 
+              //  )
+              //);
+
+              //$("#divYearWiseDetails").append( $("#table" + tabValuesArr[i]).append( $(tr.join('')) ) );
+              
+              //$("#divYearWiseDetails").append($(tr.join('')));
+              //$('#divResults').append();
+              
+              //$("div#tabs").append(
+              //  "<div id='tab" + tabValuesArr[i] + "'>" + c + "</div>"
+              //);
+              
+              //console.log(tr);
+              //console.log($(tr.join('')));
+
+              
+
+
+              //var str = "";
+              //str += '<div id=tab"'+ tabValuesArr[i] + '">';
+              //str +='<table id=#table"'+ tabValuesArr[i] + '">';
+              //str +='<tr>';
+              //for(var j=0; j < tabContent[i].length; j++)
+              //{
+              //      str +="<td>" + tabContent[i][j] + "</td>";
+              //      str +="<td>" +  ' : ' + "</td>";
+              //      str +="<td>" + " Hello " + tabContent[i][1] + "</td>";
+              //}
+              //str +='</tr>';
+              //str +='</table>'; 
+              //str +='</div>';
+
+              //$("div#tabs").append($(tr.join('')));
+              //$("div#tabs").append(str);
+
+
+              //////////////////// Working Code//////////////////////
+                //var stringDiv= "<div id='tab" + tabValuesArr[i] + "'>";
+              //stringDiv += "<table id='table" + tabValuesArr[i] + "'>"+ tabValuesArr[i] +"";
+              //stringDiv +='<tr>';
+              //for(var j=0; j < tabContent[i].length; j++)
+              //{
+
+              // stringDiv +="<td>" + tabContent[i][j] + "</td>";
+              //  stringDiv +="<td>" +  ' : ' + "</td>";
+              //  stringDiv +="<td>" + " Hello " + tabContent[i][1] + "</td>";
+              //}  
+              //stringDiv +='</tr>';
+              //stringDiv += "</table>";
+              //stringDiv += "</div>";
+
+              //$("div#tabs").append(stringDiv);
+
+
+
+
+
+
+
+
+-->
